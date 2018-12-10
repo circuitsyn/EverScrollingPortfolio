@@ -1,6 +1,29 @@
+@font-face {
+    font-family: 'FromtheWoods';
+    src: url('../fonts/FromtheWoods-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WhitePine';
+    src: url('../fonts/WhitePine-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BlackRough';
+    src: url('../fonts/SonderSans-BlackRough.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body, html {
     height: 100%;
-    background-image: url("/assets/images/Lake.png");
+    background-image: url("../images/Lake.png");
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -9,49 +32,49 @@ body, html {
 }
 
 /* nav bar styling */
-.navbar-toggler {
-    background-color: #5BA300;
-    stroke: white;
+.navbar-toggler  {
+    background-color: white;
     -webkit-box-shadow: none;
     box-shadow: none;
-    padding: 10px 15px 10px 15px;
+    padding: 1px 4px 1px 4px;
+    border: none;
 }
 
 .nav-link {
-    color:white !important;
-    font-weight:bold;
-    opacity: 1;
-    font-family: "MedSight Font";
-    margin-right: 4px;
-    margin-left: 4px;
+    color: rgba(91, 163, 0, 1) !important;
+    opacity: 0.9;
+    padding: 0px 8px 0px 8px;
+    font-family: "BlackRough", monospace;
 }
 
 li.nav-item:hover {
-    background-color: #5BA300;
-    border-radius: 20px;
-    border-color: #FFC107 !important;
+    background-color: white;
+    border-radius: 10px;
+    border-color: #5BA300 !important;
     border: solid 2px;
     
 }
 
 li.nav-item {
     transition-timing-function: ease-out;
-    padding: 5px;
+    padding: 4px 15px 4px 15px;
 }
 
 .navbar-nav {
-    border-radius:20px;
-    background-color: #5BA300;
+    border-radius:10px;
+    background-color: rgba(255,255,255,0.9);
     display: inline-block
-    /* padding-left: 1%; */
 }
 
-#navbarNav {
-    background-color: white;
-    padding: 10px 0px 10px 0px;
-    border-radius: 15px;
-    width: 20%;
-    
+#navIcon {
+    height: 32px;
+    width:32px;
+}
+
+button:focus {
+    outline-color: rgba(91, 163, 0, 1);
+    outline-style: auto;
+    outline-width: 5px;
 }
 
 /* nav bar styling */
