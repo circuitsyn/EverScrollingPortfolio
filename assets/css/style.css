@@ -46,6 +46,11 @@ body, html {
 }
 
 /* Nav Bar Styling Start */
+
+#collapsibleNavbar {
+    margin-top: 4px;
+}
+
 .navbar-toggler  {
     background-color: white;
     -webkit-box-shadow: none;
@@ -116,3 +121,30 @@ button:focus {
     font-weight: bold;
 }
 /* Contact Me Styling End */
+
+/* Caption hovers */
+.thumbnail {
+    position: relative;
+    text-align: center;
+}
+
+.caption {
+    position: absolute;
+    bottom: -8%;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    line-height: 40px;
+    /* opacity: 0.9; */
+    /* max-width: none; 
+    add border , img-responsive, settings check screenshots
+    */
+}
+
+.img-thumbnail {
+    height: 265px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 3px;
+    /* max-width: none; */
+}

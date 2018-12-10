@@ -49,50 +49,82 @@
     <div id="contactModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
     
-    <!-- Modal content-->
-    <div class="modal-content">
-        <div class="modal-header">
-            <h4 class="modal-title contactTitle">Contact Me</h4>
-            <button type="button" class="close" data-dismiss="modal">×</button>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title contactTitle">Contact Me</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <div class="modal-body">
+                
+                    <form action="https://formspree.io/jarredmsutton@gmail.com" role="form" id="contact-form" method="POST">
+                        <div>
+                            <p id="contactTxt">
+                                Send me notes, feedback, or interest. I'm looking forward to hearing from you! 
+                            </p>
+                            <p id="sig"class="offset-md-7 col-md-3 mb-0"> -Jarred S.</p>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label class="contactHeaders" for="name">
+                                Name:</label>
+                            <input type="text" class="form-control"
+                            id="name" name="name"   required maxlength="50">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="contactHeaders" for="email">
+                                Email:</label>
+                            <input type="email" class="form-control"
+                            id="email" name="email" required maxlength="50">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="contactHeaders" for="name">
+                                Message:</label> 
+                            <textarea class="form-control" type="textarea" name="message"
+                            id="message" placeholder="Your Message Here"
+                            maxlength="6000" rows="7"></textarea>
+                        </div>
+
+                            <button type="submit" class="btn btn-outline-success btn-lg btn-block" id="btnContactUs">Send It!</button>
+                    </form>
+                </div>
+            </div>
         </div>
-
-    <div class="modal-body">
-    
-        <form action="https://formspree.io/jarredmsutton@gmail.com" role="form" id="contact-form" method="POST">
-            <div>
-                <p id="contactTxt">
-                    Send me notes, feedback, or interest. I'm looking forward to hearing from you! 
-                </p>
-                <p id="sig"class="offset-md-7 col-md-3 mb-0"> -Jarred S.</p>
-            </div>
-        
-            <div class="form-group">
-                <label class="contactHeaders" for="name">
-                    Name:</label>
-                <input type="text" class="form-control"
-                id="name" name="name"   required maxlength="50">
-            </div>
-
-            <div class="form-group">
-                <label class="contactHeaders" for="email">
-                    Email:</label>
-                <input type="email" class="form-control"
-                id="email" name="email" required maxlength="50">
-            </div>
-
-            <div class="form-group">
-                <label class="contactHeaders" for="name">
-                    Message:</label> 
-                <textarea class="form-control" type="textarea" name="message"
-                id="message" placeholder="Your Message Here"
-                maxlength="6000" rows="7"></textarea>
-            </div>
-
-                <button type="submit" class="btn btn-outline-success btn-lg btn-block" id="btnContactUs">Send It!</button>
-        </form>
     </div>
-    
 
+    
+    <div class="container test">
+        <div class="row">
+
+            <!--The Weekender Image Link-->
+            <div class="col-md-4 p-3">
+                <div class="thumbnail animated flipInX"> 
+                    <a href="https://software.intel.com/en-us/videos/bringing-the-components-of-a-makerspace-together-to-create-educational-platforms" target="_blank"> <img class="img-thumbnail" src="assets/images/theweekender_results.png" alt="The Weekender"> </a>
+                    <img class="caption" src="assets/images/frame5sml.png" alt="frame">
+                </div>
+            </div>
+
+                <!--Giftastic-->
+                <div class="col-md-4 p-3">
+                    <div class="thumbnail animated flipInX"> 
+                        <a href="https://circuitsyn.github.io/GifTastic/" target="_blank"><img class="img-thumbnail" src="assets/images/giftastic.png" alt="Giftastic"> </a>
+                        <img class="caption" src="assets/images/frame5sml.png" alt="frame">
+                    </div>
+                </div>
+
+            <!--Auto Watering Garden Image Link-->
+            <div class="col-md-4 p-3">
+                <div class="thumbnail animated flipInX"> 
+                    <a href="https://circuitsyn.github.io/daWeekender/" target="_blank"> <img class="img-thumbnail" src="assets/images/AutoWateringGarden.jpg" alt="Auto Watering Garden"> </a>
+                    <img class="caption" src="assets/images/frame5sml.png" alt="frame">
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
