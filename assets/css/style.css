@@ -19,6 +19,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Signature';
+    src: url('../fonts/ArtySignature.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 body, html {
@@ -31,7 +38,7 @@ body, html {
     /* padding-top: 30px; */
 }
 
-/* nav bar styling */
+/* Nav Bar Styling Start */
 .navbar-toggler  {
     background-color: white;
     -webkit-box-shadow: none;
@@ -79,4 +86,21 @@ button:focus {
     outline-width: 5px;
 }
 
-/* nav bar styling */
+/* Nav Bar Styling End */
+
+/* Contact Me Styling Start */
+#sig {
+    font-family: 'Signature', monospace;
+    font-size: 55px;
+}
+
+
+.modal-header {
+    padding: 13px 16px 13px 16px;
+}
+
+.contactTitle {
+    font-family: 'WhitePine', monospace;
+    font-weight: bold;
+}
+/* Contact Me Styling End */
