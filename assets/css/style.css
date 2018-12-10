@@ -106,20 +106,15 @@ button:focus {
     font-size: 55px;
 }
 
+.headers {
+    font-family: 'WhitePine', monospace;
+    font-weight: bold;
+}
 
 .modal-header {
     padding: 13px 16px 13px 16px;
 }
 
-.contactTitle {
-    font-family: 'WhitePine', monospace;
-    font-weight: bold;
-}
-
-.contactHeaders {
-    font-family: 'WhitePine', monospace;
-    font-weight: bold;
-}
 /* Contact Me Styling End */
 
 /* Project Area */
