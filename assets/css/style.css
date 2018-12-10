@@ -26,6 +26,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Main';
+    src: url('../fonts/Moon.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 body, html {
@@ -35,7 +42,7 @@ body, html {
     /* background-repeat: no-repeat; */
     background-size: cover;
     background-attachment: fixed;
-    /* padding-top: 30px; */
+    font-family: 'Main';
 }
 
 /* Nav Bar Styling Start */
@@ -100,6 +107,11 @@ button:focus {
 }
 
 .contactTitle {
+    font-family: 'WhitePine', monospace;
+    font-weight: bold;
+}
+
+.contactHeaders {
     font-family: 'WhitePine', monospace;
     font-weight: bold;
 }
