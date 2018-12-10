@@ -100,6 +100,16 @@ button:focus {
 
 /* Nav Bar Styling End */
 
+/* About me Styling Start */
+
+.aboutmeText {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* About me Styling End */
+
+
 /* Contact Me Styling Start */
 #sig {
     font-family: 'Signature', monospace;
