@@ -44,7 +44,9 @@ body, html {
     color: rgba(91, 163, 0, 1) !important;
     opacity: 0.9;
     padding: 0px 8px 0px 8px;
-    font-family: "BlackRough", monospace;
+    font-family: 'WhitePine', monospace;
+    /* font-weight: bolder; */
+    font-size: 20px;
 }
 
 li.nav-item:hover {
