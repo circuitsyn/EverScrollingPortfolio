@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
     if(window.location.href.indexOf('#thankYou') != -1) {
-      $('#thankYou').modal();
+      $('#thankYou').modal('toggle');
     }
   
   });
