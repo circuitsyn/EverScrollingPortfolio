@@ -68,6 +68,18 @@ body, html {
     font-size: 20px;
 }
 
+.nav-linkP {
+    color: rgba(91, 163, 0, 1) !important;
+    font-family: 'WhitePine', monospace;
+    /* font-weight: bolder; */
+    /* font-size: 20px; */
+    padding: 0;
+}
+
+.nav-linkP:focus {
+    font-weight: bolder;
+}
+
 li.nav-item:hover {
     background-color: white;
     border-radius: 10px;
