@@ -107,6 +107,13 @@ button:focus {
     font-size: 20px;
 }
 
+#aboutBG {
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 5px;
+    padding: 1% 2% 2% 2%;
+    margin-top: 7%
+}
+
 /* About me Styling End */
 
 
@@ -175,7 +182,7 @@ button:focus {
 }
 
 #projects {
-    background-color:rgba(255,255,255,0.9);
+    background-color:rgba(255,255,255,0.5);
     border-radius: 5px;
     padding: 1% 2% 2% 2%;
     margin-top: 7%
