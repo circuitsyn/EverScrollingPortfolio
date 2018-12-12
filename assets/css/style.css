@@ -258,6 +258,16 @@ button:focus {
 }
 /* Values Section End */
 
+/* Technologies Section Start */
+.hardSoftIcons {
+    height: auto;
+    width: 80px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+/* Technologies Section End */
+
 
 /* Scroll Snap */
 .one {
@@ -279,6 +289,14 @@ button:focus {
 .three {
     height: 100vh;
     scroll-snap-align: start;
+}
+
+.five {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
 }
 
 .six {
