@@ -143,6 +143,7 @@ button:focus {
 .headers {
     font-family: 'BlackRough', monospace;
     font-weight: bold;
+    text-align: center;
 }
 
 .modal-header {
@@ -243,6 +244,17 @@ button:focus {
     padding: 3px;
 }
 
+/* Blog Page Start */
+.blogImages {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 3px;
+    object-fit: cover;
+}
+
+/* Blog Page End */
+
 /* Welcome End */
 
 /* Scroll Snap */
@@ -257,6 +269,11 @@ button:focus {
 }
 
 .three {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.four {
     height: 100vh;
     scroll-snap-align: start;
 }
