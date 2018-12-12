@@ -254,7 +254,7 @@ button:focus {
     height: auto;
     width: 80px;
     border-radius: 10px;
-    padding: 3px;
+    /* padding: 3px; */
 }
 /* Values Section End */
 
