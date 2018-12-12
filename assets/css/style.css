@@ -124,13 +124,6 @@ button:focus {
     margin: 0;
 }
 
-.aboutBG {
-    background-color:rgba(255,255,255,0.5);
-    border-radius: 5px;
-    padding: 1% 2% 2% 2%;
-    margin-top: 7%
-}
-
 /* About me Styling End */
 
 
@@ -215,12 +208,11 @@ button:focus {
     margin: 0% 2% 0% 2%;
 }
 
-.startBG {
-    background-color:rgba(255,255,255,0.5);
+.standardBG {
+    background-color:rgba(255,255,255,0.7);
     border-radius: 5px;
     padding: 1% 2% 2% 2%;
     margin-top: 7%;
-    width: 30em;
 }
 
 .startHeader {
@@ -244,6 +236,8 @@ button:focus {
     padding: 3px;
 }
 
+/* Welcome End */
+
 /* Blog Page Start */
 .blogImages {
     height: 100%;
@@ -255,7 +249,15 @@ button:focus {
 
 /* Blog Page End */
 
-/* Welcome End */
+/* Values Section Start */
+.icons {
+    height: auto;
+    width: 80px;
+    border-radius: 10px;
+    padding: 3px;
+}
+/* Values Section End */
+
 
 /* Scroll Snap */
 .one {
