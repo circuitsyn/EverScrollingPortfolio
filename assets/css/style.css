@@ -45,6 +45,10 @@ body, html {
     font-family: 'Main';
 }
 
+body {
+    scroll-snap-type: y mandatory;
+}
+
 /* Nav Bar Styling Start */
 
 #collapsibleNavbar {
@@ -202,26 +206,34 @@ button:focus {
     margin-top: 7%
 }
 
-/* Greeting */
+/* Welcome STart */
+
+.greetingText {
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0% 2% 0% 2%;
+}
 
 .startBG {
     background-color:rgba(255,255,255,0.5);
     border-radius: 5px;
     padding: 1% 2% 2% 2%;
     margin-top: 7%;
-    width: 40%;
+    width: 30em;
 }
 
 .startHeader {
-    width:100%;
+    /* width:100%; */
     text-align: center;
     font-family: 'BlackRough', monospace;
-    font-size: 60px;
+    font-size: 3em;
 }
 
 .tree {
     height: 70px;
-    width:auto;
+    width: auto;
+    display: inline-block;
+    position: relative;
 }
 
 .img-thumbnailMe {
@@ -230,3 +242,23 @@ button:focus {
     border-radius: 10px;
     padding: 3px;
 }
+
+/* Welcome End */
+
+/* Scroll Snap */
+.one {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.two {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.three {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+  /* Scroll Snap End */
