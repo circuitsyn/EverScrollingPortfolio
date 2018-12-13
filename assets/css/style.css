@@ -28,7 +28,7 @@
 
 @font-face {
     font-family: 'Main';
-    src: url('../fonts/Moon.woff2') format('woff2');
+    src: url('../fonts/Ikaros-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -146,7 +146,7 @@ button:focus {
     font-family: 'BlackRough', monospace;
     font-weight: bold;
     text-align: center;
-    font-size:40px;
+    font-size:30px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -258,12 +258,19 @@ button:focus {
 /* Blog Page End */
 
 /* Values Section Start */
-.icons {
+.valueIcons {
     height: auto;
     width: 80px;
     border-radius: 10px;
+    margin: auto;
     /* padding: 3px; */
 }
+
+.valueColumnSpacing {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+}
+
 /* Values Section End */
 
 /* Technologies Section Start */
