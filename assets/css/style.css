@@ -39,7 +39,7 @@
 
 body {
     height: 100%;
-    background-image: url("../images/Lake.png");
+    /* background-image: url("../images/Lake.png"); */
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -51,16 +51,18 @@ body {
     scroll-snap-type: y mandatory;
 }
 
-/* Nav Bar Styling Start */
+/* ------------------------------- Nav Bar Styling Start ------------------------------------ */
 
 #collapsibleNavbar {
     margin-top: 4px;
 }
 
+.navbar {
+    width: 205px;
+}
+
 .navbar-toggler  {
     background-color: white;
-    -webkit-box-shadow: none;
-    box-shadow: none;
     padding: 1px 4px 1px 4px;
     border: none;
 }
@@ -70,20 +72,7 @@ body {
     opacity: 0.9;
     padding: 0px 8px 0px 8px;
     font-family: 'WhitePine', monospace;
-    /* font-weight: bolder; */
     font-size: 20px;
-}
-
-.nav-linkP {
-    color: rgba(91, 163, 0, 1) !important;
-    font-family: 'WhitePine', monospace;
-    /* font-weight: bolder; */
-    /* font-size: 20px; */
-    padding: 0;
-}
-
-.nav-linkP:focus {
-    font-weight: bolder;
 }
 
 li.nav-item:hover {
@@ -116,9 +105,9 @@ button:focus {
     outline-width: 5px;
 }
 
-/* Nav Bar Styling End */
+/* ----------------------------- Nav Bar Styling End ------------------------------------ */
 
-/* About me Styling Start */
+/* ---------------------------- About me Styling Start ---------------------------------- */
 
 .aboutmeText {
     font-weight: bolder;
@@ -126,10 +115,10 @@ button:focus {
     margin: 0;
 }
 
-/* About me Styling End */
+/* ---------------------------- About me Styling End ------------------------------------- */
 
 
-/* Contact Me Styling Start */
+/* -------------------------- Contact Me Styling Start ------------------------------------*/
 
 .contactHeaders {
     font-family: 'BlackRough', monospace;
@@ -163,9 +152,9 @@ button:focus {
     padding: 13px 16px 13px 16px;
 }
 
-/* Contact Me Styling End */
+/* ------------------------------ Contact Me Styling End -------------------------------------- */
 
-/* Project Area */
+/* ---------------------------------- Project Area  Start-------------------------------------- */
 .thumbnail {
     position: relative;
     text-align: center;
@@ -180,7 +169,7 @@ button:focus {
     line-height: 40px;
 }
 /* see scrap */
-/* .title {
+.title {
     position: absolute;
     bottom: 92%;
     left: 12.5%;
@@ -192,15 +181,15 @@ button:focus {
     border-radius: 10px;
     text-align: center;
 
-} */
+}
 /* see scrap */
-/* .projectTitle {
+.projectTitle {
     font-family: 'WhitePine', monospace;
     width: 100%;
     height: 100%;
     margin: 0;
     vertical-align: middle !important;
-} */
+}
 
 .img-thumbnail {
     height: auto;
@@ -216,7 +205,9 @@ button:focus {
     margin-top: 7%
 }
 
-/* Welcome STart */
+/*------------------------------------ Project Area End ----------------------------------------  */
+
+/* ----------------------------------- Welcome Start -------------------------------------------- */
 
 .greetingText {
     font-weight: bolder;
@@ -229,14 +220,14 @@ button:focus {
     background-color:rgba(255,255,255,0.7);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    margin-top: 7%;
+    /* margin-top: 7%; */
 }
 
 .greetingBG{
     background-color:rgba(255,255,255,0.7);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    margin-top: 7%;
+    /* margin-top: 7%; */
     width: 60%;
 }
 
@@ -248,13 +239,6 @@ button:focus {
     /* width:100%; */
     font-family: 'BlackRough', monospace;
     font-size: 3em;
-}
-
-.tree {
-    height: 70px;
-    width: auto;
-    vertical-align: top-block;
-    position: relative;
 }
 
 .img-thumbnailMe {
@@ -303,24 +287,32 @@ button:focus {
 
 /* Technologies Section End */
 
-/* Side Scroll Section Start */
+/* Side Profile Scroll Section Start */
 
 .nameHeader {
     font-family: 'BlackRough', monospace;
     font-weight: bold;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .sideProfBG{
     background-color:rgba(255,255,255,0.7);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     margin-bottom: 10%;
     width: 16em;
-    position: fixed;
+    /* position: fixed; */
     /* margin: auto; */
+}
+
+.sideProText {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 2%;
+    font-family: 'Main';
 }
 
 /* Side Scroll Section End */
@@ -329,46 +321,62 @@ button:focus {
 .one {
     height: 100vh;
     scroll-snap-align: start;
-    display: inline;
+    /* display: inline; */
     align-items: center;
     min-height: 100%;
     vertical-align: middle;
+    background-image: url("../images/BGs/leavenworth.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .two {
     height: 100vh;
     scroll-snap-align: start;
-    display: inline;
+    /* display: inline; */
     align-items: center;
-    min-height: 100%;
+    background-position: center;
     vertical-align: middle;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    background-image: url("../images/BGs/waterfallBG.jpg");
 }
 
 .three {
     height: 100vh;
     scroll-snap-align: start;
-    display: inline;
+    /* display: inline; */
     align-items: center;
     min-height: 100%;
     vertical-align: middle;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../images/BGs/victoria.jpeg");
 }
 
 .four {
     height: 100vh;
     scroll-snap-align: start;
-    display: inline;
+    /* display: inline; */
     align-items: center;
     min-height: 100%;
     vertical-align: middle;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../images/BGs/whistler.jpeg");
 }
 
 .five {
     height: 100vh;
     scroll-snap-align: start;
-    display: inline;
+    /* display: inline; */
     align-items: center;
     min-height: 100%;
     vertical-align: middle;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../images/BGs/rasar.jpeg");
 }
 
   /* Scroll Snap End */

@@ -5,7 +5,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Animate.css -->
@@ -18,32 +17,31 @@
   <body>
       
     <!-- NavBar -->
-    <div class="container">
-        <nav class="navbar fixed-top navbar-dark">      
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <img id="navIcon" src="../Portfolio/assets/images/treeBracket64.png" alt="navigation tree icon">
-            </button>
+    <nav class="navbar fixed-top navbar-dark">      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <img id="navIcon" src="../Portfolio/assets/images/treeBracket64.png" alt="navigation tree icon">
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="#aboutSection">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#start">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#contactModal">Contact Me</a>
+                </li>
+            </ul>
+        </div> 
+    </nav>
     
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="#aboutSection">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#start">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" data-target="#contactModal">Contact Me</a>
-                    </li>
-                </ul>
-            </div> 
-        </nav>
-    </div>
         
 
 
@@ -146,8 +144,8 @@
     </div>
 
     <!-- Side Profile -->
-    <!-- <div class="two"> -->
-        <div class="ml-5 container sideProfBG float-left">
+    <div class="two">
+        <div class="ml-5 container sideProfBG">
             <div class="col-md-3 text-center">
                 <div class="row">
                     <img src="assets/images/JarredSutton.jpg" alt="Picture of Jarred" class="img-thumbnailMe mx-auto">
@@ -160,11 +158,11 @@
                     <button type="button" class="btn btn-outline-success">LinkedIn</button>
                 </div>
                 <div class="row">
-                    <h4 class="greetingText">My name is Jarred Sutton! I am a recent transplant from NYC embracing the PNW as a hardcore Tecnologist in the pursuit of building and helping people do more!</h4>
+                    <h4 class="sideProText">My name is Jarred Sutton! I am a recent transplant from NYC embracing the PNW as a hardcore Tecnologist in the pursuit of building and helping people do more!</h4>
                 </div>
             </div>
         </div>
-    <!-- </div> -->
+    </div>
 
     <!-- Values Section -->
     <div class="two">
@@ -236,59 +234,57 @@
 
     <!-- Technologies Section -->
     <div class="three">
-        <div class="offset-md-3 container mb-5">
-            <div class="col-md-10 standardBG">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="headers">Technologies</h1>
-                    </div>
+        <div class="offset-md-3 container mb-5 col-md-19 standardBG">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="headers">Technologies</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="headersMinor">Hardware</h6>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="headersMinor">Software</h6>
+                </div>
+            </div>
+
+            <!-- hardware section -->
+            <div class="row">
+                    <div class="col-md-6 rounded mx-auto d-block justify-content-center">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/arduino.png" alt="arduino">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/raspberryPi.png" alt="raspberry pi">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/circuits.png" alt="circuits">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/breadboarding.png" alt="breadboarding">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/soldering.png" alt="soldering">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/iot.png" alt="iot">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/3dprinting.png" alt="3d printing">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/anki.png" alt="Anki">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/littleBits.png" alt="little bits">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/sensors.png" alt="sensors">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/edison.png" alt="edison">
+                        <img class="hardSoftIcons m-2" src="assets/images/hardware/logo-up.png" alt="up board">
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <h6 class="headersMinor">Hardware</h6>
-                    </div>
-                    <div class="col-md-6">
-                        <h6 class="headersMinor">Software</h6>
-                    </div>
-                </div>
-
-                <!-- hardware section -->
-                <div class="row">
-                        <div class="col-md-6 rounded mx-auto d-block justify-content-center">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/arduino.png" alt="arduino">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/raspberryPi.png" alt="raspberry pi">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/circuits.png" alt="circuits">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/breadboarding.png" alt="breadboarding">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/soldering.png" alt="soldering">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/iot.png" alt="iot">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/3dprinting.png" alt="3d printing">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/anki.png" alt="Anki">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/littleBits.png" alt="little bits">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/sensors.png" alt="sensors">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/edison.png" alt="edison">
-                            <img class="hardSoftIcons m-2" src="assets/images/hardware/logo-up.png" alt="up board">
-                    </div>
-
-                    <!-- software section  -->
-                    <div class="col-md-6 rounded mx-auto d-block">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/node.png" alt="node">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/javascript.png" alt="javascript">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/css3.png" alt="css">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/html5.png" alt="html">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/bootstrap.png" alt="bootstrap">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/firebase.png" alt="firebase">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/github.png" alt="github">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/handlebars.png" alt="handlebars">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/plotly.png" alt="plotly.js">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/aws.png" alt="aws">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/expressJS.png" alt="express js">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/jquery.png" alt="jquery">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/mysql.png" alt="MySQL">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/mongodb.png" alt="MongoDB">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/restAPI.png" alt="Rest APIs">
-                        <img class="hardSoftIcons m-2" src="assets/images/software/ajax.png" alt="AJAX">
-                    </div>
+                <!-- software section  -->
+                <div class="col-md-6 rounded mx-auto d-block">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/node.png" alt="node">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/javascript.png" alt="javascript">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/css3.png" alt="css">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/html5.png" alt="html">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/bootstrap.png" alt="bootstrap">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/firebase.png" alt="firebase">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/github.png" alt="github">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/handlebars.png" alt="handlebars">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/plotly.png" alt="plotly.js">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/aws.png" alt="aws">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/expressJS.png" alt="express js">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/jquery.png" alt="jquery">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/mysql.png" alt="MySQL">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/mongodb.png" alt="MongoDB">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/restAPI.png" alt="Rest APIs">
+                    <img class="hardSoftIcons m-2" src="assets/images/software/ajax.png" alt="AJAX">
                 </div>
             </div>
         </div>
@@ -296,7 +292,11 @@
 
     <!-- Projects Section -->
     <div class="four">
-        
+        <div class="container standardBG">
+            <div class="row">
+                Portfolio Section Goes Here
+            </div>
+        </div>
     </div>
 
     
@@ -304,7 +304,7 @@
 
     <!-- Blog Section -->
     <div class="five">
-        <div id="blogSection" class="container contentbackdrop mt-5 mb-5 standardBG">
+        <div id="blogSection" class="container mb-5 standardBG">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="headers">Blog</h1>
