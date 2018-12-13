@@ -325,7 +325,7 @@ button:focus {
     align-items: center;
     min-height: 100%;
     vertical-align: middle;
-    background-image: url("../images/BGs/leavenworth.jpeg");
+    background-image: url("../images/BGs/leavenworth.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -352,7 +352,7 @@ button:focus {
     vertical-align: middle;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("../images/BGs/victoria.jpeg");
+    background-image: url("../images/BGs/victoria.jpg");
 }
 
 .four {
@@ -364,7 +364,7 @@ button:focus {
     vertical-align: middle;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("../images/BGs/whistler.jpeg");
+    background-image: url("../images/BGs/whistler.jpg");
 }
 
 .five {
@@ -376,7 +376,7 @@ button:focus {
     vertical-align: middle;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("../images/BGs/rasar.jpeg");
+    background-image: url("../images/BGs/rasar.jpg");
 }
 
   /* Scroll Snap End */
