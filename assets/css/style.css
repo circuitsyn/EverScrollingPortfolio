@@ -35,7 +35,7 @@
 
 
 
-body, html {
+body {
     height: 100%;
     background-image: url("../images/Lake.png");
     background-position: center;
@@ -137,6 +137,16 @@ button:focus {
     font-family: 'BlackRough', monospace;
     font-weight: bold;
     text-align: center;
+    font-size: 65px;
+}
+
+.headersMinor {
+    font-family: 'BlackRough', monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size:40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .modal-header {
@@ -158,10 +168,6 @@ button:focus {
     width: 100%;
     color: #ffffff;
     line-height: 40px;
-    /* opacity: 0.9; */
-    /* max-width: none; 
-    add border , img-responsive, settings check screenshots
-    */
 }
 
 .title {
@@ -276,6 +282,7 @@ button:focus {
     display: flex;
     align-items: center;
     min-height: 100%;
+    display: inline;
 }
 
 .two {
@@ -284,11 +291,25 @@ button:focus {
     display: flex;
     align-items: center;
     min-height: 100%;
+    display: inline;
 }
 
 .three {
     height: 100vh;
     scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    display: inline;
+}
+
+.four {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    display: inline;
 }
 
 .five {
@@ -297,14 +318,7 @@ button:focus {
     display: flex;
     align-items: center;
     min-height: 100%;
-}
-
-.six {
-    height: 100vh;
-    scroll-snap-align: start;
-    display: flex;
-    align-items: center;
-    min-height: 100%;
+    display: inline;
 }
 
   /* Scroll Snap End */
