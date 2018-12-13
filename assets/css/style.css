@@ -133,7 +133,6 @@ button:focus {
     font-family: 'BlackRough', monospace;
     font-weight: bold;
     text-align: center;
-    font-size:30px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -272,8 +271,6 @@ button:focus {
 .nameHeader {
     font-family: 'BlackRough', monospace;
     font-weight: bold;
-    text-align: center;
-    font-size: 20px;
 }
 
 .sideProfBG{
@@ -282,7 +279,7 @@ button:focus {
     padding: 1% 1% 1% 1%;
     /* margin-top: 5%; */
     margin-bottom: 10%;
-    width: 16em;
+    /* width: 16em; */
     /* position: fixed; */
     /* margin: auto; */
 }
@@ -290,7 +287,7 @@ button:focus {
 .sideProText {
     font-weight: bolder;
     text-align: center;
-    margin-left: 2%;
+    /* margin-left: 2%; */
     font-family: 'Main';
 }
 
