@@ -28,7 +28,7 @@
 
 @font-face {
     font-family: 'Main';
-    src: url('../fonts/Ikaros-Regular.woff2') format('woff2');
+    src: url('../fonts/noway-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -102,7 +102,7 @@ li.nav-item {
 .navbar-nav {
     border-radius:10px;
     background-color: rgba(255,255,255,0.9);
-    display: inline-block
+    vertical-align: top-block
 }
 
 #navIcon {
@@ -130,6 +130,14 @@ button:focus {
 
 
 /* Contact Me Styling Start */
+
+.contactHeaders {
+    font-family: 'BlackRough', monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+}
+
 #sig {
     font-family: 'Signature', monospace;
     font-size: 55px;
@@ -214,6 +222,7 @@ button:focus {
     font-weight: bolder;
     font-size: 20px;
     margin-left: 2%;
+    font-family: 'Main';
 }
 
 .standardBG {
@@ -244,7 +253,7 @@ button:focus {
 .tree {
     height: 70px;
     width: auto;
-    display: inline-block;
+    vertical-align: top-block;
     position: relative;
 }
 
@@ -294,51 +303,72 @@ button:focus {
 
 /* Technologies Section End */
 
+/* Side Scroll Section Start */
+
+.nameHeader {
+    font-family: 'BlackRough', monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.sideProfBG{
+    background-color:rgba(255,255,255,0.7);
+    border-radius: 5px;
+    padding: 1% 1% 1% 1%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 16em;
+    position: fixed;
+    /* margin: auto; */
+}
+
+/* Side Scroll Section End */
 
 /* Scroll Snap */
 .one {
     height: 100vh;
     scroll-snap-align: start;
-    display: flex;
+    display: inline;
     align-items: center;
     min-height: 100%;
-    display: inline;
+    vertical-align: middle;
 }
 
 .two {
     height: 100vh;
     scroll-snap-align: start;
-    display: flex;
+    display: inline;
     align-items: center;
     min-height: 100%;
-    display: inline;
+    vertical-align: middle;
 }
 
 .three {
     height: 100vh;
     scroll-snap-align: start;
-    display: flex;
+    display: inline;
     align-items: center;
     min-height: 100%;
-    display: inline;
+    vertical-align: middle;
 }
 
 .four {
     height: 100vh;
     scroll-snap-align: start;
-    display: flex;
+    display: inline;
     align-items: center;
     min-height: 100%;
-    display: inline;
+    vertical-align: middle;
 }
 
 .five {
     height: 100vh;
     scroll-snap-align: start;
-    display: flex;
+    display: inline;
     align-items: center;
     min-height: 100%;
-    display: inline;
+    vertical-align: middle;
 }
 
   /* Scroll Snap End */
