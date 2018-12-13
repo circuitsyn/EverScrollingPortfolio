@@ -67,6 +67,10 @@ body {
     border: none;
 }
 
+.navbar-toggler.collapsed {
+
+}
+
 .nav-link {
     color: rgba(91, 163, 0, 1) !important;
     opacity: 0.9;
@@ -103,29 +107,15 @@ button:focus {
     outline-color: rgba(91, 163, 0, 1);
     outline-style: auto;
     outline-width: 5px;
+    outline-style: 'border-radius: 10px';
 }
+
+.navbar
 
 /* ----------------------------- Nav Bar Styling End ------------------------------------ */
 
-/* ---------------------------- About me Styling Start ---------------------------------- */
-
-.aboutmeText {
-    font-weight: bolder;
-    font-size: 20px;
-    margin: 0;
-}
-
-/* ---------------------------- About me Styling End ------------------------------------- */
-
 
 /* -------------------------- Contact Me Styling Start ------------------------------------*/
-
-.contactHeaders {
-    font-family: 'BlackRough', monospace;
-    font-weight: bold;
-    text-align: center;
-    font-size: 40px;
-}
 
 #sig {
     font-family: 'Signature', monospace;
@@ -136,7 +126,7 @@ button:focus {
     font-family: 'BlackRough', monospace;
     font-weight: bold;
     text-align: center;
-    font-size: 65px;
+    font-size: 300%;
 }
 
 .headersMinor {
@@ -211,8 +201,7 @@ button:focus {
 
 .greetingText {
     font-weight: bolder;
-    font-size: 20px;
-    margin-left: 2%;
+    /* margin-left: 2%; */
     font-family: 'Main';
 }
 
@@ -220,32 +209,23 @@ button:focus {
     background-color:rgba(255,255,255,0.7);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    /* margin-top: 7%; */
 }
 
 .greetingBG{
     background-color:rgba(255,255,255,0.7);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    /* margin-top: 7%; */
-    width: 60%;
-}
-
-.greetingTextCell {
-    padding: 0px !important;
+    /* width: 60%; */
 }
 
 .startHeader {
-    /* width:100%; */
     font-family: 'BlackRough', monospace;
-    font-size: 3em;
 }
 
 .img-thumbnailMe {
-    height: auto;
+    height: 100px;
     width: auto;
     border-radius: 10px;
-    padding: 3px;
 }
 
 /* Welcome End */
@@ -310,7 +290,6 @@ button:focus {
 .sideProText {
     font-weight: bolder;
     text-align: center;
-    font-size: 20px;
     margin-left: 2%;
     font-family: 'Main';
 }
@@ -380,3 +359,9 @@ button:focus {
 }
 
   /* Scroll Snap End */
+
+  @media only screen and (max-width: 767px) {
+    .greetingBG {
+      text-align: center;
+    }
+  }
