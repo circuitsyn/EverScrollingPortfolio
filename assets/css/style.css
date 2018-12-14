@@ -37,18 +37,11 @@
     max-width: 95%;
 } 
 
-body {
-    
-    /* background-image: url("../images/Lake.png"); */
-    background-position: center;
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    background-attachment: fixed;
+html, body {
     font-family: 'Main';
-}
-
-body {
-    scroll-snap-type: y mandatory;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* ------------------------------- Nav Bar Styling Start ------------------------------------ */
@@ -205,16 +198,16 @@ button:focus {
 }
 
 .standardBG {
-    background-color:rgba(255,255,255,0.7);
+    background-color:rgba(255,255,255,0.9);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
 }
 
 .greetingBG{
-    background-color:rgba(255,255,255,0.7);
+    background-color:rgba(255,255,255,0.9);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    /* width: 60%; */
+    width: 60%;
 }
 
 .startHeader {
@@ -274,7 +267,7 @@ button:focus {
 }
 
 .sideProfBG{
-    background-color:rgba(255,255,255,0.7);
+    background-color:rgba(255,255,255,0.9);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
     /* margin-right: 2.2%; */
@@ -292,59 +285,65 @@ button:focus {
     font-family: 'Main';
 }
 
-/* Side Scroll Section End */
+/* Magic Scroll Section End */
 
 /* Scroll Snap */
+.panel {
+    height: 100%;
+	width: 100%;
+}
+
+.panel.two, .panel.three, .panel.four, .panel.five {
+    margin-bottom:400px !important;
+}
+
 .one {
-    scroll-snap-align: start;
     min-height: 100%;
-    vertical-align: middle;
     background-image: url("../images/BGs/leavenworth.jpg");
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
 }
 
 .two {
-    scroll-snap-align: start;
     background-position: center;
-    vertical-align: middle;
     background-size: cover;
     height: 100%;
     background-attachment: fixed;
     background-image: url("../images/BGs/waterfallBG.jpg");
+    display: flex;
+    align-items: center;
 }
 
 .three {
-    scroll-snap-align: start;
-    /* display: inline; */
     align-items: center;
     min-height: 100%;
-    vertical-align: middle;
     background-size: cover;
     background-attachment: fixed;
     background-image: url("../images/BGs/victoria.jpg");
+    display: flex;
+    align-items: center;
 }
 
 .four {
-    scroll-snap-align: start;
-    /* display: inline; */
     align-items: center;
     min-height: 100%;
-    vertical-align: middle;
     background-size: cover;
     background-attachment: fixed;
     background-image: url("../images/BGs/whistler.jpg");
+    display: flex;
+    align-items: center;
 }
 
 .five {
-    scroll-snap-align: start;
-    /* display: inline; */
     align-items: center;
     min-height: 100%;
-    vertical-align: middle;
     background-size: cover;
     background-attachment: fixed;
     background-image: url("../images/BGs/rasar.jpg");
+    display: flex;
+    align-items: center;
 }
 
   /* Scroll Snap End */
