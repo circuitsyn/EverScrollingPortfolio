@@ -277,6 +277,7 @@ button:focus {
     background-color:rgba(255,255,255,0.7);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
+    /* margin-right: 2.2%; */
     /* margin-top: 5%; */
     /* margin-bottom: 10%; */
     /* width: 16em; */
@@ -295,10 +296,7 @@ button:focus {
 
 /* Scroll Snap */
 .one {
-    height: 100vh;
     scroll-snap-align: start;
-    /* display: inline; */
-    align-items: center;
     min-height: 100%;
     vertical-align: middle;
     background-image: url("../images/BGs/leavenworth.jpg");
@@ -307,10 +305,7 @@ button:focus {
 }
 
 .two {
-    height: 100vh;
     scroll-snap-align: start;
-    /* display: inline; */
-    align-items: center;
     background-position: center;
     vertical-align: middle;
     background-size: cover;
@@ -320,7 +315,6 @@ button:focus {
 }
 
 .three {
-    height: 100vh;
     scroll-snap-align: start;
     /* display: inline; */
     align-items: center;
@@ -332,7 +326,6 @@ button:focus {
 }
 
 .four {
-    height: 100vh;
     scroll-snap-align: start;
     /* display: inline; */
     align-items: center;
@@ -344,7 +337,6 @@ button:focus {
 }
 
 .five {
-    height: 100vh;
     scroll-snap-align: start;
     /* display: inline; */
     align-items: center;
@@ -361,4 +353,8 @@ button:focus {
     .greetingBG {
       text-align: center;
     }
+    .sideProfBG {
+        margin: auto;
+    }
+
   }
