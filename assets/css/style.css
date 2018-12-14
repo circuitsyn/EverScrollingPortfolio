@@ -151,6 +151,10 @@ button:focus {
     height:80%;
 }
 
+.projectDesc {
+    font-weight: bolder;
+}
+
 .projectScroll{
     height: auto;
     /* display: block; */
@@ -168,7 +172,7 @@ button:focus {
     vertical-align: middle !important;
 }
 
-.img-thumbnail {
+.img-thumbnailProj {
     height: auto;
     width: 100%;
     border-radius: 10px;
