@@ -18,7 +18,8 @@ $(document).ready(function() {
 		// init
 		var controller = new ScrollMagic.Controller({
 			globalSceneOptions: {
-				triggerHook: 'onLeave'
+        triggerHook: 'onLeave',
+        globalSceneOptions: {duration: 100}
 			}
 		});
 
@@ -33,7 +34,33 @@ $(document).ready(function() {
 				.setPin(slides[i])
 				.addIndicators()
 				.addTo(controller);
-		}
+    }
+    
+
+    // nav bar highlight build scenes
+    // new ScrollMagic.Scene({triggerElement: "#home", offset: 1})
+    //   .setClassToggle("#navItem1", "navHighlight") // add class toggle
+    //   .addIndicators() // add indicators (requires plugin)
+    //   .addTo(controller);
+    // new ScrollMagic.Scene({triggerElement: "#values", offset: 1})
+    //   .setClassToggle("#navItem2", "navHighlight") // add class toggle
+    //   .addIndicators() // add indicators (requires plugin)
+    //   .addTo(controller);
+    // new ScrollMagic.Scene({triggerElement: "#technologies", offset: 1})
+    //   .setClassToggle("#navItem3", "navHighlight") // add class toggle
+    //   .addIndicators() // add indicators (requires plugin)
+    //   .addTo(controller);
+    // new ScrollMagic.Scene({triggerElement: "#projects", offset: 1})
+    //   .setClassToggle("#navItem4", "navHighlight") // add class toggle
+    //   .addIndicators() // add indicators (requires plugin)
+    //   .addTo(controller);
+
+      // side bar fade in and out build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#sideCardTrigger", duration: "250%", offset: -100})
+      // trigger animation by adding a css class
+      .setClassToggle("#sideCard", "zap")
+      .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+      .addTo(controller);
 	});
 
 

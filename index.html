@@ -15,9 +15,9 @@
     <link rel="icon" href="./assets/images/treeBracket64rnd.png" type="image/png" sizes="64x64">
   </head>
   <body>
-      
+    
     <!-- NavBar -->
-    <nav class="navbar fixed-top navbar-dark">      
+    <nav id="#home" class="navbar fixed-top navbar-dark">      
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <img id="navIcon" src="../Portfolio/assets/images/treeBracket64.png" alt="navigation tree icon">
@@ -26,14 +26,17 @@
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link" href="#aboutSection">About</a>
+                <li id="navItem2" class="nav-item">
+                <a class="nav-link" href="#values">Values</a>
                 </li>
-                <li class="nav-item">
+                <li id="navItem3" class="nav-item">
+                    <a class="nav-link" href="#technologies">Technologies</a>
+                </li>
+                <li id="navItem4" class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#start">Home</a>
+                <li id="navItem1" class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="modal" data-target="#contactModal">Contact Me</a>
@@ -137,7 +140,7 @@
 
     <!-- Values Section With Left Profile -->
     <!-- Left Profile -->
-    <div class="container">
+    <div id="sideCard" class="container">
         <div class="col-md-2 mr-4 sideProfBG makeItStick">
             <div class="row">
                 <img src="assets/images/JarredSutton.jpg" alt="Picture of Jarred" class="img-thumbnailMe mx-auto">
@@ -155,7 +158,7 @@
         </div>
     </div>
     
-    <section class="two panel">
+    <section id="sideCardTrigger" class="two panel">
 
         <!-- value Section -->
         <div class="standardBG ml-5 ml-auto col-md-9 offset-md-3 mr-4">
@@ -220,7 +223,7 @@
     </section>
 
     <!-- Technologies Section -->
-    <section class="three panel">
+    <section id="technologies" class="three panel">
         <div class="offset-md-3 mr-4 standardBG">
             <div class="row">
                 <div class="col-12">
@@ -272,7 +275,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="four panel">
+    <section id="projects" class="four panel">
         <div class="container standardBG">
             <div class="row">
                 Portfolio Section Goes Here
@@ -282,7 +285,7 @@
     
 
     <!-- Blog Section -->
-    <section class="five panel">
+    <section id="blog" class="five panel">
         <div id="blogSection" class="container standardBG">
             <div class="row">
                 <div class="col-md-12">

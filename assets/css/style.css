@@ -72,6 +72,13 @@ html, body {
     font-size: 20px;
 }
 
+.navHighlight {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #5BA300 !important;
+    border: solid 2px;   
+}
+
 li.nav-item:hover {
     background-color: white;
     border-radius: 10px;
@@ -303,8 +310,24 @@ button:focus {
 	width: 100vw;
 }
 
+#sideCard {
+    /* margin-bottom: -100px; */
+    opacity: 0;
+    /* transition-timing-function: ease-in; */
+    /* animation: fadein 2s; */
+    
+}
+
+.zap {
+    /* animation: fadeout 2s; */
+    /* visibility: hidden; */
+    opacity: 1 !important;
+    transition: opacity 0.5s linear;
+    /* visibility: visible !important; */
+}
+
 .panel.two, .panel.three, .panel.four, .panel.five {
-    margin-bottom:400px !important;
+    /* margin-bottom:300px; */
 }
 
 .one {
