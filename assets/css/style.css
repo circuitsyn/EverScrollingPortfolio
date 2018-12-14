@@ -207,7 +207,7 @@ button:focus {
     background-color:rgba(255,255,255,0.9);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    width: 60%;
+    width: 50%;
 }
 
 .startHeader {
@@ -269,6 +269,7 @@ button:focus {
 .nameHeader {
     font-family: 'BlackRough', monospace;
     font-weight: bold;
+    margin-top: 0.5em;
 }
 
 .sideProfBG{
@@ -365,6 +366,7 @@ button:focus {
   @media only screen and (max-width: 767px) {
     .greetingBG {
       text-align: center;
+      width: auto;
     }
     .sideProfBG {
         margin: auto;
