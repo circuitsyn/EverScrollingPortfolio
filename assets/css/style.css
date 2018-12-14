@@ -153,37 +153,14 @@ button:focus {
 
 .projectScroll{
     height: auto;
-    display: block;
-    max-height: 100%;
+    /* display: block; */
+    max-height: 85%;
     overflow-y:scroll;
 }
 
 .thumbnail {
     position: relative;
     text-align: center;
-}
-
-.caption {
-    position: absolute;
-    bottom: -8%;
-    left: 0;
-    width: 100%;
-    color: #ffffff;
-    line-height: 40px;
-}
-
-.title {
-    position: absolute;
-    bottom: 92%;
-    left: 12.5%;
-    width: 75%;
-    color: #ffffff;
-    height: 13%;
-    background: rgb(193, 154, 107);
-    border: solid white 3px;
-    border-radius: 10px;
-    text-align: center;
-
 }
 
 .projectTitle {
@@ -195,13 +172,11 @@ button:focus {
     height: auto;
     width: 100%;
     border-radius: 10px;
-    padding: 3px;
 }
 
 #projects {
-    background-color:rgba(255,255,255,0.5);
+    /* background-color:rgba(255,255,255,0.5); */
     border-radius: 5px;
-    padding: 1% 2% 2% 2%;
 }
 
 /*------------------------------------ Project Area End ----------------------------------------  */
