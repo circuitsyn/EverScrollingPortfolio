@@ -156,10 +156,20 @@ button:focus {
 }
 
 .projectScroll{
+    overflow-y:scroll;
+    position: relative;
+}
+
+.projectScrollCont{
     height: auto;
     /* display: block; */
     max-height: 85%;
-    overflow-y:scroll;
+}
+
+.projectScrollNav {
+    height: auto;
+    /* display: block; */
+    max-height: 85%;
 }
 
 .thumbnail {
