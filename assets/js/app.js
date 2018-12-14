@@ -14,27 +14,27 @@ $(document).ready(function() {
 
 
     //------------ Scroll Magic
-	$(function () { // wait for document ready
-		// init
-		var controller = new ScrollMagic.Controller({
-			globalSceneOptions: {
-        triggerHook: 'onLeave',
-        globalSceneOptions: {duration: 100}
-			}
-		});
+	// $(function () { // wait for document ready
+	// 	// init
+	// 	var controller = new ScrollMagic.Controller({
+	// 		globalSceneOptions: {
+  //       triggerHook: 'onLeave',
+  //       globalSceneOptions: {duration: 100}
+	// 		}
+	// 	});
 
-		// get all slides
-		var slides = document.querySelectorAll("section.panel");
+	// 	// get all slides
+	// 	var slides = document.querySelectorAll("section.panel");
 
-		// create scene for every slide
-		for (var i=0; i<slides.length; i++) {
-			new ScrollMagic.Scene({
-					triggerElement: slides[i]
-				})
-				.setPin(slides[i])
-				.addIndicators()
-				.addTo(controller);
-    }
+	// 	// create scene for every slide
+	// 	for (var i=0; i<slides.length; i++) {
+	// 		new ScrollMagic.Scene({
+	// 				triggerElement: slides[i]
+	// 			})
+	// 			.setPin(slides[i])
+	// 			.addIndicators()
+	// 			.addTo(controller);
+  //   }
     
 
     // nav bar highlight build scenes
@@ -56,12 +56,12 @@ $(document).ready(function() {
     //   .addTo(controller);
 
       // side bar fade in and out build scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#sideCardTrigger", duration: "250%", offset: -100})
-      // trigger animation by adding a css class
-      .setClassToggle("#sideCard", "zap")
-      .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
-      .addTo(controller);
-	});
+  //     var scene = new ScrollMagic.Scene({triggerElement: "#sideCardTrigger", duration: "250%", offset: -100})
+  //     // trigger animation by adding a css class
+  //     .setClassToggle("#sideCard", "zap")
+  //     .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+  //     .addTo(controller);
+	// });
 
 
   //end of document on ready section
