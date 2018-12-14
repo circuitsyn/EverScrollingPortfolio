@@ -31,7 +31,7 @@ $(document).ready(function() {
 					triggerElement: slides[i]
 				})
 				.setPin(slides[i])
-				// .addIndicators()
+				.addIndicators()
 				.addTo(controller);
 		}
 	});

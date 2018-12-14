@@ -249,7 +249,7 @@ button:focus {
 
 /* Values Section End */
 
-/* Technologies Section Start */
+/* -------------------------Technologies Section Start ---------------------------------- */
 .hardSoftIcons {
     height: auto;
     width: 100px;
@@ -257,9 +257,14 @@ button:focus {
     padding: 3px;
 }
 
-/* Technologies Section End */
+/* ------------------------ Technologies Section End ------------------------------------ */
 
-/* Side Profile Scroll Section Start */
+/* ------------------------- Side Profile Scroll Section Start -------------------------- */
+.makeItStick {
+    position: fixed;
+    left: 0;
+    top: 24em;
+}
 
 .nameHeader {
     font-family: 'BlackRough', monospace;
@@ -270,12 +275,9 @@ button:focus {
     background-color:rgba(255,255,255,0.9);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    /* margin-right: 2.2%; */
-    /* margin-top: 5%; */
-    /* margin-bottom: 10%; */
-    /* width: 16em; */
-    /* position: fixed; */
-    /* margin: auto; */
+    margin-left: 4%;
+    height: auto;
+    width: 20%;
 }
 
 .sideProText {
@@ -285,12 +287,19 @@ button:focus {
     font-family: 'Main';
 }
 
-/* Magic Scroll Section End */
+/* remove scroll bars */
+::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Footer End */
+
+/* -------------------------------------- Magic Scroll Section Start ------------------------------------------ */
 
 /* Scroll Snap */
 .panel {
-    height: 100%;
-	width: 100%;
+    height: 100vh;
+	width: 100vw;
 }
 
 .panel.two, .panel.three, .panel.four, .panel.five {
@@ -304,6 +313,7 @@ button:focus {
     background-attachment: fixed;
     display: flex;
     align-items: center;
+    z-index: -2;
 }
 
 .two {
@@ -314,6 +324,7 @@ button:focus {
     background-image: url("../images/BGs/waterfallBG.jpg");
     display: flex;
     align-items: center;
+    z-index: -2;
 }
 
 .three {
@@ -324,6 +335,7 @@ button:focus {
     background-image: url("../images/BGs/victoria.jpg");
     display: flex;
     align-items: center;
+    z-index: -2;
 }
 
 .four {
@@ -334,6 +346,7 @@ button:focus {
     background-image: url("../images/BGs/whistler.jpg");
     display: flex;
     align-items: center;
+    z-index: -2;
 }
 
 .five {
@@ -344,6 +357,7 @@ button:focus {
     background-image: url("../images/BGs/rasar.jpg");
     display: flex;
     align-items: center;
+    z-index: -2;
 }
 
   /* Scroll Snap End */
