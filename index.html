@@ -127,7 +127,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel"><strong>How to Affect Change by Just Being You!</strong></h5>
+              <h5 class="modal-title blogHeader" id="exampleModalLabel">How to Affect Change by Just Being You!</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -171,7 +171,6 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
@@ -182,17 +181,177 @@
             <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title blogHeader" id="exampleModalLabel">Building a Tweeting Trash Can</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
                 <div class="modal-body">
-                ...
+                    <img class="blogImgs" src="assets/images/blog/tweetPOD/strategy.jpg">
+                    <p>
+                        <a href="">Next Top Makers</a> is a great organization helping the NYC Mayor's office help tell the story of makers in NYC and their journey. Staten Island MakerSpace teamed up with them to throw a hackathon with the general public on a concept of building products for social change. For our project we put together a tweeting trash can with a ring of lights for immediate feedback to inspire trash clean up with positive reinforcement. Typically we use negative reinforcement and it just is not effective enough. If we make people more aware then we can help them be better stewards of their neighborhoods and environment!
+                    </p>
+                    <img class="blogImgs" src="assets/images/blog/tweetPOD/coding.jpg">
+                    <p>
+                        For the event I partnered with two local high schoolers Crystal Duguid and Antoun Sawires. I wanted to use this event as an opportunity to teach high schoolers the power of arduino and how to code.
+                    </p>
+                    <img class="blogImgs" src="assets/images/blog/tweetPOD/StatenIslandMakers-0027.jpg">
+                    <p>
+                        Our project consisted of a PIR sensor that would detect trash dropped in for triggering a tweet as well as an immediate string of LED lights for positive reinforcement.
+                    </p>
+                    <img class="blogImgs" src="assets/images/blog/tweetPOD/ledRing.jpg">
+                    <p>
+                        We built code and tested our designs often as you can see below.
+                    </p>
+                    <img class="blogImgs" src="assets/images/blog/tweetPOD/electronics2.jpg">
+                    <img class="blogImgs" src="assets/images/blog/tweetPOD/testing circuit.jpg">
+                    <img class="blogImgs" src="assets/images/blog/tweetPOD/testing.jpg">
+                    <p>
+                        If you are curious how to build your own checkout the code below and thank you for reading!
+                    </p>
+                    <figure>
+                        <figcaption>Your code title</figcaption>
+                        <pre>
+                          <code contenteditable spellcheck="false" class="prettyprint">
+//includes
+#include <SPI.h> // needed in Arduino 0019 or later
+#include <Ethernet.h>
+#include <Twitter.h>
+#include <time.h>
+
+// Ethernet Shield Settings
+byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
+
+
+// If you don't specify the IP address, DHCP is used(only in Arduino 1.0 or later).
+byte ip[] = { 192, 168, 137, 34 };
+
+// Your Token to Tweet (get it from http://arduino-tweet.appspot.com/)
+Twitter twitter("INSERT TOKEN HERE");
+
+int tweetcount = 0;
+
+
+/*
+* PIR sensor tester
+*/
+
+int ledPin = 13;                // choose the pin for the LED
+int inputPin = 12;               // choose the input pin (for PIR sensor)
+int pirState = LOW;             // we start, assuming no motion detected
+int val = 0;                    // variable for reading the pin status---
+//LED Pin Variables
+int ledPins[] = {2,3,4,5,6,7,8,9};
+
+void setup() {
+pinMode(ledPin, OUTPUT);      // declare LED as output
+pinMode(inputPin, INPUT);     // declare sensor as input
+
+//Set each pin connected to an LED to output mode (pulling high (on) or low (off)
+for(int i = 0; i < 8; i++){         //this is a loop and will repeat eight times
+    pinMode(ledPins[i],OUTPUT); //we use this to set each LED pin to output
+
+Serial.begin(9600);
+}
+}
+
+void loop(){
+int trashcount = 0;
+
+val = digitalRead(inputPin);  // read input value
+if (val == HIGH) {            // check if the input is HIGH
+    oneAfterAnotherLoop();
+    trashcount++;
+    tweetcount++;
+    
+    Serial.println(tweetcount);
+    
+    //if(tweetcount%2) {
+    if(tweetcount) {
+    TweetThis(tweetcount);
+    }
+    
+    if (pirState == LOW) {
+    // we have just turned on
+    Serial.println("Motion detected!");
+    // We only want to print on the output change, not state
+    pirState = HIGH;
+    }
+} else {
+    digitalWrite(ledPin, LOW); // turn LED OFF
+    if (pirState == HIGH){
+    // we have just turned of
+    Serial.println("Motion ended!");
+    // We only want to print on the output change, not state
+    pirState = LOW;
+    }
+}
+}
+
+
+void TweetThis(int tweetcount) {
+delay(1000);
+
+// Message to post
+char msg[] = "One less piece of trash! # of items kept off our streets: ";
+char integer_string[32];
+
+
+sprintf(integer_string, "%d", tweetcount);
+
+strcat(msg, integer_string);
+
+Ethernet.begin(mac, ip);
+// or you can use DHCP for autoomatic IP address configuration.
+// Ethernet.begin(mac);
+Serial.begin(9600);
+
+Serial.println("connecting ...");
+if (twitter.post(msg)) {
+    // Specify &Serial to output received response to Serial.
+    // If no output is required, you can just omit the argument, e.g.
+    // int status = twitter.wait();
+    int status = twitter.wait(&Serial);
+    if (status == 200) {
+    Serial.println("OK.");
+    } else {
+    Serial.print("failed : code ");
+    Serial.println(status);
+    }
+} else {
+    Serial.println("connection failed.");
+}  
+}
+
+void oneAfterAnotherLoop(){
+int delayTime = 100; //the time (in milliseconds) to pause between LEDs
+                    //make smaller for quicker switching and larger for slower
+
+//Turn Each LED on one after another
+for(int i = 0; i <= 7; i++){
+    digitalWrite(ledPins[i], HIGH);  //Turns on LED #i each time this runs i
+    delay(delayTime);                //gets one added to it so this will repeat 
+}                                  //8 times the first time i will = 0 the final
+                                    //time i will equal 7;
+
+//Turn Each LED off one after another
+for(int i = 7; i >= 0; i--){  //same as above but rather than starting at 0 and counting up
+                                //we start at seven and count down
+    digitalWrite(ledPins[i], LOW);  //Turns off LED #i each time this runs i
+    delay(delayTime);                //gets one subtracted from it so this will repeat 
+}                                  //8 times the first time i will = 7 the final
+                                    //time it will equal 0
+                                    
+                                    
+}
+                          </code>
+                        </pre>
+                      </figure>
+
+
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
             </div>
@@ -530,7 +689,7 @@
 
     <!-- Blog Section -->
     <section id="blog" class="five panel">
-        <div id="blogSection" class="container standardBG">
+        <div id="blogSection" class="container blogBG">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="headers">Blog</h1>
@@ -542,17 +701,20 @@
             <div class="row">
                 <!-- Toy Hack Blog Image Section -->
                 <div class="col-md-4">
-                    <img id="toyHackImg" src="assets/images/blog/toyHack.jpeg" alt="Toy Hack" class="animated blogImages mx-auto">
+                    <img id="toyHackImg" src="assets/images/blog/toyHack.jpeg" alt="Toy Hack" class="animated blogIndexImages mx-auto">
+                    <h4 class="headersMinor">Toy Hack Event</h4>
                 </div>
 
                 <!-- Next Top Makers - Tweeting Trash Can  -->
                 <div id="tweetImg" class="col-md-4">
-                    <img src="assets/images/blog/buildingcircuit-01.jpeg" alt="Tweeting Trash Can" class="blogImages mx-auto">
+                    <img src="assets/images/blog/buildingcircuit-01.jpeg" alt="Tweeting Trash Can" class="blogIndexImages mx-auto">
+                    <h4 class="headersMinor">Social Garbage for Change</h4>
                 </div>
                 
                 <!-- LittleBits Olympics -->
                 <div id="littlebitsImg" class="col-md-4">
-                    <img src="assets/images/blog/bitOlmpics2-01.jpeg" alt="Bit Olympics" class="blogImages mx-auto">
+                    <img src="assets/images/blog/bitOlmpics2-01.jpeg" alt="Bit Olympics" class="blogIndexImages mx-auto">
+                    <h4 class="headersMinor">LittleBits Olympics</h4>
                 </div>
                 
                 
@@ -582,6 +744,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Code Prettifier -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
     <!-- Scroll Magic Section -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
