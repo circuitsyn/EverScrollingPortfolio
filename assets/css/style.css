@@ -64,12 +64,13 @@ html, body {
 
 }
 
-.nav-link {
+.nav-linkStart {
     color: rgba(91, 163, 0, 1) !important;
     opacity: 0.9;
     padding: 0px 8px 0px 8px;
     font-family: 'WhitePine', monospace;
     font-size: 20px;
+    text-decoration: none !important;
 }
 
 .navHighlight {
