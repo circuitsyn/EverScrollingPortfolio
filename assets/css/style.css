@@ -411,5 +411,13 @@ footer {
         margin: auto;
         display: none;
     }
+    footer {
+        opacity: 0;
+    }
+  }
 
+  @media (min-width: 768px) {
+    footer {
+        opacity: 1;
+    }
   }

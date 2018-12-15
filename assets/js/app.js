@@ -11,7 +11,37 @@ $(document).ready(function() {
       function(){ $(this).addClass('pulse infinite') },
       function(){ $(this).removeClass('pulse') }
 )
+    
+    // Modal Listeners
+    // Toy Hack Event Listener Trigger
+    $("#toyHackImg").click(function(){
+      $('#toyHackModal').modal();
+      $('#toyHackImg').addClass('animated jello').one('animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd',
+      function() {
+        $(this).removeClass('animated jello');
+      });
 
+    });
+
+    // TweetPod Event Listener Trigger
+    $("#tweetImg").click(function(){
+      $('#tweetModal').modal();
+      $('#tweetImg').addClass('animated jello').one('animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd',
+      function() {
+        $(this).removeClass('animated jello');
+      });
+      
+    });
+    
+    // LittleBits Event Listener Trigger
+    $("#littlebitsImg").click(function(){
+      $('#littlebitsModal').modal();
+      $('#littlebitsImg').addClass('animated jello').one('animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd',
+      function() {
+        $(this).removeClass('animated jello');
+      });
+      
+    });
 
     //------------ Scroll Magic
 	// $(function () { // wait for document ready
