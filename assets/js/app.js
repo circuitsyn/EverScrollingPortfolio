@@ -12,7 +12,7 @@ $(document).ready(function() {
       function(){ $(this).removeClass('pulse') }
 )
     
-    // Modal Listeners
+    // Modal Listeners plus animations
     // Toy Hack Event Listener Trigger
     $("#toyHackImg").click(function(){
       $('#toyHackModal').modal();
