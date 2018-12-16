@@ -453,7 +453,7 @@ footer {
   }
 
   @media (min-width: 768px) {
-    footer {
-        opacity: 1;
+    #footerBottom {
+        display: none;
     }
   }
