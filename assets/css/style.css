@@ -15,8 +15,8 @@
 @font-face {
     font-family: 'BlackRough';
     src: url('../fonts/SonderSans-BlackRough.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    /* font-weight: normal; */
+    /* font-style: normal; */
 }
 
 @font-face {
@@ -120,19 +120,17 @@ button:focus {
 
 #sig {
     font-family: 'Signature', monospace;
-    font-size: 55px;
+    font-size: 100%;
 }
 
 .headers {
     font-family: 'BlackRough', monospace;
-    font-weight: bold;
     text-align: center;
     font-size: 300%;
 }
 
 .headersMinor {
     font-family: 'BlackRough', monospace;
-    font-weight: bold;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
