@@ -327,10 +327,11 @@ button:focus {
 pre {
     overflow: auto;
   }
-  pre > code {
+code {
     display: block;
     padding: 1rem;
     word-wrap: normal;
+    font-family: monospace;
   }
 
 /* -------------------------------------------- Blog Styling End --------------------------------------------- */

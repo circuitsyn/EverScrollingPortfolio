@@ -16,9 +16,9 @@ $(document).ready(function() {
     // Toy Hack Event Listener Trigger
     $("#toyHackImg").click(function(){
       $('#toyHackModal').modal();
-      $('#toyHackImg').addClass('animated jello').one('animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd',
+      $('#toyHackImg').addClass('animated pulse').one('animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd',
       function() {
-        $(this).removeClass('animated jello');
+        $(this).removeClass('animated pulse');
       });
 
     });
@@ -26,9 +26,9 @@ $(document).ready(function() {
     // TweetPod Event Listener Trigger
     $("#tweetImg").click(function(){
       $('#tweetModal').modal();
-      $('#tweetImg').addClass('animated jello').one('animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd',
+      $('#tweetImg').addClass('animated pulse').one('animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd',
       function() {
-        $(this).removeClass('animated jello');
+        $(this).removeClass('animated pulse');
       });
       
     });
@@ -36,9 +36,9 @@ $(document).ready(function() {
     // LittleBits Event Listener Trigger
     $("#littlebitsImg").click(function(){
       $('#littlebitsModal').modal();
-      $('#littlebitsImg').addClass('animated jello').one('animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd',
+      $('#littlebitsImg').addClass('animated pulse').one('animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd',
       function() {
-        $(this).removeClass('animated jello');
+        $(this).removeClass('animated pulse');
       });
       
     });
