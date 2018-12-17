@@ -148,7 +148,8 @@ button:focus {
     background-color:rgba(255,255,255,0.9);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    height:80%;
+    height:40vw;
+    max-height: 80%;
 }
 
 .projectDesc {
@@ -156,8 +157,8 @@ button:focus {
 }
 
 .projectScroll{
-    overflow-y: scroll;
-    position: relative !important;
+    overflow: scroll !important;
+    /* position: relative !important; */
 }
 
 .projectScrollCont{
@@ -229,9 +230,10 @@ button:focus {
 }
 
 .img-thumbnailMe {
-    height: 100px;
+    height: 7vw;
     width: auto;
     border-radius: 10px;
+    vertical-align: middle;
 }
 
 /* Welcome End */
@@ -281,9 +283,21 @@ button:focus {
 
 .nameHeader {
     font-family: 'BlackRough', monospace;
-    font-weight: bold;
+    text-align: center;
     margin-top: 0.5em;
     font-size: 1.7vw;
+    /* border-bottom: 1px solid lightgray; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-thumbnailMeProf {
+    height: 15vw;
+    width: auto;
+    border-radius: 10px;
+    vertical-align: middle;
 }
 
 .sideProfBG{
