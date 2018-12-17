@@ -5,6 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Animate on Scroll CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Animate.css -->
@@ -263,7 +265,7 @@
 
     <!-- Values Section With Left Profile -->
     <!-- Left Profile -->
-    <div id="sideCard" class="container">
+    <div id="sideCard" class="container" data-aos="fade-right" data-aos-anchor="#sideCardTrigger">
         <div class="col-md-2 mr-4 sideProfBG makeItStick">
             <div class="row">
                 <img src="assets/images/JarredSutton.jpg" alt="Picture of Jarred" class="img-thumbnailMeProf mx-auto d-block">
@@ -287,23 +289,29 @@
 
     <!-- Welcome -->
     <section class="one">
-        <div class="container greetingBG">
-            <div class="row">
-                <div class="col-md-2">
-                    <img src="assets/images/JarredSutton.jpg" alt="Picture of Jarred" class="img-thumbnailMe rounded mx-auto d-block">
+        <div class="container">
+            
+                <div class="row greetingBG">
+                    <div class="col-md-2">
+                        <img src="assets/images/JarredSutton.jpg" alt="Picture of Jarred" class="img-thumbnailMe rounded mx-auto d-block">
+                    </div>
+                    <div class="col-md-10 greetingTextCell">
+                        <h1 class="startHeader">Welcome</h1>
+                        <h4><strong>Purpose driven development with a focus on design and responsive efficenciy at its core. That is how I build.</strong></h4>
+                    </div>
                 </div>
-                <div class="col-md-10 greetingTextCell">
-                    <h1 class="startHeader">Welcome</h1>
-                    <h4><strong>Purpose driven development with a focus on design and responsive efficenciy at its core. That is how I build.</strong></h4>
+            
+        
+                <div class="row mx-auto">
+                    <img id="treeScrollIcon" class="d-flex align-items-end m-4" src="assets/images/ctWhite1px.png" alt="tree scroll icon">
                 </div>
-            </div>
         </div>
     </section>
 
-    <section id="sideCardTrigger" class="two">
+    <section  class="two">
 
         <!-- Value Section -->
-        <div class="standardBG ml-5 ml-auto col-md-9 offset-md-3 mr-4">
+        <div id="sideCardTrigger" class="standardBG ml-5 ml-auto col-md-9 offset-md-3 mr-4 col-12">
             <div class="row">
                 <h1 class="headers rounded mx-auto">Values</h1>
             </div>
@@ -366,7 +374,7 @@
 
     <!-- Technologies Section -->
     <section id="technologies" class="three">
-        <div class="standardBG ml-5 ml-auto col-md-9 offset-md-3 mr-4">
+        <div class="standardBG ml-5 ml-auto col-md-9 offset-md-3 mr-4 col-12">
             <div class="row">
                 <div class="col-12">
                     <h1 class="headers">Technologies</h1>
@@ -424,7 +432,7 @@
 
     <!-- Projects Section -->
     <section id="projects" class="four">
-        <div class="projectBG ml-5 ml-auto col-md-9 offset-md-3 mr-4">
+        <div class="projectBG ml-5 ml-auto col-md-9 offset-md-3 mr-4 col-12">
             <h1 class="headers mb-2">Projects</h1>
             <div class="row projectScrollCont">
                 <div class="col-md-1">
@@ -448,7 +456,7 @@
                     <!--The Weekender Image Link-->
                     <div id="theWeekender" class="row mt-4 mb-4">    
                         <div class="col-md-4 thumbnail animated flipInX"> 
-                            <a href="https://github.com/circuitsyn/daWeekender" target="_blank"> <img class="img-thumbnailProj" src="assets/images/theweekender_results.png" alt="The Weekender"> </a>
+                            <a href="https://github.com/circuitsyn/daWeekender" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/theweekender_results.png" alt="The Weekender"> </a>
                         </div>
                         <div class="col-md-6">
                             <h4 class="projectTitle">The Weekender</h4>
@@ -459,7 +467,7 @@
                     <!--MedSight-->                                
                     <div id="medSight" class="row mt-4 mb-4">    
                         <div class="col-md-4 thumbnail animated flipInX"> 
-                            <a href="https://salty-basin-99417.herokuapp.com/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/medSight.png" alt="MedSight"> </a>
+                            <a href="https://salty-basin-99417.herokuapp.com/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/medSight.png" alt="MedSight"> </a>
                         </div>
                         <div class="col-md-6">
                             <h4 class="projectTitle">MedSight</h4>
@@ -470,7 +478,7 @@
                     <!--Dream Shake-->       
                     <div id="dreamSake" class="row mt-4 mb-4">    
                         <div class="col-md-4 thumbnail animated flipInX"> 
-                            <a href="https://warm-falls-68532.herokuapp.com/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/dreamShake.PNG" alt="Dream Shake"> </a>
+                            <a href="https://warm-falls-68532.herokuapp.com/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/dreamShake.PNG" alt="Dream Shake"> </a>
                         </div>
                         <div class="col-md-6">
                             <h4 class="projectTitle">Dream Shake</h4>
@@ -481,7 +489,7 @@
                     <!--Auto Watering Garden Image Link-->
                     <div id="arduinoGarden" class="row mt-4 mb-4">    
                         <div class="col-md-4 thumbnail animated flipInX"> 
-                            <a href="https://circuitsyn.github.io/daWeekender/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/AutoWateringGarden.jpg" alt="Dream Shake"> </a>
+                            <a href="https://circuitsyn.github.io/daWeekender/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/AutoWateringGarden.jpg" alt="Dream Shake"> </a>
                         </div>
                         <div class="col-md-6">
                             <h4 class="projectTitle">Auto Watering Garden</h4>
@@ -492,7 +500,7 @@
                     <!--Firebase Train Schedule-->
                     <div id="trainSched" class="row mt-4 mb-4">    
                         <div class="col-md-4 thumbnail animated flipInX"> 
-                            <a href="https://circuitsyn.github.io/Train-Schedule/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/train.PNG" alt="Train Scheduler"> </a>
+                            <a href="https://circuitsyn.github.io/Train-Schedule/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/train.PNG" alt="Train Scheduler"> </a>
                         </div>
                         <div class="col-md-6">
                             <h4 class="projectTitle">Firebase Train Scheduler</h4>
@@ -503,7 +511,7 @@
                     <!--Cascade Store App-->
                     <div id="cascade" class="row mt-4 mb-4">    
                         <div class="col-md-4 thumbnail animated flipInX"> 
-                            <a href="https://github.com/circuitsyn/Cascade-MYSQL_Store" target="_blank"> <img class="img-thumbnailProj" src="assets/images/cascade.PNG" alt="Cascade Shop"> </a>
+                            <a href="https://github.com/circuitsyn/Cascade-MYSQL_Store" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/cascade.PNG" alt="Cascade Shop"> </a>
                         </div>
                         <div class="col-md-6">
                             <h4 class="projectTitle">Cascade Store App</h4>
@@ -514,7 +522,7 @@
                     <!--Rick and Morty RPG-->
                     <div id="rickMorty" class="row mt-4 mb-4">    
                         <div class="col-md-4 thumbnail animated flipInX"> 
-                            <a href="https://circuitsyn.github.io/unit-4-game/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/rick-and-morty.jpg" alt="Ricka nd Morty RPG"> </a>
+                            <a href="https://circuitsyn.github.io/unit-4-game/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/rick-and-morty.jpg" alt="Ricka nd Morty RPG"> </a>
                         </div>
                         <div class="col-md-6">
                             <h4 class="projectTitle">Rick and Morty RPG</h4>
@@ -525,7 +533,7 @@
                     <!--LIRI Bot-->
                     <div id="liri" class="row mt-4 mb-4">    
                         <div class="col-md-4 thumbnail animated flipInX"> 
-                            <a href="https://github.com/circuitsyn/liri-node-app" target="_blank"> <img class="img-thumbnailProj" src="assets/images/liribot.PNG" alt="LIRI Bot"> </a>
+                            <a href="https://github.com/circuitsyn/liri-node-app" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/liribot.PNG" alt="LIRI Bot"> </a>
                         </div>
                         <div class="col-md-6">
                             <h4 class="projectTitle">LIRI Bot</h4>
@@ -536,7 +544,7 @@
                     <!--EGG Image Link-->
                     <div id="egg" class="row mt-4 mb-4">    
                         <div class="col-md-4 thumbnail animated flipInX"> 
-                            <a href="https://software.intel.com/en-us/videos/bringing-the-components-of-a-makerspace-together-to-create-educational-platforms" target="_blank"> <img class="img-thumbnailProj" src="assets/images/EGG.png" alt="Education Gravity Garden"> </a>
+                            <a href="https://software.intel.com/en-us/videos/bringing-the-components-of-a-makerspace-together-to-create-educational-platforms" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/EGG.png" alt="Education Gravity Garden"> </a>
                         </div>
                         <div class="col-md-6">
                             <h4 class="projectTitle">Education Gravity Garden</h4>
@@ -547,7 +555,7 @@
                     <!--Giftastic-->
                     <div id="giftastic" class="row mt-4 mb-4">    
                             <div class="col-md-4 thumbnail animated flipInX"> 
-                                <a href="https://circuitsyn.github.io/GifTastic/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/giftastic.png" alt="Giftastic"> </a>
+                                <a href="https://circuitsyn.github.io/GifTastic/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/giftastic.png" alt="Giftastic"> </a>
                             </div>
                             <div class="col-md-6">
                                 <h4 class="projectTitle">Giftastic</h4>
@@ -558,7 +566,7 @@
                     <!--Video Game Trivia-->
                     <div id="trivia" class="row mt-4 mb-4">    
                         <div class="col-md-4 thumbnail animated flipInX"> 
-                            <a href="https://circuitsyn.github.io/TriviaGame/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/VGTrivia.png" alt="Video Game Trivia"> </a>
+                            <a href="https://circuitsyn.github.io/TriviaGame/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/VGTrivia.png" alt="Video Game Trivia"> </a>
                         </div>
                         <div class="col-md-6">
                             <h4 class="projectTitle">Video Game Trivia</h4>
@@ -620,16 +628,19 @@
       </footer>
 
     <!-- Optional JavaScript -->
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <!-- Scroll Magic Section -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script> -->
   </body>
 </html>

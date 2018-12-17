@@ -1,9 +1,12 @@
 // Message Submission Thank you Modal Trigger
 $(document).ready(function() {
+
     if(window.location.href.indexOf('#thankYou') != -1) {
       $('#thankYou').modal('show');
     }
   
+    // initialize AOS
+    AOS.init();
 
     // Link Hover Pulse
     $('.nav-linkP').hover(
