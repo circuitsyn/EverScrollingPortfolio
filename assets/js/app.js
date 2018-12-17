@@ -1,8 +1,5 @@
 // Message Submission Thank you Modal Trigger
 $(document).ready(function() {
-  //initialize code highlighting
-  hljs.initHighlightingOnLoad();
-
     if(window.location.href.indexOf('#thankYou') != -1) {
       $('#thankYou').modal('show');
     }
