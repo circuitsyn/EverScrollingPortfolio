@@ -126,7 +126,7 @@ button:focus {
 .headers {
     font-family: 'BlackRough', monospace;
     text-align: center;
-    font-size: 300%;
+    font-size: 4vw;
 }
 
 .headersMinor {
@@ -134,6 +134,7 @@ button:focus {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 2.6vw;
 }
 
 .modal-header {
@@ -155,19 +156,17 @@ button:focus {
 }
 
 .projectScroll{
-    overflow-y:scroll;
+    overflow-y: scroll;
     position: relative !important;
 }
 
 .projectScrollCont{
     height: auto;
-    /* display: block; */
     max-height: 85%;
 }
 
 .projectScrollNav {
     height: auto;
-    /* display: block; */
     max-height: 85%;
 }
 
@@ -212,7 +211,8 @@ button:focus {
     background-color:rgba(255,255,255,0.9);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    padding-bottom: 4%;
+    height: 80%;
+    /* padding-bottom: 4%; */
 }
 
 .greetingBG{
@@ -224,6 +224,8 @@ button:focus {
 
 .startHeader {
     font-family: 'BlackRough', monospace;
+    font-size: 4vw;
+
 }
 
 .img-thumbnailMe {
@@ -238,9 +240,8 @@ button:focus {
 .blogIndexImages {
     height: 100%;
     width: 100%;
-    border-radius: 10px;
-    padding: 3px;
-    object-fit: cover;
+    border-radius: 15px;
+    padding: 0.8em;
 }
 
 /* Blog Page End */
@@ -282,6 +283,7 @@ button:focus {
     font-family: 'BlackRough', monospace;
     font-weight: bold;
     margin-top: 0.5em;
+    font-size: 1.7vw;
 }
 
 .sideProfBG{
@@ -289,7 +291,6 @@ button:focus {
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
     margin-left: 4%;
-    height: auto;
     width: 20%;
 }
 
@@ -298,6 +299,10 @@ button:focus {
     text-align: center;
     /* margin-left: 2%; */
     font-family: 'Main';
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-right: 0.7em;
+    margin-left: 0.7em;
 }
 
 /* remove scroll bars */
@@ -349,10 +354,10 @@ footer {
 /* -------------------------------------- Magic Scroll Section Start ------------------------------------------ */
 
 /* Scroll Snap */
-.panel {
+/* .panel {
     height: 100vh;
 	width: 100vw;
-}
+} */
 
 #sideCard {
     /* margin-bottom: -100px; */
@@ -391,9 +396,9 @@ footer {
     }
 
 .two {
-    background-position: center;
+    
     background-size: cover;
-    height: 100%;
+    min-height: 100%;
     background-attachment: fixed;
     background-image: url("../images/BGs/waterfallBG.jpg");
     display: flex;
@@ -404,7 +409,6 @@ footer {
 .three {
     align-items: center;
     min-height: 100%;
-    background-size: cover;
     background-attachment: fixed;
     background-image: url("../images/BGs/victoria.jpg");
     display: flex;
@@ -415,7 +419,6 @@ footer {
 .four {
     align-items: center;
     min-height: 100%;
-    background-size: cover;
     background-attachment: fixed;
     background-image: url("../images/BGs/whistler.jpg");
     display: flex;
@@ -426,7 +429,6 @@ footer {
 .five {
     align-items: center;
     min-height: 100%;
-    background-size: cover;
     background-attachment: fixed;
     background-image: url("../images/BGs/rasar.jpg");
     display: flex;
@@ -448,7 +450,20 @@ footer {
     footer {
         opacity: 0;
     }
-  }
+    #sideCard {
+        display: none;
+    }
+    .headers {
+        font-size: 6.1vw;
+    }
+    .headersMinor{
+        font-size: 3.5vw;
+    }
+    .startHeader {
+        font-size: 6.5vw;
+    }
+
+}
 
   @media (min-width: 768px) {
     #footerBottom {
