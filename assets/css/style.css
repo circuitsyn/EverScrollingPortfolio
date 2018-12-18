@@ -488,9 +488,7 @@ footer {
         left: 42%;
     }
 
-    #footerBottom {
-        display: none;
-    }
+    
     .startHeader {
         font-size: 10vw;
     }
@@ -644,8 +642,8 @@ footer {
     }
   }
 
-  /* @media all and (min-width: 768px) {
+  @media all and (min-width: 768px) {
     #footerBottom {
         display: none;
     }
-  } */
+  }
