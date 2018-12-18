@@ -184,8 +184,7 @@ button:focus {
 }
 
 .thumbnail {
-    position: relative;
-    text-align: center;
+    margin-left: 1em;
 }
 
 .projectTitle {
@@ -401,8 +400,7 @@ code {
 /* ---------------------------------------------- Footer Start ----------------------------------------------- */
 
 footer {
-    background: transparent !important;
-    /* position: absolute; */
+    background-color: rgba(255,255,255,0.9);
     left: 0;
     bottom: 0;
     width: 100%;
@@ -525,10 +523,6 @@ footer {
         display: none;
     }
 
-    footer {
-        opacity: 0;
-    }
-
     #sideCard {
         display: none;
     }
@@ -542,7 +536,7 @@ footer {
     }
 
     .headersMinorBlog {
-        font-size: 3vw;
+        font-size: inherit;
     }
 
     .startHeader {
@@ -557,9 +551,34 @@ footer {
     }
 
     .projectBG {
-        padding: 3vw;
+        padding: 0;
         margin-right: 0 !important;
     }
+
+    .projectScroll {
+        overflow-y: none;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none !important;
+        height: inherit;
+        box-sizing:border-box;
+    }
+    
+    .navbarProj {
+        height: inherit;
+        box-sizing:border-box;
+        overflow-y: none;
+        -ms-overflow-style: none !important;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .standardBG {
+        padding: 0;
+        margin: auto !important;
+    }
+
+
 
 }
 
