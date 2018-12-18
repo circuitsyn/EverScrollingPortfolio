@@ -182,7 +182,7 @@ button:focus {
 
 .projectTitle {
     font-family: 'BlackRough', monospace;
-    vertical-align: middle !important;
+    /* vertical-align: middle !important; */
 }
 
 .img-thumbnailProj {
@@ -522,6 +522,14 @@ button:focus {
 
   }
   @media all and (max-width: 767px) {
+    .projectTitle {
+        margin-top: 5%;
+    }
+
+    .btn-group-vertical .btn {
+        width: auto;
+        align-content: center !important;
+    }
     #footerBottom {
         display: flex !important;
     }
