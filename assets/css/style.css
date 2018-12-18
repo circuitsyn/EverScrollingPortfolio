@@ -154,8 +154,6 @@ button:focus {
     background-color:rgba(255,255,255,0.9);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    height:40vw;
-    max-height: 80%;
 }
 
 .projectDesc {
@@ -163,21 +161,24 @@ button:focus {
 }
 
 .projectScroll {
-    overflow-y: scroll !important;
+    overflow-y: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    /* position: relative !important; */
+    -ms-overflow-style: auto !important;
+    height: inherit;
+    box-sizing:border-box;
 }
 
 .projectScrollCont {
-    height: auto;
-    max-height: 85%;
+    height: 40vw;
 }
 
-#navbarProj {
-    height: auto;
-    max-height: 85%;
-    overflow-y: scroll !important;
+.navbarProj {
+    height: inherit;
+    box-sizing:border-box;
+    /* max-height: 85%; */
+    overflow-y: scroll;
+    -ms-overflow-style: auto !important;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
@@ -246,14 +247,6 @@ button:focus {
     padding: 1% 1% 1% 1%;
 }
 
-.blogBG {
-    background-color:rgba(255,255,255,0.9);
-    border-radius: 5px;
-    padding: 1% 1% 1% 1%;
-    height: 80%;
-    /* padding-bottom: 4%; */
-}
-
 .greetingBG{
     background-color:rgba(255,255,255,0.9);
     border-radius: 5px;
@@ -282,6 +275,22 @@ button:focus {
     border-radius: 15px;
     padding: 0.8em;
 }
+
+.headersMinorBlog {
+    font-family: 'BlackRough', monospace;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 2vw;
+}
+
+.blogBG {
+    background-color:rgba(255,255,255,0.9);
+    border-radius: 5px;
+    padding: 1% 1% 1% 1%;
+    /* height: 80%; */
+}
+
 
 /* Blog Page End */
 
@@ -510,25 +519,36 @@ footer {
       text-align: center;
       width: auto;
     }
+
     .sideProfBG {
         margin: auto;
         display: none;
     }
+
     footer {
         opacity: 0;
     }
+
     #sideCard {
         display: none;
     }
+
     .headers {
         font-size: 6.1vw;
     }
+
     .headersMinor{
         font-size: 4.5vw;
     }
+
+    .headersMinorBlog {
+        font-size: 3vw;
+    }
+
     .startHeader {
         font-size: 6.5vw;
     }
+    
     .img-thumbnailMe {
         height: auto;
         width: auto;
@@ -537,6 +557,15 @@ footer {
     }
 
 }
+
+  @media (max-width: 960px) {
+    h4.sideProText {
+        font-size: 1rem;
+    }
+    .scrollText {
+        font-size: 2.2vw;
+    }
+  }
 
   @media (min-width: 768px) {
     #footerBottom {
