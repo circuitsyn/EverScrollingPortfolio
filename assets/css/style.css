@@ -40,6 +40,8 @@
     font-family: 'BlackRough', monospace;
     text-align: center;
     font-size: 4vw;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 html, body {
