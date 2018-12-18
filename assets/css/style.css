@@ -383,7 +383,9 @@ button:focus {
 .blogHeader {
     font-family: 'BlackRough', monospace;
     text-align: center;
-    font-size: 1.7vw;
+    font-size: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* -------------------------------------------- Blog Styling End --------------------------------------------- */
