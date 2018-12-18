@@ -328,7 +328,7 @@ button:focus {
 .makeItStick {
     position: fixed;
     left: 0;
-    top: 15em;
+    top: 20vh;
 }
 
 .nameHeader {
