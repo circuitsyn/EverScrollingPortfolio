@@ -6,10 +6,10 @@ $(document).ready(function() {
     }
 
     // Link Hover Pulse
-    $('.nav-linkP').hover(
-      function(){ $(this).addClass('pulse infinite') },
-      function(){ $(this).removeClass('pulse') }
-)
+//     $('.nav-linkP').hover(
+//       function(){ $(this).addClass('pulse infinite') },
+//       function(){ $(this).removeClass('pulse') }
+// )
     
     // Modal Listeners plus animations
     // Toy Hack Event Listener Trigger

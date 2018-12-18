@@ -196,13 +196,32 @@ button:focus {
 /*------------------------------------ Project Area End ----------------------------------------  */
 
 /* ----------------------------------- Welcome Start -------------------------------------------- */
+.scrollPos {
+    top: 83%;
+    left: 45%;
+    position: absolute;
+    width: auto;
+}
+
+.scrollPos {
+    -webkit-animation: pulse 2s; /* Safari 4+ */
+    -moz-animation:    pulse 2s; /* Fx 5+ */
+    -o-animation:      pulse 2s; /* Opera 12+ */
+    animation:         pulse 2s; /* IE 10+, Fx 29+ */
+  }
+
+.scrollText {
+    font-family: 'BlackRough', monospace;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    margin-bottom: 2px;
+    font-size: 1.2vw;
+}
 
 #treeScrollIcon {
-    height: 5%;
+    height: 4em;
     width: auto;
-    /* position: relative; */
-      /* top: 100%; */
-  	
+    margin: 0 !important;
 }
 
 .greetingText {
@@ -284,7 +303,7 @@ button:focus {
 
 /* ------------------------- Side Profile Scroll Section Start -------------------------- */
 .makeItStick {
-    position: fixed !important;
+    position: fixed;
     left: 0;
     top: 24em;
 }
@@ -313,7 +332,6 @@ button:focus {
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
     margin-left: 4%;
-    width: 20%;
 }
 
 .sideProText {
