@@ -154,6 +154,7 @@ button:focus {
     background-color:rgba(255,255,255,0.9);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
+    min-height: 100%;
 }
 
 .projectDesc {
@@ -243,7 +244,7 @@ button:focus {
 }
 
 .greetingBG{
-    background-color:rgba(255,255,255,0.9);
+    background-color:rgba(255,255,255,1);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
 }
@@ -254,11 +255,19 @@ button:focus {
 
 }
 
+.divMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
 .img-thumbnailMe {
-    height: 7vw;
-    width: auto;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
     border-radius: 10px;
-    vertical-align: middle;
+    
 }
 
 /* Welcome End */
@@ -474,22 +483,60 @@ footer {
   
 
   /* Media queries */
-  @media (max-width: 540px) {
+  @media all and (max-width: 575px) {
     .scrollPos {
-        left: 38% !important;
-    }
-  }
-  @media (max-width: 767px) {
-    .greetingBG {
-      text-align: center;
-      width: auto;
+        left: 42%;
     }
 
+    #footerBottom {
+        display: none;
+    }
+    .startHeader {
+        font-size: 10vw;
+    }
+    .greetingBG{
+        text-align: center;
+    }
+    .scrollText {
+        font-size: 2.2vw;
+    }
+
+    .sideProfBG {
+        display: none;
+    }
+
+    #sideCard {
+        display: none;
+    }
+    .img-thumbnailMe {
+        height: 200px;
+        width: 200px;
+        min-width: 0;
+        min-height: 0;
+        border-radius: 10px;
+    }
+    .hardSoftIcons {
+        width: 11vw;
+    }
+    .projectScroll {
+        overflow-y: none !important;
+        scroll-behavior: unset;
+        -webkit-overflow-scrolling: unset;
+        -ms-overflow-style: none;
+        height: unset;
+        box-sizing: unset;
+    }
+
+
+  }
+  @media all and (max-width: 767px) {
+    .greetingBG{
+        text-align: center;
+    }
     .hardSoftIcons {
         width: 11vw;
     }
     .sideProfBG {
-        margin: auto;
         display: none;
     }
 
@@ -514,10 +561,11 @@ footer {
     }
     
     .img-thumbnailMe {
-        height: auto;
-        width: auto;
+        height: 200px;
+        width: 200px;
+        min-width: 0;
+        min-height: 0;
         border-radius: 10px;
-        vertical-align: middle;
     }
 
     .projectBG {
@@ -557,12 +605,12 @@ footer {
         margin: 0 !important;
     }
 
-    .thumbnail {
+    /* .thumbnail {
         margin-left: 1em;
-    }
+    } */
 
     .scrollPos {
-        left: 43%;
+        left: 42%;
     }
 
     .scrollText {
@@ -575,17 +623,29 @@ footer {
 
 }
 
-  @media (max-width: 960px) {
+  @media all and (max-width: 960px) and (min-width: 767px){
     h4.sideProText {
         font-size: 1rem;
     }
     .scrollText {
         font-size: 4vw;
     }
-  }
 
-  @media (min-width: 768px) {
     #footerBottom {
         display: none;
     }
+
+    .scrollPos {
+        left: 39%;
+    }
+
+    .startHeader {
+        font-size: 7vw;
+    }
   }
+
+  /* @media all and (min-width: 768px) {
+    #footerBottom {
+        display: none;
+    }
+  } */
