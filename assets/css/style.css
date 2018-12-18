@@ -15,8 +15,11 @@
 @font-face {
     font-family: 'BlackRough';
     src: url('../fonts/SonderSans-BlackRough.woff2') format('woff2');
-    /* font-weight: normal; */
-    /* font-style: normal; */
+}
+
+@font-face {
+    font-family: 'BlackSmooth';
+    src: url('../fonts/SonderSans-Black.woff2') format('woff2');
 }
 
 @font-face {
@@ -159,14 +162,14 @@ button:focus {
     font-weight: bolder;
 }
 
-.projectScroll{
+.projectScroll {
     overflow-y: scroll !important;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     /* position: relative !important; */
 }
 
-.projectScrollCont{
+.projectScrollCont {
     height: auto;
     max-height: 85%;
 }
@@ -211,14 +214,14 @@ button:focus {
 }
 
 .scrollPos {
-    -webkit-animation: pulse 2s; /* Safari 4+ */
-    -moz-animation:    pulse 2s; /* Fx 5+ */
-    -o-animation:      pulse 2s; /* Opera 12+ */
-    animation:         pulse 2s; /* IE 10+, Fx 29+ */
+    -webkit-animation: pulse 1s; /* Safari 4+ */
+    -moz-animation:    pulse 1s; /* Fx 5+ */
+    -o-animation:      pulse 1s; /* Opera 12+ */
+    animation:         pulse 1s; /* IE 10+, Fx 29+ */
   }
 
 .scrollText {
-    font-family: 'BlackRough', monospace;
+    font-family: 'BlackSmooth', monospace;
     -webkit-text-stroke: 1px black;
     color: white;
     margin-bottom: 2px;
