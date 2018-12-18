@@ -183,10 +183,6 @@ button:focus {
     -webkit-overflow-scrolling: touch;
 }
 
-.thumbnail {
-    margin-left: 1em;
-}
-
 .projectTitle {
     font-family: 'BlackRough', monospace;
     vertical-align: middle !important;
@@ -312,7 +308,7 @@ button:focus {
 /* -------------------------Technologies Section Start ---------------------------------- */
 .hardSoftIcons {
     height: auto;
-    width: 100px;
+    width: 5vw;
     border-radius: 10px;
     padding: 3px;
 }
@@ -385,16 +381,6 @@ button:focus {
     font-size: 1.7vw;
 }
 
-pre {
-    overflow: auto;
-  }
-code {
-    display: block;
-    padding: 1rem;
-    word-wrap: normal;
-    font-family: monospace;
-  }
-
 /* -------------------------------------------- Blog Styling End --------------------------------------------- */
 
 /* ---------------------------------------------- Footer Start ----------------------------------------------- */
@@ -409,32 +395,6 @@ footer {
 /* ----------------------------------------------- Footer End ------------------------------------------------- */
 
 /* -------------------------------------- Magic Scroll Section Start ------------------------------------------ */
-
-/* Scroll Snap */
-/* .panel {
-    height: 100vh;
-	width: 100vw;
-} */
-
-#sideCard {
-    /* margin-bottom: -100px; */
-    /* opacity: 0; */
-    /* transition-timing-function: ease-in; */
-    /* animation: fadein 2s; */
-    
-}
-
-.zap {
-    /* animation: fadeout 2s; */
-    /* visibility: hidden; */
-    opacity: 1 !important;
-    transition: opacity 0.5s linear;
-    /* visibility: visible !important; */
-}
-
-.panel.two, .panel.three, .panel.four, .panel.five {
-    /* margin-bottom:300px; */
-}
 
 .break {
     height: 20em;
@@ -511,13 +471,23 @@ footer {
     }
 
   /* Scroll Snap End */
+  
 
-  @media only screen and (max-width: 767px) {
+  /* Media queries */
+  @media (max-width: 540px) {
+    .scrollPos {
+        left: 38% !important;
+    }
+  }
+  @media (max-width: 767px) {
     .greetingBG {
       text-align: center;
       width: auto;
     }
 
+    .hardSoftIcons {
+        width: 11vw;
+    }
     .sideProfBG {
         margin: auto;
         display: none;
@@ -551,34 +521,57 @@ footer {
     }
 
     .projectBG {
-        padding: 0;
-        margin-right: 0 !important;
+        padding: 23px;
+    }
+
+    .ml-2 {
+        margin-left: 0 !important;
     }
 
     .projectScroll {
-        overflow-y: none;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: none !important;
-        height: inherit;
-        box-sizing:border-box;
+        overflow-y: none !important;
+        scroll-behavior: unset;
+        -webkit-overflow-scrolling: unset;
+        -ms-overflow-style: none;
+        height: unset;
+        box-sizing: unset;
     }
     
     .navbarProj {
-        height: inherit;
-        box-sizing:border-box;
-        overflow-y: none;
-        -ms-overflow-style: none !important;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
+        
+        overflow-y: none !important;
+        height: unset;
+        box-sizing: unset;
+        -ms-overflow-style: none;
+        scroll-behavior: unset;
+        -webkit-overflow-scrolling: unset;
+        
     }
 
-    .standardBG {
-        padding: 0;
-        margin: auto !important;
+    ul {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
+    .standardBG.nav {
+        margin: 0 !important;
+    }
 
+    .thumbnail {
+        margin-left: 1em;
+    }
+
+    .scrollPos {
+        left: 43%;
+    }
+
+    .scrollText {
+        font-size: 2.2vw;
+    }
+
+    .blogHeader {
+        font-size: 4vw;
+    }
 
 }
 
@@ -587,7 +580,7 @@ footer {
         font-size: 1rem;
     }
     .scrollText {
-        font-size: 2.2vw;
+        font-size: 4vw;
     }
   }
 
