@@ -111,16 +111,17 @@ button:focus {
     outline-style: 'border-radius: 10px';
 }
 
-.navbar
-
 /* ----------------------------- Nav Bar Styling End ------------------------------------ */
 
 
 /* -------------------------- Contact Me Styling Start ------------------------------------*/
+#contactTxt {
+    margin-bottom: 0;
+}
 
 #sig {
     font-family: 'Signature', monospace;
-    font-size: 100%;
+    font-size: 4.3vw;
 }
 
 .headers {
