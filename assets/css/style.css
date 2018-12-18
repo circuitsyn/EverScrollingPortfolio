@@ -33,9 +33,15 @@
     font-style: normal;
 }
 
-.col-md-10 {
+/* .col-md-10 {
     max-width: 95%;
-} 
+}  */
+
+.headers {
+    font-family: 'BlackRough', monospace;
+    text-align: center;
+    font-size: 4vw;
+}
 
 html, body {
     font-family: 'Main';
@@ -124,10 +130,10 @@ button:focus {
     font-size: 4.3vw;
 }
 
-.headers {
+.contactHeaders {
     font-family: 'BlackRough', monospace;
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .headersMinor {
