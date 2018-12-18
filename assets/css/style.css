@@ -556,6 +556,11 @@ footer {
         vertical-align: middle;
     }
 
+    .projectBG {
+        padding: 3vw;
+        margin-right: 0 !important;
+    }
+
 }
 
   @media (max-width: 960px) {
