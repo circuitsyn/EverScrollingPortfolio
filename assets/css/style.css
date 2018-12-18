@@ -137,7 +137,7 @@ button:focus {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 2.6vw;
+    font-size: 2vw;
 }
 
 .modal-header {
@@ -160,8 +160,9 @@ button:focus {
 }
 
 .projectScroll{
-    overflow: scroll !important;
+    overflow-y: scroll !important;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     /* position: relative !important; */
 }
 
@@ -170,9 +171,12 @@ button:focus {
     max-height: 85%;
 }
 
-.projectScrollNav {
+#navbarProj {
     height: auto;
     max-height: 85%;
+    overflow-y: scroll !important;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 .thumbnail {
