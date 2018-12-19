@@ -687,6 +687,9 @@ button:focus {
 }
 
   @media all and (max-width: 960px) and (min-width: 767px){
+    .rileyCat {
+        width: 45vw;
+    }
     h4.sideProText {
         font-size: 1rem;
     }
