@@ -276,6 +276,7 @@ button:focus {
 .startHeader {
     font-family: 'BlackRough', monospace;
     font-size: 4vw;
+    margin-left: -3%;
 
 }
 
@@ -346,12 +347,8 @@ button:focus {
     padding: 3px;
 }
 
-a:focus {
-    outline: none;
-    border: 1px solid rgba(91, 163, 0, 1);
-    border-style: dotted;    
-    border-radius: 100px;
-    padding: 10px 9px 19px 10px;
+a.popover-dismiss:focus {
+    outline-color: 1px solid rgba(91, 163, 0, 1);
   }
 
 /* ------------------------ Technologies Section End ------------------------------------ */
