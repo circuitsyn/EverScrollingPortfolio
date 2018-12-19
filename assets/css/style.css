@@ -634,14 +634,13 @@ a.popover-dismiss:focus {
     }
 
     .projectBG {
-        /* padding: 23px; */
         margin-top: 15%;
         margin-bottom: 15%;
 
     }
 
-    .ml-2 {
-        margin-left: 0 !important;
+    nav#innerNav {
+        padding: 2%;
     }
 
     .projectScroll {
