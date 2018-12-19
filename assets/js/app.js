@@ -5,11 +5,10 @@ $(document).ready(function() {
       $('#thankYou').modal('show');
     }
 
-    // Link Hover Pulse
-//     $('.nav-linkP').hover(
-//       function(){ $(this).addClass('pulse infinite') },
-//       function(){ $(this).removeClass('pulse') }
-// )
+    // Popover Listener
+    $('.popover-dismiss').popover({
+      trigger: 'focus'
+    })
     
     // Modal Listeners plus animations
     // Toy Hack Event Listener Trigger

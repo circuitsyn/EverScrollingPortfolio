@@ -346,6 +346,14 @@ button:focus {
     padding: 3px;
 }
 
+a:focus {
+    outline: none;
+    border: 1px solid rgba(91, 163, 0, 1);
+    border-style: dotted;    
+    border-radius: 100px;
+    padding: 10px 9px 19px 10px;
+  }
+
 /* ------------------------ Technologies Section End ------------------------------------ */
 
 /* ------------------------- Side Profile Scroll Section Start -------------------------- */
