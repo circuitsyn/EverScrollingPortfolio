@@ -118,24 +118,27 @@ button:focus {
 
 
 /* ------------------------- Thank you Modal Styling Start ------------------------------- */
-.modal-header {
+.modal-headerRiley {
     border-bottom: none;
     background-color: white;
     border-radius: 50px;
+    text-align: center;
 }
 
-.modal-footer {
+.modal-footerRiley {
     border-top: none;
     background-color: white;
     border-radius: 50px;
+    text-align: center;
 }
 
-.modal-content {
+.modal-contentRiley {
     background-color: transparent;
 }
 
 .rileyCat {
     border-radius: 500px;
+    width: 35vw;
 }
 
 /* ------------------------- Thank you Modal Styling End ------------------------------- */
@@ -503,8 +506,9 @@ button:focus {
     .scrollPos {
         left: 39% !important;
     }
-
-    
+    .blogHeader {
+        width: 6vw;
+    }
     .startHeader {
         font-size: 10vw;
     }
