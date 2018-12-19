@@ -123,7 +123,6 @@ button:focus {
     background-color: white;
     border-radius: 50px;
     text-align: center;
-    padding: 15px;
 }
 
 .modal-footerRiley {
@@ -513,6 +512,13 @@ button:focus {
         border-radius: 500px;
         width: 45vw;
     }
+    #sig {
+        font-size: 7vw;
+    }
+    .contactHeaders {
+        font-size: 7vw;
+    }
+
     .scrollPos {
         left: 39% !important;
     }
