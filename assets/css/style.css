@@ -141,6 +141,10 @@ button:focus {
     width: 35vw;
 }
 
+.blogHeaderRiley {
+    padding: 10px;
+}
+
 /* ------------------------- Thank you Modal Styling End ------------------------------- */
 
 /* -------------------------- Contact Me Styling Start ------------------------------------*/
@@ -507,7 +511,7 @@ button:focus {
         left: 39% !important;
     }
     .blogHeader {
-        width: 6vw;
+        
     }
     .startHeader {
         font-size: 10vw;
