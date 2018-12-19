@@ -114,8 +114,31 @@ button:focus {
     outline-style: 'border-radius: 10px';
 }
 
-/* ----------------------------- Nav Bar Styling End ------------------------------------ */
+/* ------------------------------ Nav Bar Styling End ------------------------------------ */
 
+
+/* ------------------------- Thank you Modal Styling Start ------------------------------- */
+.modal-header {
+    border-bottom: none;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.modal-footer {
+    border-top: none;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.modal-content {
+    background-color: transparent;
+}
+
+.rileyCat {
+    border-radius: 500px;
+}
+
+/* ------------------------- Thank you Modal Styling End ------------------------------- */
 
 /* -------------------------- Contact Me Styling Start ------------------------------------*/
 #contactTxt {
