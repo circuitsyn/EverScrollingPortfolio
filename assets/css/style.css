@@ -131,7 +131,7 @@ button:focus {
     background-color: white;
     border-radius: 50px;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 .modal-contentRiley {
@@ -144,13 +144,7 @@ button:focus {
 }
 
 .blogHeaderRiley {
-    padding: 10px;
     font-family: 'BlackRough', monospace;
-}
-
-.blogHeaderFooter {
-    padding: 10px;
-    font-weight: bolder;
 }
 
 /* ------------------------- Thank you Modal Styling End ------------------------------- */
@@ -515,6 +509,10 @@ button:focus {
 
   /* Media queries */
   @media all and (max-width: 575px) {
+    .rileyCat {
+        border-radius: 500px;
+        width: 45vw;
+    }
     .scrollPos {
         left: 39% !important;
     }
