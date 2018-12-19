@@ -563,6 +563,9 @@ button:focus {
 
   }
   @media all and (max-width: 767px) {
+    .rileyCat {
+        width: 45vw;
+    }
     .projectTitle {
         margin-top: 5%;
     }
