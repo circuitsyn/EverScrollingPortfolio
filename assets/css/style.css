@@ -121,14 +121,14 @@ button:focus {
 .modal-headerRiley {
     border-bottom: none;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 10px;
     text-align: center;
 }
 
 .modal-footerRiley {
     border-top: none;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 10px;
     text-align: center;
     padding: 10px;
 }
@@ -138,7 +138,7 @@ button:focus {
 }
 
 .rileyCat {
-    border-radius: 500px;
+    border-radius: 20px;
     width: 35vw;
 }
 
