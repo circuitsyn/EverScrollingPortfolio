@@ -1,6 +1,7 @@
-// Message Submission Thank you Modal Trigger
+// Check if html document is ready and loaded
 $(document).ready(function() {
 
+    // Message Submission Thank you Modal Trigger
     if(window.location.href.indexOf('#thankYou') != -1) {
       $('#thankYou').modal('show');
     }
