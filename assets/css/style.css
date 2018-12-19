@@ -637,7 +637,7 @@ button:focus {
     }
 
     .scrollText {
-        font-size: 2.2vw;
+        font-size: 4vw;
     }
 
     .blogHeader {
@@ -651,7 +651,7 @@ button:focus {
         font-size: 1rem;
     }
     .scrollText {
-        font-size: 4vw;
+        font-size: 2.2vw;
     }
 
     .scrollPos {
