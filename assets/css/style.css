@@ -139,7 +139,7 @@ button:focus {
 
 .rileyCat {
     border-radius: 20px;
-    width: 35vw;
+    width: 25vw;
 }
 
 .blogHeaderRiley {
@@ -509,7 +509,6 @@ button:focus {
   /* Media queries */
   @media all and (max-width: 575px) {
     .rileyCat {
-        border-radius: 500px;
         width: 45vw;
     }
     #sig {
