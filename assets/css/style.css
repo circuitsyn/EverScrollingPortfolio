@@ -136,6 +136,7 @@ button:focus {
 .borderFooterRiley {
     color: white !important;
     -webkit-text-stroke: 1px black !important;
+    font-family: 'BlackSmooth', monospace;
 }
 
 .modal-headerRiley {
