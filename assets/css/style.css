@@ -120,13 +120,25 @@ button:focus {
 }
 
 /* ------------------------------ Nav Bar Styling End ------------------------------------ */
+/* --------------------------------  Robot Start ----------------------------------------- */
+
+.break {
+    background-color: rgba(126,192,238, 0.3);
+    /* height: 15vh; */
+}
+
+#robotFooter {
+    height: 50px;
+}
+
+/*  --------------------------------  Robot End ------------------------------------------ */
 /* -------------------------------- Resume Start ----------------------------------------- */
 
 .gist .gist-file article {
     padding: 2%;
 }
 
-/* -------------------------------- Resume End ----------------------------------------- --*/
+/* -------------------------------- Resume End ------------------------------------------- */
 /* ------------------------- Thank you Modal Styling Start ------------------------------- */
 #thankYouClose {
     -webkit-text-stroke: 2px white;
@@ -382,7 +394,7 @@ a.popover-dismiss:focus {
 .makeItStick {
     position: fixed;
     left: 0;
-    top: 20vh;
+    top: 25vh;
 }
 
 .nameHeader {
@@ -405,7 +417,7 @@ a.popover-dismiss:focus {
 }
 
 .sideProfBG{
-    background-color:rgba(255,255,255,0.9);
+    background-color:rgba(255,255,255,1);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
     margin-left: 4%;
@@ -458,12 +470,6 @@ a.popover-dismiss:focus {
 /* ----------------------------------------------- Footer End ------------------------------------------------- */
 
 /* -------------------------------------- Snap Scroll Section Start ------------------------------------------ */
-
-.break {
-    height: 20em;
-    z-index: -2;
-    background: #ffffff;
-    }
 
 .one {
     min-height: 100%;
