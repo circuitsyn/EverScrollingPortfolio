@@ -544,6 +544,10 @@ a.popover-dismiss:focus {
 
   /* Media queries */
   @media all and (max-width: 575px) {
+    /* .robotStyle {
+        height: 150px;
+    } */
+
     .rileyCat {
         width: 45vw;
     }
