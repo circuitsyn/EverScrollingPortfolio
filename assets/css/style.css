@@ -124,11 +124,7 @@ button:focus {
 
 .break {
     background-color: white;
-    height: 15%;
-}
-
-.robotStyle {
-    height: 13%;
+    /* height: 15vh; */
 }
 
 /*  --------------------------------  Robot End ------------------------------------------ */
