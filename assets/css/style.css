@@ -123,8 +123,12 @@ button:focus {
 /* --------------------------------  Robot Start ----------------------------------------- */
 
 .break {
-    background-color: white;
+    background-color: rgba(126,192,238, 0.3);
     /* height: 15vh; */
+}
+
+#robotFooter {
+    height: 50px;
 }
 
 /*  --------------------------------  Robot End ------------------------------------------ */
@@ -390,7 +394,7 @@ a.popover-dismiss:focus {
 .makeItStick {
     position: fixed;
     left: 0;
-    top: 20vh;
+    top: 25vh;
 }
 
 .nameHeader {
@@ -413,7 +417,7 @@ a.popover-dismiss:focus {
 }
 
 .sideProfBG{
-    background-color:rgba(255,255,255,0.9);
+    background-color:rgba(255,255,255,1);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
     margin-left: 4%;
