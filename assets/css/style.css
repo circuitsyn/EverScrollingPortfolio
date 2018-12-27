@@ -78,10 +78,17 @@ body {
 .nav-linkStart {
     color: rgba(91, 163, 0, 1) !important;
     /* opacity: 1; */
-    padding: 0px 8px 0px 8px;
+    /* padding: 0px 8px 0px 8px; */
     font-family: 'WhitePine', monospace;
     font-size: 20px;
+   
+}
+
+a.nav-linkStart {
+    padding: 0.2% 3% 0.2% 10%;
     text-decoration: none !important;
+    display: block;
+    
 }
 
 li.nav-item:hover {
@@ -94,7 +101,8 @@ li.nav-item:hover {
 
 li.nav-item {
     transition-timing-function: ease-out;
-    padding: 4px 15px 4px 15px;
+    padding: 1px 0px 1px 0px;
+    width:100%;
 }
 
 .navbar-nav {
@@ -130,9 +138,8 @@ button:focus {
 /*  --------------------------------  Robot End ------------------------------------------ */
 /* -------------------------------- Resume Start ----------------------------------------- */
 
-.gist .gist-file article .blob-code-inner {
-    white-space: pre-wrap;
-    padding: 2%;
+.gist .gist-file article {
+    padding: 4% !important;
 }
 
 /* -------------------------------- Resume End ------------------------------------------- */
@@ -189,7 +196,6 @@ button:focus {
 
 #sig {
     font-family: 'Signature', monospace;
-    font-size: 4.3vw;
 }
 
 .contactHeaders {
@@ -391,7 +397,7 @@ a.popover-dismiss:focus {
 .makeItStick {
     position: fixed;
     left: 0;
-    top: 25vh;
+    top: 23vh;
 }
 
 .nameHeader {
@@ -548,9 +554,6 @@ a.popover-dismiss:focus {
     .rileyCat {
         width: 45vw;
     }
-    #sig {
-        font-size: 7vw;
-    }
     .contactHeaders {
         font-size: 7vw;
     }
@@ -693,11 +696,6 @@ a.popover-dismiss:focus {
         scroll-behavior: unset;
         -webkit-overflow-scrolling: unset;
         
-    }
-
-    ul {
-        margin-left: 5%;
-        margin-right: 5%;
     }
 
     .standardBG.nav {
