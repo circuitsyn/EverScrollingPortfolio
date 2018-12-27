@@ -1,20 +1,6 @@
 @font-face {
-    font-family: 'FromtheWoods';
-    src: url('../fonts/FromtheWoods-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: '8bit';
     src: url('../fonts/ProggyClean.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'WhitePine';
-    src: url('../fonts/WhitePine-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -132,6 +118,27 @@ button:focus {
 
 /* ------------------------------ Nav Bar Styling End ------------------------------------ */
 /* --------------------------------  Robot Start ----------------------------------------- */
+.roboText {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin-bottom: 0;
+    
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.robotStyleL {
+    height: 150px;
+    padding-right: 2%;
+}
+
+.robotStyleR {
+    height: 150px;
+    padding-left: 2%;
+}
+
 .dismissIcon {
     height: 30px;
     width: auto;
@@ -146,8 +153,8 @@ button:focus {
 }
 
 .robotCont {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .popUpRobot {
@@ -636,9 +643,6 @@ a.popover-dismiss:focus {
 
   /* Media queries */
   @media all and (max-width: 575px) {
-    /* .robotStyle {
-        height: 150px;
-    } */
 
     .robotCont {
         border-radius: 10px;

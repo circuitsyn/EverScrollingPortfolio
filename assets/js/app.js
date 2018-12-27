@@ -45,8 +45,6 @@ $(document).ready(function() {
     //robot dismiss listener
     $(".dismissIcon").click(function(){
        $(".popUpRobot").addClass("d-none");
-      //  $(".roboDiv").addClass("d-none");
-      //  $(".dismissIcon").addClass("d-none");
     })
 
   //end of document on ready section
