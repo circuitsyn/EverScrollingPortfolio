@@ -60,6 +60,9 @@ body {
 
 #collapsibleNavbar {
     margin-top: 4px;
+    border: 1px rgba(91, 163, 0, 1) solid;
+    border-radius: 10px;
+
 }
 
 .navbar {
@@ -74,25 +77,18 @@ body {
 
 .nav-linkStart {
     color: rgba(91, 163, 0, 1) !important;
-    opacity: 0.9;
+    /* opacity: 1; */
     padding: 0px 8px 0px 8px;
     font-family: 'WhitePine', monospace;
     font-size: 20px;
     text-decoration: none !important;
 }
 
-.navHighlight {
-    background-color: white;
-    border-radius: 10px;
-    border-color: #5BA300 !important;
-    border: solid 2px;   
-}
-
 li.nav-item:hover {
     background-color: white;
     border-radius: 10px;
     border-color: #5BA300 !important;
-    border: solid 2px;
+    border: solid 1px;
     
 }
 
@@ -103,7 +99,7 @@ li.nav-item {
 
 .navbar-nav {
     border-radius:10px;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,1);
     vertical-align: top-block
 }
 
@@ -134,7 +130,8 @@ button:focus {
 /*  --------------------------------  Robot End ------------------------------------------ */
 /* -------------------------------- Resume Start ----------------------------------------- */
 
-.gist .gist-file article {
+.gist .gist-file article .blob-code-inner {
+    white-space: pre-wrap;
     padding: 2%;
 }
 
