@@ -70,8 +70,6 @@ body {
 
 .nav-linkStart {
     color: rgba(91, 163, 0, 1) !important;
-    /* opacity: 1; */
-    /* padding: 0px 8px 0px 8px; */
     font-family: 'WhitePine', monospace;
     font-size: 20px;
    
@@ -188,7 +186,6 @@ button:focus {
 
 /* robot chat bubble styling */
 .section_8bit{ 
-    /* width: 25%;  */
     float: left; 
     border-left: 5px solid black;
     border-right: 5px solid black;
@@ -817,10 +814,6 @@ a.popover-dismiss:focus {
 }
 
   @media all and (max-width: 960px) and (min-width: 767px){
-    /* .roboDiv.col-lg-2 {
-        max-width: 12.666667 !important;
-    } */
-
     .rileyCat {
         width: 45vw;
     }
