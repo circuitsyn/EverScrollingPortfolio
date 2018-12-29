@@ -582,9 +582,10 @@ a.popover-dismiss:focus {
     }
 
 .two {
-    
-    background-size: cover;
     min-height: 100%;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -597,8 +598,10 @@ a.popover-dismiss:focus {
     }
 
 .three {
-    align-items: center;
     min-height: 100%;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -612,6 +615,8 @@ a.popover-dismiss:focus {
 .four {
     align-items: center;
     min-height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -625,6 +630,8 @@ a.popover-dismiss:focus {
 .five {
     align-items: center;
     min-height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -794,11 +801,7 @@ a.popover-dismiss:focus {
     .standardBG.nav {
         margin: 0 !important;
     }
-
-    /* .thumbnail {
-        margin-left: 1em;
-    } */
-
+    
     .scrollPos {
         left: 42%;
     }

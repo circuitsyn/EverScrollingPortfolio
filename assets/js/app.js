@@ -11,6 +11,11 @@ $(document).ready(function() {
     //   snowStorm.toggleSnow();
     // });
 
+    //Navbar collapse listener
+    $(document).click(function(){
+      $('#collapsibleNavbar').collapse('hide')
+    })
+
     // Message Submission Thank you Modal Trigger
     if(window.location.href.indexOf('#thankYou') != -1) {
       $('#thankYou').modal('show');
