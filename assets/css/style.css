@@ -430,7 +430,7 @@ button:focus {
 
 .img-thumbnailMe {
     flex-shrink: 0;
-    min-width: 100%;
+    /* min-width: 100%; */
     min-height: 100%;
     border-radius: 10px;
     
