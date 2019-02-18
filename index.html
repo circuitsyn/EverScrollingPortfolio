@@ -15,7 +15,7 @@
     <!-- Homemade CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Favicon -->
-    <link rel="icon" href="./assets/images/treeBracket64rnd.png" type="image/png" sizes="64x64">
+    <link rel="icon" href="./assets/images/logoWhiteFillsm.png" type="image/png" sizes="64x64">
     <!-- Snow JS -->
     <!-- <script src="/assets/js/snowstorm.js"></script> -->
 
@@ -28,19 +28,21 @@
     <meta property="og:type" content="website">
 
     <!-- Twitter Meta Data -->
-    <meta name="twitter:title" content="Jarred Sutton Full Stack Portfolio">
+    <meta name="twitter:title" content="Jarred Sutton's Full Stack Portfolio">
     <meta name="twitter:description" content="An ever-scrolling web page filled with projects as well as fun easter eggs on my skills and career. I also built this website to demonstrate the breath of technical knowledge I have as well as what my ambitions and values are.">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/circuitsyn/Portfolio/master/assets/images/landingPage.PNG">
     <meta name="twitter:card" content="summary_large_image">
 
   </head>
   <body>
-    
+    <!-- load screen area -->
+    <div id="loader-wrapper">
+
     <!-- NavBar -->
     <nav id="#home" class="navbar navbar-collapse fixed-top navbar-dark">      
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <img id="navIcon" class="navbar-toggler-icon" src="../Portfolio/assets/images/treeBracket64.png" alt="navigation tree icon">
+        <img id="navIcon" class="navbar-toggler-icon" src="../Portfolio/assets/images/logoWhiteFillsm.png" alt="navigation tree icon">
         </button>
 
         <!-- Navbar links -->
@@ -484,6 +486,8 @@
                     <a tabindex="0" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="Node.JS" data-content="Javascript run on the backend."><img class="hardSoftIcons m-2 mx-auto" src="assets/images/software/node.png" alt="node"></a>
                     <!-- Javascript Popover -->
                     <a tabindex="0" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="Javascript" data-content="An object-oriented computer programming language commonly used to create interactive effects within web browsers."><img class="hardSoftIcons m-2 mx-auto" src="assets/images/software/javascript.png" alt="javascript"></a>
+                    <!-- React Popover -->
+                    <a tabindex="0" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="React" data-content="React is a component-based library which is used to develop interactive UI's ( User Interfaces ). It is currently one of the most popular JavaScript front-end libraries which has a strong foundation and a large community supporting it."><img class="hardSoftIcons m-2 mx-auto" src="assets/images/software/react.png" alt="react"></a>
                     <!-- CSS Popover -->
                     <a tabindex="0" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="Cascade Styling Sheets - CSS3" data-content="CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once."><img class="hardSoftIcons m-2 mx-auto" src="assets/images/software/css3.png" alt="css"></a>
                     <!-- HTML Popover -->
@@ -562,6 +566,34 @@
                 </div>
                     
                 <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-10 projectScroll" data-spy="scroll" data-target=".navbarProj" data-offset="0">
+
+                    <!--Accessibility Lending Library-->                                
+                    <div id="ALL" class="col-12 row mt-4 mb-4">    
+                        <div class="col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                            <a href="https://accessibility-lending-library.herokuapp.com/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/All.png" alt="Accessibility Lending Library"> </a>
+                        </div>
+                        <div class="col-sm-7 col-md-6 col-lg-6 col-xl-6">
+                            <h4 class="projectTitle">Accessibility Lending Library</h4>
+                            <p class="projectDesc">The Accessibility Lending Library is a community based website that houses products that have been reviewed from university sources and occupational therapists that are accessible friendly. Not only is it a database of information, it allows users to add reviews and learn how to modify products of their own, learn where to purchase them, or rent one from a local Accessiblity Lending Library.
+                            </p>
+                            <span class="badge badge-warning">React</span>
+                            <span class="badge badge-warning">Javascript</span>
+                            <span class="badge badge-warning">Node.JS</span>
+                            <span class="badge badge-warning">Bootstrap</span>
+                            <span class="badge badge-warning">MongoDB</span>
+                            <span class="badge badge-warning">Handlebars</span>
+                            <span class="badge badge-warning">Mongoose</span>
+                            <span class="badge badge-warning">Char.JS React</span>
+                            <span class="badge badge-warning">Passport</span>
+                            <span class="badge badge-warning">Express</span>
+                            <span class="badge badge-warning">NPM</span>
+                            <span class="badge badge-warning">BCrypt</span>
+                            <span class="badge badge-warning">Heroku</span>
+                            <span class="badge badge-warning">Axios</span>
+                            <span class="badge badge-warning">Accessibility</span>
+                        </div>
+                    </div>
+                    <hr>
 
                     <!--MedSight-->                                
                     <div id="medSight" class="col-12 row mt-4 mb-4">    
@@ -889,6 +921,15 @@
         </div>
     </footer>
 
+
+        <div class="loader-section section-left">
+                <!-- left side curtain on load -->
+        </div>
+        <div class="loader-section section-right">
+                <!-- right side curtain on load -->
+        </div>
+    </div>
+    
     <!-- Optional JavaScript -->
     <!-- Animate on Scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

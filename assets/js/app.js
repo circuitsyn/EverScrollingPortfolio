@@ -1,15 +1,7 @@
 // Check if html document is ready and loaded
 $(document).ready(function() {
-
-    //Snow Section
-    // snowStorm.snowColor = '#99ccff';   // blue-ish snow!?
-    // snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
-    // snowStorm.useTwinkleEffect = true; 
-    // snowStorm.autoStart = true;
-
-    // $('#snowBtn').cllck()(function(){
-    //   snowStorm.toggleSnow();
-    // });
+  var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
+  console.log(loadTime);
 
     //Navbar collapse listener
     $(document).click(function(){
