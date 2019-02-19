@@ -15,7 +15,7 @@
     <!-- Homemade CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Favicon -->
-    <link rel="icon" href="./assets/images/treeBracket64rnd.png" type="image/png" sizes="64x64">
+    <link rel="icon" href="./assets/images/logoWhiteFillsm.png" type="image/png" sizes="64x64">
     <!-- Snow JS -->
     <!-- <script src="/assets/js/snowstorm.js"></script> -->
 
@@ -28,19 +28,36 @@
     <meta property="og:type" content="website">
 
     <!-- Twitter Meta Data -->
-    <meta name="twitter:title" content="Jarred Sutton Full Stack Portfolio">
+    <meta name="twitter:title" content="Jarred Sutton's Full Stack Portfolio">
     <meta name="twitter:description" content="An ever-scrolling web page filled with projects as well as fun easter eggs on my skills and career. I also built this website to demonstrate the breath of technical knowledge I have as well as what my ambitions and values are.">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/circuitsyn/Portfolio/master/assets/images/landingPage.PNG">
     <meta name="twitter:card" content="summary_large_image">
 
+    <!-- Preload Fonts -->
+    <link rel="preload" as="font" href="./assets/fonts/ProggyClean.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./assets/fonts/SonderSans-BlackRough.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./assets/fonts/SonderSans-Black.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./assets/fonts/ArtySignature.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./assets/fonts/noway-regular-webfont.woff2" type="font/woff2" crossorigin="anonymous">
+
+
   </head>
   <body>
-    
+    <!-- load screen area -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+            <div class="loader-section section-left">
+                    <!-- left side curtain on load -->
+            </div>
+            <div class="loader-section section-right">
+                    <!-- right side curtain on load -->
+            </div>
+        </div>
     <!-- NavBar -->
     <nav id="#home" class="navbar navbar-collapse fixed-top navbar-dark">      
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <img id="navIcon" class="navbar-toggler-icon" src="../Portfolio/assets/images/treeBracket64.png" alt="navigation tree icon">
+        <img id="navIcon" class="navbar-toggler-icon" src="../Portfolio/assets/images/logoWhiteFillsm.png" alt="navigation tree icon">
         </button>
 
         <!-- Navbar links -->
@@ -81,7 +98,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header text-center">
-                    <h4 class="modal-title contactHeaders mx-auto pl-4">Contact Me</h4>
+                    <h1 class="modal-title contactHeaders mx-auto pl-4">Contact Me</h1>
                     <button type="button" class="mx-0 close" data-dismiss="modal">×</button>
                 </div>
 
@@ -89,7 +106,7 @@
                 
                     <form action="https://formspree.io/jarredmsutton@gmail.com" role="form" id="contact-form" method="POST">
                         <div>
-                            <h4 id="contactTxt">
+                            <h4 id="contactTxt mb-2">
                                 Send me notes, feedback, or interest. I'm looking forward to hearing from you! 
                             </h4>
                             <h1 id="sig" class="offset-md-7 col-md-4 mb-0"> 
@@ -97,23 +114,23 @@
                             </h1>
                         </div>
                     
-                        <div class="form-group">
+                        <div class="form-group mt-3">
                             <label for="name">
-                                <h1>Name:</h1></label>
+                                <h4>Name:</h4></label>
                             <input type="text" class="form-control"
                             id="name" name="name"   required maxlength="50">
                         </div>
 
                         <div class="form-group">
                             <label for="email">
-                                <h1>Email:</h1></label>
+                                <h4>Email:</h4></label>
                             <input type="email" class="form-control"
                             id="email" name="email" required maxlength="50">
                         </div>
 
                         <div class="form-group">
                             <label for="name">
-                                <h1>Message:</h1></label> 
+                                <h4>Message:</h4></label> 
                             <textarea class="form-control" type="textarea" name="message"
                             id="message" placeholder="Your Message Here"
                             maxlength="6000" rows="7"></textarea>
@@ -162,7 +179,7 @@
     </div>
     
     <!-- Toy Hack Modal -->
-      <div class="modal fade" id="toyHackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="toyHackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -213,7 +230,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
 
     <!-- Tweeting Trashcan Modal -->
         <div class="modal fade" id="tweetModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -301,44 +318,46 @@
 
     <!-- Left Profile --> 
     
-        <div class="col-md-2 mr-4 sideProfBG makeItStick" data-aos="fade-right" data-aos-anchor=".sideCardTrigger">
+        <div class="col-md-2 mr-4 sideProfBG boxShadow makeItStick" data-aos="fade-right" data-aos-anchor=".sideCardTrigger">
             <div class="row">
                 <img src="assets/images/JarredSutton.png" alt="Picture of Jarred" class="img-thumbnailMeProf mx-auto d-block">
             </div>
             <div class="row">
-                <h5 class="nameHeader mb-0">Jarred Sutton</h4>
+                <h4 class="nameHeader mb-0 txtShadow">Jarred Sutton</h4>
             </div>
             
-                <hr class="mt-1 mb-1">
+                <hr class="mt-1 mb-2">
            
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center mb-2">
                 <a href="https://github.com/circuitsyn" target="_blank" class="btn btn-success btn-sm m-1" role="button" aria-pressed="true">Github</a>
                 <a href="#" data-toggle="modal" data-target="#contactModal" class="btn btn-success btn-sm m-1" role="button" aria-pressed="true">Contact Me</a>
                 <a href="https://www.linkedin.com/in/suttonjarred/" target="_blank" class="btn btn-success btn-sm m-1" role="button" aria-pressed="true">LinkedIn</a>
             </div>
             <div class="row">
-                <h4 class="sideProText">Purpose driven development with a focus on design and responsive efficiency at its core. That is how I build.</h4>
+                <h5 class="sideProText p-1">Purpose driven development with a focus on design and responsive efficiency at its core. That is how I build.</h5>
             </div>    
         </div>
     
 
     <!-- Welcome -->
     <section id="home" class="one">
-        <div class="container">
-            <div class="row greetingBG col-12 offset-sm-1 col-sm-9 offset-md-1 col-md-9 offset-lg-1 col-lg-9 offset-xl-2 col-xl-8 mx-auto" data-aos="fade-up">
-                <div class="divMe col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <img src="assets/images/JarredSutton.png" alt="Picture of Jarred" class="img-thumbnailMe rounded mx-auto d-block">
+        <div class="container mx-auto mt-auto">
+            <div class="row boxShadow greetingBG col-12 col-sm-9 col-md-9 col-lg-9 col-xl-8 mx-auto" data-aos="fade-up">
+                <div class="p-0 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                    <img src="assets/images/JarredSutton.png" alt="Picture of Jarred" class="img-thumbnailMe">
                 </div>
-                <div class=" col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 greetingTextCell">
-                    <h1 class="startHeader">Welcome</h1>
-                    <h4><strong>Purpose driven development with a focus on design and responsive efficiency at its core. That&nbsp;is&nbsp;how&nbsp;I&nbsp;build.</strong></h4>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 greetingTextCell">
+                    <h1 class="startHeader txtShadow text-center text-sm-center text-md-center text-lg-left text-xl-left">Welcome</h1>
+                    <h4 class="text-center text-sm-center text-md-center text-lg-left text-xl-left"><strong>Purpose driven development with a focus on design and responsive efficiency at its core.</strong></h4>
+                    <h4 class="text-center text-sm-center text-md-center text-lg-left text-xl-left"><strong> That&nbsp;is&nbsp;how&nbsp;I&nbsp;build.</strong></h4>
                 </div>
             </div>
         
-    
-            <div class="container scrollPos animated pulse infinite text-center">
-                <p class="scrollText">Scroll</p>
-                <img id="treeScrollIcon" class="m-4" src="assets/images/scrollTree.png" alt="tree scroll icon">
+            <div class="row scrollPos"> 
+                <div class="text-center col-12">
+                    <h4 class="scrollText txtShadow mb-2 animated pulse infinite">Scroll</h4>
+                    <img class="treeScrollIcon imgShadow animated pulse infinite mb-3" src="assets/images/scrollTree.png" alt="tree scroll icon">
+                </div>
             </div>
         </div>
     </section>
@@ -347,7 +366,7 @@
     <div class="break">
         <div class="container">
             <div class="row robotCont">
-                <div class="col-12 offset-sm-2 col-sm-10 offset-md-2 col-md-10 offset-lg-2 col-lg-10 offset-xl-2 col-xl-10">
+                <div class="col-12 col-sm-12 offset-md-2 col-md-10 offset-lg-2 col-lg-10 offset-xl-2 col-xl-10">
                     <img class="robotStyleL float-left" src="assets/images/johnny5Sm.png" alt="robot image" data-aos="fade-right">
                     <h4 class="roboText" data-aos="fade-left"><span class="bolder">Fun Fact #1:</span> Did you know that all these background images were shot by Jarred himself? Yep! He also happens to be a published, award and grant winning professional photographer!
                     </h4>
@@ -359,14 +378,14 @@
     <section id="values" class="two">
 
         <!-- Value Section -->
-        <div class="standardBG ml-5 ml-auto col-12  col-sm-12 offset-md-3 col-md-9 offset-lg-3 col-lg-9 offset-xl-3 col-xl-9  mr-4" data-aos="fade-up">
+        <div class="standardBG boxShadow ml-5 mr-4 pt-3 pb-4 ml-auto col-12 col-sm-12 offset-md-3 col-md-9 offset-lg-3 col-lg-9 offset-xl-3 col-xl-9" data-aos="fade-up">
             <div class="row">
-                <h1 class="headers rounded mx-auto">Values</h1>
+                <h1 class="headers txtShadow rounded mx-auto">Values</h1>
             </div>
             <div class="row greetingText sideCardTrigger">
 
                 <!-- Impact Value Section -->
-                <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     <img class="valueIcons rounded mx-auto d-block" src="assets/images/values/impactIcon.png" alt="impact icon">
                     <h3 class="headersMinor">Impact</h3>
                     <hr>
@@ -379,7 +398,7 @@
                 </div>
 
                 <!-- Curiosity Value Section -->
-                <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     <img class="valueIcons rounded mx-auto d-block" src="assets/images/values/Brainfull.png" alt="curiosity icon">
                     <h3 class="headersMinor">Curiosity</h3>
                     <hr>
@@ -392,7 +411,7 @@
                 </div>
 
                 <!-- Community Value Section -->
-                <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     <img class="valueIcons rounded mx-auto d-block" src="assets/images/values/communityIconBlack.png" alt="community icon">
                     <h3 class="headersMinor">Community</h3>
                     <hr>
@@ -405,7 +424,7 @@
                 </div>
 
                 <!-- Leadership Value Section -->
-                <div class="col-md-3">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     <img class="valueIcons rounded mx-auto d-block" src="assets/images/values/leadershipIconBlack.png" alt="leadership icon">
                     <h3 class="headersMinor">Leadership</h3>
                     <hr>
@@ -424,7 +443,7 @@
     <div class="break">
         <div class="container">
             <div class="row robotCont">
-                <div class="col-12 offset-sm-2 col-sm-10 offset-md-2 col-md-10 offset-lg-2 col-lg-10 offset-xl-2 col-xl-10">
+                <div class="col-12 col-sm-12 offset-md-2 col-md-10 offset-lg-2 col-lg-10 offset-xl-2 col-xl-10">
                     <img class="robotStyleR float-right" src="assets/images/johnny5FlippedSm.png" alt="robot image" data-aos="fade-left">
                     <h4 class="roboText" data-aos="fade-right">
                         <span class="bolder">Fun Fact #2:</span> Want to know a hidden feature of the site? Not sure about every one of the technologies hidden below? Then you are in luck! Click on any of the technologies and a pop over will come out to learn more. Just click away from it to dismiss. Input... I mean, knowledge is power, enjoy!
@@ -436,10 +455,10 @@
 
     <!-- Technologies Section -->
     <section id="technologies" class="three">
-        <div class="standardBG ml-5 ml-auto col-md-9 offset-md-3 mr-4 col-12" data-aos="fade-up">
+        <div class="standardBG pb-2 mt-2 boxShadow ml-5 ml-auto col-md-9 offset-md-3 mr-4 col-12" data-aos="fade-up">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="headers">Technologies</h1>
+                    <h1 class="headers txtShadow">Technologies</h1>
                 </div>
             </div>
 
@@ -447,7 +466,7 @@
             <div class="row">
                     
                 <div class="col-md-6 text-center">
-                    <h4 class="headersMinor">Hardware</h4>
+                    <h4 class="headersMinor txtShadow">Hardware</h4>
                     <hr>
                     <!-- Arduino Popover -->
                     <a tabindex="0" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="Arduino" data-content="A powerful open source hardware platform. It is a microcontroller often used for robotics and automation."><img class="hardSoftIcons m-2 mx-auto" src="assets/images/hardware/arduino.png" alt="arduino"></a>
@@ -477,13 +496,15 @@
 
                 <!-- software section  -->
                 <div class="col-md-6 text-center">       
-                    <h4 class="headersMinor">Software</h4>
+                    <h4 class="headersMinor txtShadow">Software</h4>
                     <hr>
 
                     <!-- Node Popover -->
                     <a tabindex="0" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="Node.JS" data-content="Javascript run on the backend."><img class="hardSoftIcons m-2 mx-auto" src="assets/images/software/node.png" alt="node"></a>
                     <!-- Javascript Popover -->
                     <a tabindex="0" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="Javascript" data-content="An object-oriented computer programming language commonly used to create interactive effects within web browsers."><img class="hardSoftIcons m-2 mx-auto" src="assets/images/software/javascript.png" alt="javascript"></a>
+                    <!-- React Popover -->
+                    <a tabindex="0" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="React" data-content="React is a component-based library which is used to develop interactive UI's ( User Interfaces ). It is currently one of the most popular JavaScript front-end libraries which has a strong foundation and a large community supporting it."><img class="hardSoftIcons m-2 mx-auto" src="assets/images/software/react.png" alt="react"></a>
                     <!-- CSS Popover -->
                     <a tabindex="0" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="Cascade Styling Sheets - CSS3" data-content="CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once."><img class="hardSoftIcons m-2 mx-auto" src="assets/images/software/css3.png" alt="css"></a>
                     <!-- HTML Popover -->
@@ -529,7 +550,7 @@
     <div class="break">
         <div class="container">
             <div class="row robotCont">
-                <div class="col-12 offset-sm-2 col-sm-10 offset-md-2 col-md-10 offset-lg-2 col-lg-10 offset-xl-2 col-xl-10">
+                <div class="col-12 col-sm-12 offset-md-2 col-md-10 offset-lg-2 col-lg-10 offset-xl-2 col-xl-10">
                     <img class="robotStyleL float-left" src="assets/images/johnny5Sm.png" alt="robot image" data-aos="fade-right">
                     <h4 class="roboText" data-aos="fade-left"><span class="bolder">Fun Fact #3:</span> Jarred has always wanted to build his own working robot. He has been a tinkerer and maker for quite some time. He recently picked up his new pal and programmable robot Vector by Anki to learn Python. Who knows he may be as cool as me one day!
                     </h4>
@@ -540,36 +561,66 @@
 
     <!-- Projects Section -->
     <section id="projects" class="four">
-        <div class="projectBG ml-5 ml-auto col-12 col-sm-12 col-md-9 offset-md-3 offset-lg-3 col-lg-9 offset-xl-3 col-xl-9 mr-4" data-aos="fade-up">
-            <h1 class="headers mb-2">Projects</h1>
+    <div class="container-fluid">
+    <div class="row-fluid">
+        <div class="projectBG boxShadow ml-md-auto ml-lg-auto ml-xl-auto pt-3 pb-4 col-12 col-sm-12 col-md-9 offset-md-3 offset-lg-3 col-lg-9 offset-xl-3 col-xl-9 mr-4" data-aos="fade-up">
+            <h1 class="headers txtShadow mb-2">Projects</h1>
             <hr>
             <div class="row projectScrollCont">
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2 p-0 btn-group-vertical navbarProj">
-                    <nav id="innerNav" class="nav ml-2">
-                        <a href="#medSight" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">MedSight</a>
-                        <a href="#theWeekender" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">The Weekender</a>
-                        <a href="#holidayScraper" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">Holiday Decor Scraper</a>
-                        <a href="#dreamSake" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">Dream Shake</a>
-                        <a href="#arduinoGarden" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">Arduino Garden</a>
-                        <a href="#trainSched" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">Train Scheduler</a>
-                        <a href="#cascade" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">Cascade Store</a>
-                        <a href="#rickMorty" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">Rick & Morty RPG</a>
-                        <a href="#liri" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">LIRI Bot</a>
-                        <a href="#egg" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">Edu. Gravity Garden</a>
-                        <a href="#giftastic" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">Giftastic</a>
-                        <!-- <a href="#trivia" class="btn btn-outline-success btn-sm m-1 p-1 projNavBtn nav-link">Video Game Trivia</a> -->
+                    <nav id="innerNav" class="nav justify-content-center">
+                        <a href="#ALL" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Accessibility Lending Library</a>
+                        <a href="#medSight" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">MedSight</a>
+                        <a href="#theWeekender" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">The Weekender</a>
+                        <a href="#holidayScraper" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Holiday Decor Scraper</a>
+                        <a href="#dreamSake" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Dream Shake</a>
+                        <a href="#arduinoGarden" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Arduino Garden</a>
+                        <a href="#trainSched" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Train Scheduler</a>
+                        <a href="#cascade" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Cascade Store</a>
+                        <a href="#rickMorty" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Rick & Morty RPG</a>
+                        <a href="#liri" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">LIRI Bot</a>
+                        <a href="#egg" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Edu. Gravity Garden</a>
+                        <a href="#giftastic" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Giftastic</a>
+                        <!-- <a href="#trivia" class="btn btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Video Game Trivia</a> -->
                     </nav>
                 </div>
                     
                 <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-10 projectScroll" data-spy="scroll" data-target=".navbarProj" data-offset="0">
+                    <!--Accessibility Lending Library-->                                
+                    <div id="ALL" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
+                            <a href="https://accessibility-lending-library.herokuapp.com/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/All.png" alt="Accessibility Lending Library"> </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Accessibility Lending Library</h4>
+                            <p class="projectDesc">The Accessibility Lending Library is a community based website that houses products that have been reviewed from university sources and occupational therapists that are accessible friendly. Not only is it a database of information, it allows users to add reviews and learn how to modify products of their own, learn where to purchase them, or rent one from a local Accessiblity Lending Library.
+                            </p>
+                            <span class="badge badge-warning">React</span>
+                            <span class="badge badge-warning">Javascript</span>
+                            <span class="badge badge-warning">Node.JS</span>
+                            <span class="badge badge-warning">Bootstrap</span>
+                            <span class="badge badge-warning">MongoDB</span>
+                            <span class="badge badge-warning">Handlebars</span>
+                            <span class="badge badge-warning">Mongoose</span>
+                            <span class="badge badge-warning">Char.JS React</span>
+                            <span class="badge badge-warning">Passport</span>
+                            <span class="badge badge-warning">Express</span>
+                            <span class="badge badge-warning">NPM</span>
+                            <span class="badge badge-warning">BCrypt</span>
+                            <span class="badge badge-warning">Heroku</span>
+                            <span class="badge badge-warning">Axios</span>
+                            <span class="badge badge-warning">Accessibility</span>
+                        </div>
+                    </div>
+                    <hr>
 
                     <!--MedSight-->                                
-                    <div id="medSight" class="col-12 row mt-4 mb-4">    
-                        <div class="col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                    <div id="medSight" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
                             <a href="https://salty-basin-99417.herokuapp.com/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/medSight.png" alt="MedSight"> </a>
                         </div>
-                        <div class="col-sm-7 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">MedSight</h4>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">MedSight</h4>
                             <p class="projectDesc">One of the biggest problems in managing personal health is rooted in how difficult it is to track and correlate what is really going on. We can’t understand what is really happening in the 4th dimension, meaning time. When a symptom or health issue occurs, we cannot recall what was eaten, where we were, etc., let alone some of the more nuanced influences, such as weather conditions, pollen count or a myriad of other factors going on at the time. Welcome to MedSight!
                             </p>
                             <span class="badge badge-warning">Javascript</span>
@@ -589,12 +640,12 @@
                     <hr>
 
                     <!--The Weekender Image Link-->
-                    <div id="theWeekender" class="col-12 row mt-4 mb-4">    
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                    <div id="theWeekender" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
                             <a href="https://github.com/circuitsyn/daWeekender" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/theweekender_results.png" alt="The Weekender"> </a>
                         </div>
-                        <div class="col-12 col-sm-7 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">The Weekender</h4>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">The Weekender</h4>
                             <p class="projectDesc"> Planning a weekend getaway? The Weekender allows users to pull all the information needed for a weekend trip with one simple location-based submission in this web application.</p>
                             <span class="badge badge-warning">Javascript</span>
                             <span class="badge badge-warning">Bootstrap</span>
@@ -613,12 +664,12 @@
                     <hr>
 
                     <!--Holiday Scraper-->       
-                    <div id="holidayScraper" class="col-12 row mt-4 mb-4">    
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                    <div id="holidayScraper" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
                             <a href="https://frozen-chamber-74604.herokuapp.com/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/mongoScraper.PNG" alt="Holiday Decor Scraper"> </a>
                         </div>
-                        <div class="col-12 col-sm-7 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">Holiday Decor Scraper</h4>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Holiday Decor Scraper</h4>
                             <p class="projectDesc">A MongoDB backed Cheerio web scrapper sample application designed to help a community keep track of holiday decor articles as well as leave and manage notes. The app is hosted on heroku and helps encourage the collabrative holiday decorating cheer!</p>
                             <span class="badge badge-warning">Javascript</span>
                             <span class="badge badge-warning">Node.JS</span>
@@ -638,12 +689,12 @@
                     <hr>
 
                     <!--Dream Shake-->       
-                    <div id="dreamSake" class="col-12 row mt-4 mb-4">    
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                    <div id="dreamSake" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
                             <a href="https://warm-falls-68532.herokuapp.com/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/dreamShake.PNG" alt="Dream Shake"> </a>
                         </div>
-                        <div class="col-12 col-sm-7 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">Dream Shake</h4>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Dream Shake</h4>
                             <p class="projectDesc">A sample Heroku app using MySQL, Handlebars and Node.JS. In this application, users can submit your favorite ideas for a milkshake and devour it when ready! The MySQL database keeps track of all submissions. Give it a go!</p>
                             <span class="badge badge-warning">Javascript</span>
                             <span class="badge badge-warning">Node.JS</span>
@@ -658,12 +709,12 @@
                     <hr>
         
                     <!--Auto Watering Garden Image Link-->
-                    <div id="arduinoGarden" class="col-12 row mt-4 mb-4">    
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                    <div id="arduinoGarden" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
                             <a href="https://circuitsyn.github.io/daWeekender/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/AutoWateringGarden.jpg" alt="Dream Shake"> </a>
                         </div>
-                        <div class="col-12 col-sm-7 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">Auto Watering Garden</h4>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Auto Watering Garden</h4>
                             <p class="projectDesc"></p>An Arduino based auto-watering garden. The system utilized a nested loop to check for humidity and sunlight when watering plants, identifying the ideal soil moisture level to prevent burning or over watering. If conditions are met, a solenoid is triggered for a period of time and voila! Your plants are watered!</p>
                             <span class="badge badge-warning">Arduino</span>
                             <span class="badge badge-warning">C/C++</span>
@@ -675,12 +726,12 @@
                     <hr>
         
                     <!--Firebase Train Schedule-->
-                    <div id="trainSched" class="col-12 row mt-4 mb-4">    
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                    <div id="trainSched" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
                             <a href="https://circuitsyn.github.io/Train-Schedule/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/train.PNG" alt="Train Scheduler"> </a>
                         </div>
-                        <div class="col-12 col-sm-7 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">Firebase Train Scheduler</h4>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Firebase Train Scheduler</h4>
                             <p class="projectDesc"></p>This is a sample application built to demo Firebase. The functionality provides a real-time display scheduling notepad tracker. Users can enter their train name, destination, the typical start time, alongside the train’s frequency; what users get back is all that data saved in addition to the next train’s arrival time, as well as the minutes remaining. This would be useful for those seeking to map their train schedule for the day and recall it automatically from the cloud without having to worry about storing the data.</p>
                             <span class="badge badge-warning">Javascript</span>
                             <span class="badge badge-warning">BootStrap</span>
@@ -693,12 +744,12 @@
                     <hr>
         
                     <!--Cascade Store App-->
-                    <div id="cascade" class="col-12 row mt-4 mb-4">    
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                    <div id="cascade" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
                             <a href="https://github.com/circuitsyn/Cascade-MYSQL_Store" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/cascade.PNG" alt="Cascade Shop"> </a>
                         </div>
-                        <div class="col-12 col-sm-7 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">Cascade Store App</h4>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Cascade Store App</h4>
                             <p class="projectDesc"></p>Cascade is a Node.JS-based shopping market that allows for customer, manager, and supervisor interactions via a MySQL database.</p>
                             <span class="badge badge-warning">Node.JS</span>
                             <span class="badge badge-warning">MySQL</span>
@@ -710,12 +761,12 @@
                     <hr>
         
                     <!--Rick and Morty RPG-->
-                    <div id="rickMorty" class="col-12 row mt-4 mb-4">    
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                    <div id="rickMorty" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
                             <a href="https://circuitsyn.github.io/unit-4-game/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/rick-and-morty.jpg" alt="Ricka nd Morty RPG"> </a>
                         </div>
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">Rick and Morty RPG</h4>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Rick and Morty RPG</h4>
                             <p class="projectDesc"></p>In this role-playing game, the user battles some of the many characters in the hit TV-series, Rick and Morty. Choose your character carefully; if you choose the wrong one you won’t be able to defeat them all! The now-ruined punchline and plot is: in order to win you must defeat them all!</p>
                             <span class="badge badge-warning">Javascript</span>
                             <span class="badge badge-warning">Bootstrap</span>
@@ -726,12 +777,12 @@
                     <hr>
         
                     <!--LIRI Bot-->
-                    <div id="liri" class="col-12 row mt-4 mb-4">    
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                    <div id="liri" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
                             <a href="https://github.com/circuitsyn/liri-node-app" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/liribot.PNG" alt="LIRI Bot"> </a>
                         </div>
-                        <div class="col-12 col-sm-7 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">LIRI Bot</h4>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">LIRI Bot</h4>
                             <p class="projectDesc"></p>LIRI Bot is a Node.JS Language Input Robot Interface (LIRI) that receives language commands and runs a function with an attached API call. This current robot can do a myriad of things, and has four commands to start: Spotify-this, movie-this, concert-this, and do-what-it-says. Please feel free to give it a try!</p>
                             <span class="badge badge-warning">Node.JS</span>
                             <span class="badge badge-warning">API (Spotify)</span>
@@ -743,12 +794,12 @@
                     <hr>
         
                     <!--EGG Image Link-->
-                    <div id="egg" class="col-12 row mt-4 mb-4">    
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                    <div id="egg" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
                             <a href="https://software.intel.com/en-us/videos/bringing-the-components-of-a-makerspace-together-to-create-educational-platforms" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/EGG.png" alt="Education Gravity Garden"> </a>
                         </div>
-                        <div class="col-12 col-sm-7 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">Educational Gravity Garden</h4>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Educational Gravity Garden</h4>
                             <p class="projectDesc"></p>The Educational Gravity Garden (EGG) is an overzealous way to water your plants. This video provides an overview of all the components one would find at a local makerspace that can then be used to create educational platforms. This demo utilizes 3D printed components designed in CAD, and multiple sensors that are connected to an Intel® Edison module.</p>
                             <span class="badge badge-warning">Arduino</span>
                             <span class="badge badge-warning">C/C++</span>
@@ -763,12 +814,12 @@
                     <hr>
                 
                     <!--Giftastic-->
-                    <div id="giftastic" class="col-12 row mt-4 mb-4">    
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
+                    <div id="giftastic" class="row mt-4 mb-4">    
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 animated flipInX"> 
                             <a href="https://circuitsyn.github.io/GifTastic/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/giftastic.png" alt="Giftastic"> </a>
                         </div>
-                        <div class="col-12 col-sm-7 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">Giftastic</h4>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                            <h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Giftastic</h4>
                             <p class="projectDesc"></p>In this API driven app, users can make their own custom gif board based on food! In order to utilize the app, users enter a quantity and food item type, and simply click submit! Once completed, buttons will add to the display; users only need to click them to generate the chosen number of gifs. Have fun with it!</p>
                             <span class="badge badge-warning">Javascript</span>
                             <span class="badge badge-warning">Bootstrap</span>
@@ -777,28 +828,18 @@
                             <span class="badge badge-warning">CSS</span>
                         </div>
                     </div>
-                    <hr> 
-                    
-                    <!--Video Game Trivia-->
-                    <!-- <div id="trivia" class="col-12 row mt-4 mb-4">    
-                        <div class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 thumbnail animated flipInX"> 
-                            <a href="https://circuitsyn.github.io/TriviaGame/" target="_blank"> <img class="img-thumbnailProj" src="assets/images/projectImgs/VGTrivia.png" alt="Video Game Trivia"> </a>
-                        </div>
-                        <div class="col-12 col-sm-7 col-md-6 col-lg-6 col-xl-6">
-                            <h4 class="projectTitle">Video Game Trivia</h4>
-                            <p class="projectDesc"></p>In this game you will be guessing the answers to questions about famous videogames of the millennial generation! Give it a go and don't take too long because it is timed!</p>
-                        </div>
-                    </div>  -->
                 </div>
             </div>   
         </div>
+    </div>
+    </div>
     </section>
     
     <!-- Robot Break 4 -->
     <div class="break">
         <div class="container">
             <div class="row robotCont">
-                <div class="col-12 offset-sm-2 col-sm-10 offset-md-2 col-md-10 offset-lg-2 col-lg-10 offset-xl-2 col-xl-10">
+                <div class="col-12 col-sm-12 offset-md-2 col-md-10 offset-lg-2 col-lg-10 offset-xl-2 col-xl-10">
                     <img class="robotStyleR float-right" src="assets/images/johnny5FlippedSm.png" alt="robot image" data-aos="fade-left">
                     <h4 class="roboText" data-aos="fade-right">
                         <span class="bolder">Fun Fact #4:</span> Jarred isn't just a fan of nature, he also happens to have just moved to the Pacific North West; Seattle. Technology, evergreens and mountain views abound!
@@ -810,10 +851,10 @@
 
     <!-- Blog Section -->
     <section id="blog" class="five">
-        <div id="blogSection" class="standardBG ml-5 ml-auto col-12 col-sm-12 col-md-9 offset-md-3 mr-4" data-aos="fade-up" data-aos-offset="100">
+        <div id="blogSection" class="standardBG boxShadow ml-5 ml-auto col-12 col-sm-12 col-md-9 offset-md-3 mr-4" data-aos="fade-up" data-aos-offset="100">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12">
-                    <h1 class="headers">Blog</h1>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h1 class="headers txtShadow">Blog</h1>
                 </div>
             </div>    
             
@@ -821,7 +862,7 @@
             
             <div class="row">
                 <!-- Toy Hack Blog Image Section -->
-                <div class="col-12 col-sm-4 col-md-4">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="row">
                         <img id="toyHackImg" src="assets/images/blog/toyHack.jpeg" alt="Toy Hack" class="blogIndexImages mx-auto">
                         <h4 class="headersMinorBlog mx-auto">Toy Hack Event</h4>
@@ -829,7 +870,7 @@
                 </div>
 
                 <!-- Next Top Makers - Tweeting Trash Can  -->
-                <div class="col-12 col-sm-4 col-md-4">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="row">
                         <img id="tweetImg" src="assets/images/blog/buildingcircuit-01.jpeg" alt="Tweeting Trash Can" class="blogIndexImages mx-auto">
                         <h4 class="headersMinorBlog mx-auto">Social Garbage for Change</h4>
@@ -837,7 +878,7 @@
                 </div>
                 
                 <!-- LittleBits Olympics -->
-                <div class="col-12 col-sm-4 col-md-4">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="row roboTrigger">
                         <img id="littlebitsImg" src="assets/images/blog/bitOlmpics2-01.jpeg" alt="Bit Olympics" class="blogIndexImages mx-auto">
                         <h4 class="headersMinorBlog mx-auto">LittleBits Olympics</h4>
@@ -852,8 +893,8 @@
     <div class="container-fluid fixed-bottom popUpRobot" data-aos="fade-up" data-aos-anchor=".roboTrigger" data-aos-delay="2000">
         <div class="row">
             <!-- 8bit text div -->
-            <div class="offset-1 col-7 offset-sm-3 col-sm-5 offset-md-5 col-md-4 offset-lg-5 col-lg-4 offset-xl-7 col-xl-3">
-            <div class="bubble">    
+            <div class="col-7 offset-sm-3 col-sm-5 offset-md-5 col-md-4 offset-lg-5 col-lg-4 offset-xl-7 col-xl-3">
+            <div class="bubble imgShadow">    
                 <div class="section_8bit fixed-bottom">
                         <div class="wrapper">
                             <p class="bitText">    
@@ -868,7 +909,7 @@
 
             <!-- robot div -->
             <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-1 roboDiv">
-                <img id="robotFooter" class="img-fluid float-right" src="assets/images/johnny5FlippedSm.png" alt="robot image">
+                <img id="robotFooter imgShadow" class="img-fluid float-right" src="assets/images/johnny5FlippedSm.png" alt="robot image">
             </div>
 
             <!-- close icon div -->
@@ -889,11 +930,13 @@
         </div>
     </footer>
 
+
+        
+    
     <!-- Optional JavaScript -->
     <!-- Animate on Scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script> AOS.init({duration: 1200}); </script>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
