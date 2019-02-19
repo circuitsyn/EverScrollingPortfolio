@@ -384,6 +384,14 @@ button:focus {
     border-radius: 5px;
 }
 
+a.projLink:link {
+    color: black;
+}
+
+a.projLink:hover {
+    color: black;
+}
+
 /*------------------------------------ Project Area End ----------------------------------------  */
 
 /* ----------------------------------- Welcome Start -------------------------------------------- */
