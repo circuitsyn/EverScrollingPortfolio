@@ -1,7 +1,8 @@
 // Check if html document is ready and loaded
 $(document).ready(function() {
-  var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
-  console.log(loadTime);
+    $(function() {
+      $('body').addClass('loaded');
+    });
 
     //Navbar collapse listener
     $(document).click(function(){

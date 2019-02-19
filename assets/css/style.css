@@ -32,9 +32,9 @@
 .headers {
     font-family: 'BlackRough', monospace;
     text-align: center;
-    font-size: 4vw;
-    margin-bottom: auto;
-    margin-top: auto;
+    /* font-size: 4vw; */
+    /* margin-bottom: auto;
+    margin-top: auto; */
 }
 html {
     height: 100%;
@@ -47,6 +47,19 @@ body {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+.boxShadow {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.txtShadow {
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+.imgShadow {
+    -webkit-filter: drop-shadow(0px 5px 5px #222);
+    filter: drop-shadow(0px 5px 5px #222);
 }
 
 /* ------------------------------- Nav Bar Styling Start ------------------------------------ */
@@ -64,7 +77,7 @@ body {
 
 .navbar {
     width: 242px;
-    z-index: 1000;
+    z-index: 2;
 }
 
 .navbar-toggler  {
@@ -76,7 +89,7 @@ body {
 .nav-linkStart {
     color: rgba(91, 163, 0, 1) !important;
     font-family: 'WhitePine', monospace;
-    font-size: 20px;
+    /* font-size: 20px; */
     
    
 }
@@ -113,6 +126,7 @@ li.nav-item {
     width:64px;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.2);
     border-radius: 50%;
+    background-color: #FDB814;
 }
 
 button:focus {
@@ -164,7 +178,7 @@ button:focus {
 }
 
 .popUpRobot {
-    height: 115px;
+    height: 135px;
 }
 
 .popUpChat {
@@ -177,7 +191,7 @@ button:focus {
 
 .bubble {
     position: absolute;
-    top: -5%;
+    top: -43%;
 }
 
 .roboDiv {
@@ -302,7 +316,7 @@ button:focus {
 .contactHeaders {
     font-family: 'BlackRough', monospace;
     text-align: center;
-    font-size: 3vw;
+    /* font-size: 3vw; */
 }
 
 .headersMinor {
@@ -319,7 +333,7 @@ button:focus {
 
 /* ------------------------------ Contact Me Styling End -------------------------------------- */
 
-/* ---------------------------------- Project Area  Start-------------------------------------- */
+/* ---------------------------------- Project Area Start-------------------------------------- */
 .projectBG {
     background-color:rgba(255,255,255,0.9);
     border-radius: 5px;
@@ -332,16 +346,17 @@ button:focus {
 }
 
 .projectScroll {
+    height: inherit;
+    /* box-sizing:border-box; */
+    /* max-height: 85%; */
     overflow-y: scroll;
+    -ms-overflow-style: auto !important;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: auto !important;
-    height: inherit;
-    box-sizing:border-box;
 }
 
 .projectScrollCont {
-    height: 40vw;
+    height: 50vh;
 }
 
 .navbarProj {
@@ -354,6 +369,10 @@ button:focus {
     -webkit-overflow-scrolling: touch;
 }
 
+.projNavBtn {
+    white-space: normal;
+}
+
 .projectTitle {
     font-family: 'BlackRough', monospace;
     /* vertical-align: middle !important; */
@@ -362,43 +381,40 @@ button:focus {
 .img-thumbnailProj {
     height: auto;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /*------------------------------------ Project Area End ----------------------------------------  */
 
 /* ----------------------------------- Welcome Start -------------------------------------------- */
 .scrollPos {
-    top: 83%;
-    left: 45%;
-    position: absolute;
-    width: auto;
+    margin-top: 25%;
+    /* left: 45%; */
+    /* position: absolute; */
+    /* width: auto; */
 }
 
 .scrollPos {
-    -webkit-animation: pulse 1s; /* Safari 4+ */
-    -moz-animation:    pulse 1s; /* Fx 5+ */
-    -o-animation:      pulse 1s; /* Opera 12+ */
-    animation:         pulse 1s; /* IE 10+, Fx 29+ */
+    -webkit-animation: pulse 2s; /* Safari 4+ */
+    -moz-animation:    pulse 2s; /* Fx 5+ */
+    -o-animation:      pulse 2s; /* Opera 12+ */
+    animation:         pulse 2s; /* IE 10+, Fx 29+ */
   }
 
 .scrollText {
     font-family: 'BlackSmooth', monospace;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 2px black;
     color: white;
-    margin-bottom: 2px;
-    font-size: 1.2vw;
 }
 
-#treeScrollIcon {
-    height: 4em;
-    width: auto;
-    margin: 0 !important;
+.treeScrollIcon {
+    height: 5rem !important;
+    width: auto !important;
+    /* margin: 0 !important; */
 }
 
 .greetingText {
     font-weight: bolder;
-    /* margin-left: 2%; */
     font-family: 'Main';
 }
 
@@ -416,23 +432,20 @@ button:focus {
 
 .startHeader {
     font-family: 'BlackRough', monospace;
-    font-size: 4vw;
-    margin-left: -3%;
-
 }
 
-.divMe {
-    display: flex;
+/* .divMe { */
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden
-}
+    /* overflow: hidden */ 
+/* } */
 
 .img-thumbnailMe {
-    flex-shrink: 0;
-    /* min-width: 100%; */
-    min-height: 100%;
-    border-radius: 10px;
+    /* flex-shrink: 0; */
+    width: auto;
+    height: 100%;
+    border-radius: 5px;
     
 }
 
@@ -451,7 +464,7 @@ button:focus {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 2vw;
+    /* font-size: 2vw; */
 }
 
 .blogBG {
@@ -505,7 +518,7 @@ a.popover-dismiss:focus {
     font-family: 'BlackRough', monospace;
     text-align: center;
     margin-top: 0.5em;
-    font-size: 1.7vw;
+    /* font-size: 1.7vw; */
     /* border-bottom: 1px solid lightgray; */
     display: flex;
     align-items: center;
@@ -530,12 +543,7 @@ a.popover-dismiss:focus {
 .sideProText {
     font-weight: bolder;
     text-align: center;
-    /* margin-left: 2%; */
     font-family: 'Main';
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-right: 0.7em;
-    margin-left: 0.7em;
 }
 
 /* remove scroll bars */
@@ -557,9 +565,9 @@ a.popover-dismiss:focus {
 .blogHeader {
     font-family: 'BlackRough', monospace;
     text-align: center;
-    font-size: 2vw;
-    margin-top: auto;
-    margin-bottom: auto;
+    /* font-size: 2vw; */
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
 }
 
 /* -------------------------------------------- Blog Styling End --------------------------------------------- */
@@ -568,7 +576,6 @@ a.popover-dismiss:focus {
 
 #footerBottom {
     display: none !important;
-    /* background-color: rgba(255,255,255,0.9); */
 }
 
 /* ----------------------------------------------- Footer End ------------------------------------------------- */
@@ -585,7 +592,7 @@ a.popover-dismiss:focus {
     -o-background-size: cover;
     background-size: cover;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     z-index: -2;
     }
 
@@ -666,14 +673,15 @@ a.popover-dismiss:focus {
 #loader {
     display: block;
     position: relative;
-    left: 50%;
-    top: 50%;
+    left: 50vw;
+    top: 50vh;
     width: 150px;
     height: 150px;
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #3498db;
+    z-index: 1001;
 
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -731,20 +739,33 @@ a.popover-dismiss:focus {
     -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(-100%);  /* IE 9 */
     transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
     -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(100%);  /* IE 9 */
     transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.3s 0.3s ease-out; 
+            transition: all 0.3s 0.3s ease-out;
 }
 
 .loaded #loader {
     opacity: 0;
+    -webkit-transition: all 0.3s ease-out; 
+            transition: all 0.3s ease-out;
 }
 
 .loaded #loader-wrapper {
     visibility: hidden;
+    -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+ 
+        -webkit-transition: all 0.3s 0.6s ease-out; 
+                transition: all 0.3s 0.6s ease-out;
+
 }
 
 @-webkit-keyframes spin {
@@ -775,7 +796,20 @@ a.popover-dismiss:focus {
 /* Load screen styling area end */
 
   /* Media queries */
-  @media all and (max-width: 575px) {
+  @media all and (max-width: 547px) {
+
+    .scrollPos {
+        margin-top: 7%;
+    }
+
+    .bubble {
+        position: absolute;
+        top: -73%;
+    }
+
+    .headersMinor{
+        font-size: 9vw;
+    }
 
     .robotCont {
         border-radius: 10px;
@@ -785,23 +819,7 @@ a.popover-dismiss:focus {
         width: 45vw;
     }
     .contactHeaders {
-        font-size: 7vw;
-    }
-
-    .scrollPos {
-        left: 39% !important;
-    }
-    /* .blogHeader {
-        
-    } */
-    .startHeader {
-        font-size: 10vw;
-    }
-    .greetingBG{
-        text-align: center;
-    }
-    .scrollText {
-        font-size: 2.2vw;
+        /* font-size: 7vw; */
     }
 
     .sideProfBG {
@@ -811,27 +829,28 @@ a.popover-dismiss:focus {
     #sideCard {
         display: none;
     }
-    .img-thumbnailMe {
+    /* .img-thumbnailMe {
         height: 200px;
         width: 200px;
         min-width: 0;
         min-height: 0;
         border-radius: 10px;
-    }
+    } */
     .hardSoftIcons {
         width: 11vw;
     }
-    .projectScroll {
+    /* .projectScroll {
         overflow-y: none !important;
         scroll-behavior: unset;
         -webkit-overflow-scrolling: unset;
         -ms-overflow-style: none;
-        height: unset;
-        box-sizing: unset;
+    } */
+    #footerBottom {
+        display: flex !important;
     }
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 548px) and (max-width: 767px) {
     .rileyCat {
         width: 45vw;
     }
@@ -843,9 +862,7 @@ a.popover-dismiss:focus {
         width: auto;
         align-content: center !important;
     }
-    #footerBottom {
-        display: flex !important;
-    }
+    
     .standardBG {
         margin-top: 15%;
         margin-bottom: 15%;
@@ -859,9 +876,6 @@ a.popover-dismiss:focus {
         height: auto;
     }
 
-    .greetingBG{
-        text-align: center;
-    }
     .hardSoftIcons {
         width: 11vw;
     }
@@ -874,7 +888,7 @@ a.popover-dismiss:focus {
     }
 
     .headers {
-        font-size: 6.1vw;
+        /* font-size: 6.1vw; */
     }
 
     .headersMinor{
@@ -882,20 +896,15 @@ a.popover-dismiss:focus {
     }
 
     .headersMinorBlog {
-        font-size: inherit;
-    }
-
-    .startHeader {
-        font-size: 6.5vw;
-    }
-    
-    .img-thumbnailMe {
+        /* font-size: inherit; */
+    }    
+    /* .img-thumbnailMe {
         height: 200px;
         width: 200px;
         min-width: 0;
         min-height: 0;
         border-radius: 10px;
-    }
+    } */
 
     .projectBG {
         margin-top: 15%;
@@ -907,14 +916,12 @@ a.popover-dismiss:focus {
         padding: 2%;
     }
 
-    .projectScroll {
+    /* .projectScroll {
         overflow-y: none !important;
         scroll-behavior: unset;
         -webkit-overflow-scrolling: unset;
         -ms-overflow-style: none;
-        height: unset;
-        box-sizing: unset;
-    }
+    } */
     
     .navbarProj {
         
@@ -922,8 +929,8 @@ a.popover-dismiss:focus {
         height: unset;
         box-sizing: unset;
         -ms-overflow-style: none;
-        scroll-behavior: unset;
-        -webkit-overflow-scrolling: unset;
+        /* scroll-behavior: unset; */
+        /* -webkit-overflow-scrolling: unset; */
         
     }
 
@@ -932,15 +939,12 @@ a.popover-dismiss:focus {
     }
     
     .scrollPos {
-        left: 42%;
+        /* left: 42%; */
     }
 
-    .scrollText {
-        font-size: 4vw;
-    }
 
     .blogHeader {
-        font-size: 4vw;
+        /* font-size: 4vw; */
     }
 
 }
@@ -949,18 +953,14 @@ a.popover-dismiss:focus {
     .rileyCat {
         width: 45vw;
     }
-    h4.sideProText {
+    /* h4.sideProText {
         font-size: 1rem;
-    }
-    .scrollText {
-        font-size: 2.2vw;
+    } */
+
+    .makeItStick {
+        position: fixed;
+        left: 0;
+        top: 10vh;
     }
 
-    .scrollPos {
-        left: 39%;
-    }
-
-    .startHeader {
-        font-size: 7vw;
-    }
   }
