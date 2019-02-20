@@ -54,7 +54,7 @@
             </div>
         </div>
     <!-- NavBar -->
-    <nav id="#home" class="navbar navbar-collapse fixed-top navbar-dark">      
+    <nav id="#home" class="navbar pt-3 navbar-collapse fixed-top navbar-dark">      
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <img id="navIcon" class="navbar-toggler-icon" src="../Portfolio/assets/images/logoWhiteFillsm.png" alt="navigation tree icon">
@@ -329,7 +329,7 @@
                         <a href="#" data-toggle="modal" data-target="#contactModal" class="btn btn-success btn-sm m-1" role="button" aria-pressed="true">Contact Me</a>
                         <a href="https://www.linkedin.com/in/suttonjarred/" target="_blank" class="btn btn-success btn-sm m-1" role="button" aria-pressed="true">LinkedIn</a>
                     </div>
-                    <div class="p-2">
+                    <div class="p-2 font-weight-bold">
                         <h5 class="sideProText">Purpose driven development with a focus on design and responsive efficiency at its core.</h5>
                         <h5 class="sideProText">That is how I build.</h5>
                     </div>
@@ -340,26 +340,32 @@
     
 
     <!-- Welcome -->
-    <section id="home" class="one">
-        <div class="container mx-auto mt-auto">
-            <div class="row boxShadow greetingBG col-12 col-sm-9 col-md-9 col-lg-9 col-xl-8 mx-auto" data-aos="fade-up">
-                <div class="p-0 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center text-sm-center text-md-center text-lg-left text-xl-left">
-                    <img src="assets/images/JarredSutton.png" alt="Picture of Jarred" class="img-thumbnailMe">
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 greetingTextCell">
-                    <h1 class="startHeader txtShadow text-center text-sm-center text-md-center text-lg-left text-xl-left">Welcome</h1>
-                    <h4 class="text-center text-sm-center text-md-center text-lg-left text-xl-left"><strong>Purpose driven development with a focus on design and responsive efficiency at its core.</strong></h4>
-                    <h4 class="text-center text-sm-center text-md-center text-lg-left text-xl-left"><strong> That&nbsp;is&nbsp;how&nbsp;I&nbsp;build.</strong></h4>
-                </div>
-            </div>
+    <section id="home" class="one d-flex justify-content-center">
         
-            <div class="row scrollPos"> 
-                <div class="text-center col-12">
-                    <h4 class="scrollText txtShadow mb-2 animated pulse infinite">Scroll</h4>
-                    <img class="treeScrollIcon imgShadow animated pulse infinite mb-3" src="assets/images/scrollTree.png" alt="tree scroll icon">
-                </div>
-            </div>
-        </div>
+
+            
+                        <div class="container align-self-center">
+                            <div class="row boxShadow greetingBG" data-aos="fade-up">
+                                <div class=" p-0 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center text-sm-center text-md-center text-lg-left text-xl-left">
+                                    <img src="assets/images/JarredSutton.png" alt="Picture of Jarred" class="img-thumbnailMe">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 greetingTextCell">
+                                    <h1 class="startHeader txtShadow text-center text-sm-center text-md-center text-lg-left text-xl-left">Welcome</h1>
+                                    <h4 class="text-center text-sm-center text-md-center text-lg-left text-xl-left"><strong>Purpose driven development with a focus on design and responsive efficiency at its core.</strong></h4>
+                                    <h4 class="text-center text-sm-center text-md-center text-lg-left text-xl-left"><strong> That&nbsp;is&nbsp;how&nbsp;I&nbsp;build.</strong></h4>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="d-flex align-self-end p-2 text-center scroll animated pulse infinite">
+                        <h4 class="scrollText txtShadow mb-2">Scroll</h4>
+                        <img class="treeScrollIcon imgShadow mb-3" src="assets/images/scrollTree.png" alt="tree scroll icon">
+
+                    </div>
+                  
+
+            
+        
     </section>
 
     <!-- Robot Break 1 -->
@@ -376,21 +382,21 @@
     </div>
 
     <!-- Value Section -->
-    <section id="values" class="two">
-
-        <div class="col-12 col-sm-12 offset-md-3 col-md-9 offset-lg-3 col-lg-9 offset-xl-3 col-xl-9" data-aos="fade-up">
-            <div class="standardBG pt-3 pb-4 boxShadow">
-                <div class="row">
-                    <h1 class="headers txtShadow rounded mx-auto">Values</h1>
+    <section id="values" class="two d-flex">
+            
+        <div class="align-self-center mt-3 mb-3 col-12 col-sm-12 offset-md-3 col-md-9 offset-lg-3 col-lg-9 offset-xl-3 col-xl-9" data-aos="fade-up">
+            <div class=" standardBG pt-3 pb-4 boxShadow">
+                <div class="headers txtShadow text-center">
+                    <h1 class="">Values</h1>
                 </div>
-                <div class="row greetingText sideCardTrigger">
 
+                <div class="row greetingText sideCardTrigger">
                     <!-- Impact Value Section -->
-                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                         <img class="valueIcons rounded mx-auto d-block" src="assets/images/values/impactIcon.png" alt="impact icon">
-                        <h3 class="headersMinor">Impact</h3>
+                        <h5 class="text-center headersMinor">Impact</h5>
                         <hr>
-                        <ul>
+                        <ul class="font-weight-bold">
                             <li>Technology & coding mentor for UW FullStack Web Dev. program</li>
                             <li>Instructor & creator of <a href="http://www.makerspace.nyc" target="_blank">Makerspace.NYC</a> technology program.</li>
                             <li>Teaching Arduino to ages 12-70 together.</li>
@@ -399,11 +405,11 @@
                     </div>
 
                     <!-- Curiosity Value Section -->
-                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                         <img class="valueIcons rounded mx-auto d-block" src="assets/images/values/Brainfull.png" alt="curiosity icon">
-                        <h3 class="headersMinor">Curiosity</h3>
+                        <h5 class="text-center headersMinor">Curiosity</h5>
                         <hr>
-                        <ul>
+                        <ul class="font-weight-bold">
                             <li>Growing tech skills w/ UW FullStack program - <i>A Avg.</i></li>
                             <li>Pursuing cloud Certifications to increase value & ability.</li>
                             <li>Not afraid of new challenges.</li>
@@ -412,11 +418,11 @@
                     </div>
 
                     <!-- Community Value Section -->
-                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                         <img class="valueIcons rounded mx-auto d-block" src="assets/images/values/communityIconBlack.png" alt="community icon">
-                        <h3 class="headersMinor">Community</h3>
+                        <h5 class="text-center headersMinor">Community</h5>
                         <hr>
-                        <ul>
+                        <ul class="font-weight-bold">
                             <li>Intel IoT Developer</li>
                             <li>Thrown IoT & VR Hackathons w/ sponsorship of Intel, Google & Unity.</li>
                             <li>Founding Director of the City University of New York Technology Incubator.</li>
@@ -425,11 +431,11 @@
                     </div>
 
                     <!-- Leadership Value Section -->
-                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                         <img class="valueIcons rounded mx-auto d-block" src="assets/images/values/leadershipIconBlack.png" alt="leadership icon">
-                        <h3 class="headersMinor">Leadership</h3>
+                        <h5 class="text-center headersMinor">Leadership</h5>
                         <hr>
-                        <ul>
+                        <ul class="font-weight-bold">
                             <li>Global Knowledge Mangement Tech Lead.</li>
                             <li>Global IT Director.</li>
                             <li>Customer Service & Technology Manager for 30+ volunteers & 10,000+ guests.</li>
@@ -456,19 +462,20 @@
     </div>
 
     <!-- Technologies Section -->
-    <section id="technologies" class="three">
+    <section id="technologies" class="three d-flex">
 
-        <div class="col-12 col-sm-12 offset-md-3 col-md-9 offset-lg-3 col-lg-9 offset-xl-3 col-xl-9" data-aos="fade-up">
+        <div class="align-self-center mt-3 mb-3 col-12 col-sm-12 offset-md-3 col-md-9 offset-lg-3 col-lg-9 offset-xl-3 col-xl-9" data-aos="fade-up">
+
             <div class="standardBG pb-2 mt-2 boxShadow">
                 <div class="headers txtShadow text-center">
-                        <h1>Technologies</h1>
+                    <h2>Technologies</h2>
                 </div>
 
                 <!-- hardware section -->
                 <div class="row">
                         
                     <div class="col-12 col-sm-6 col-lg-6 col-md-6 col-xl-6 text-center">
-                        <h3 class="headersMinor txtShadow">Hardware</h3>
+                        <h3 class="text-center headersMinor txtShadow">Hardware</h3>
                         <hr>
                         <!-- Arduino Popover -->
                         <a tabindex="0" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="Arduino" data-content="A powerful open source hardware platform. It is a microcontroller often used for robotics and automation."><img class="hardSoftIcons m-2 mx-auto" src="assets/images/hardware/arduino.png" alt="arduino"></a>
@@ -499,7 +506,7 @@
                     <!-- software section  -->
                     <div class="col-12 col-sm-6 col-lg-6 col-md-6 col-xl-6 text-center">   
 
-                        <h3 class="headersMinor txtShadow">Software</h3>
+                        <h3 class="text-center headersMinor txtShadow">Software</h3>
                         <hr>
                         <!-- Node Popover -->
                         <a tabindex="0" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="Node.JS" data-content="Javascript run on the backend."><img class="hardSoftIcons m-2 mx-auto" src="assets/images/software/node.png" alt="node"></a>
@@ -563,28 +570,28 @@
     </div>
 
     <!-- Projects Section -->
-    <section id="projects" class="four">
-        <div class="container-fluid">
+    <section id="projects" class="four d-flex">
+        <div class="align-self-center mt-3 mb-3 container-fluid">
             <div class="row-fluid">
                 <div class="projectBG boxShadow pt-3 pb-4 col-12 col-sm-12 col-md-9 offset-md-3 offset-lg-3 col-lg-9 offset-xl-3 col-xl-9" data-aos="fade-up">
                     <h1 class="headers text-center txtShadow mb-2">Projects</h1>
                     <hr>
                     <div class="row projectScrollCont">
-                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2 p-0 btn-group-vertical navbarProj">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2 p-md-0 p-lg-0 p-xl-0 btn-group-vertical navbarProj">
                             <nav id="innerNav" class="nav justify-content-center">
-                                <a href="#ALL" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Accessibility Lending Library</a>
-                                <a href="#medSight" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">MedSight</a>
-                                <a href="#theWeekender" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">The Weekender</a>
-                                <a href="#holidayScraper" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Holiday Decor Scraper</a>
-                                <a href="#dreamSake" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Dream Shake</a>
-                                <a href="#arduinoGarden" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Arduino Garden</a>
-                                <a href="#trainSched" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Train Scheduler</a>
-                                <a href="#cascade" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Cascade Store</a>
-                                <a href="#rickMorty" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Rick & Morty RPG</a>
-                                <a href="#liri" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">LIRI Bot</a>
-                                <a href="#egg" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Edu. Gravity Garden</a>
-                                <a href="#giftastic" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Giftastic</a>
-                                <!-- <a href="#trivia" class="btn p-1 btn-outline-success btn-sm ml-2 mt-1 mb-1 projNavBtn nav-link">Video Game Trivia</a> -->
+                                <a href="#ALL" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">Accessibility Lending Library</a>
+                                <a href="#medSight" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">MedSight</a>
+                                <a href="#theWeekender" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">The Weekender</a>
+                                <a href="#holidayScraper" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">Holiday Decor Scraper</a>
+                                <a href="#dreamSake" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">Dream Shake</a>
+                                <a href="#arduinoGarden" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">Arduino Garden</a>
+                                <a href="#trainSched" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">Train Scheduler</a>
+                                <a href="#cascade" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">Cascade Store</a>
+                                <a href="#rickMorty" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">Rick & Morty RPG</a>
+                                <a href="#liri" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">LIRI Bot</a>
+                                <a href="#egg" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">Edu. Gravity Garden</a>
+                                <a href="#giftastic" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">Giftastic</a>
+                                <!-- <a href="#trivia" class="btn p-1 btn-outline-success btn-sm ml-2 mr-2 ml-md-2 ml-lg-2 ml-xl-2 mt-1 mb-1 projNavBtn nav-link">Video Game Trivia</a> -->
                             </nav>
                         </div>
                             
@@ -596,7 +603,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://accessibility-lending-library.herokuapp.com/" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Accessibility Lending Library</h4></a>
-                                    <p class="projectDesc">The Accessibility Lending Library is a community based website that houses products that have been reviewed from university sources and occupational therapists that are accessible friendly. Not only is it a database of information, it allows users to add reviews and learn how to modify products of their own, learn where to purchase them, or rent one from a local Accessiblity Lending Library.
+                                    <p class="font-weight-bold">The Accessibility Lending Library is a community based website that houses products that have been reviewed from university sources and occupational therapists that are accessible friendly. Not only is it a database of information, it allows users to add reviews and learn how to modify products of their own, learn where to purchase them, or rent one from a local Accessiblity Lending Library.
                                     </p>
                                     <span class="badge badge-warning">React</span>
                                     <span class="badge badge-warning">Javascript</span>
@@ -624,7 +631,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://salty-basin-99417.herokuapp.com/" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">MedSight</h4></a>
-                                    <p class="projectDesc">One of the biggest problems in managing personal health is rooted in how difficult it is to track and correlate what is really going on. We can’t understand what is really happening in the 4th dimension, meaning time. When a symptom or health issue occurs, we cannot recall what was eaten, where we were, etc., let alone some of the more nuanced influences, such as weather conditions, pollen count or a myriad of other factors going on at the time. Welcome to MedSight!
+                                    <p class="font-weight-bold">One of the biggest problems in managing personal health is rooted in how difficult it is to track and correlate what is really going on. We can’t understand what is really happening in the 4th dimension, meaning time. When a symptom or health issue occurs, we cannot recall what was eaten, where we were, etc., let alone some of the more nuanced influences, such as weather conditions, pollen count or a myriad of other factors going on at the time. Welcome to MedSight!
                                     </p>
                                     <span class="badge badge-warning">Javascript</span>
                                     <span class="badge badge-warning">Node.JS</span>
@@ -649,7 +656,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://github.com/circuitsyn/daWeekender" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">The Weekender</h4></a>
-                                    <p class="projectDesc"> Planning a weekend getaway? The Weekender allows users to pull all the information needed for a weekend trip with one simple location-based submission in this web application.</p>
+                                    <p class="font-weight-bold"> Planning a weekend getaway? The Weekender allows users to pull all the information needed for a weekend trip with one simple location-based submission in this web application.</p>
                                     <span class="badge badge-warning">Javascript</span>
                                     <span class="badge badge-warning">Bootstrap</span>
                                     <span class="badge badge-warning">Firebase</span>
@@ -673,7 +680,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://frozen-chamber-74604.herokuapp.com/" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Holiday Decor Scraper</h4></a>
-                                    <p class="projectDesc">A MongoDB backed Cheerio web scrapper sample application designed to help a community keep track of holiday decor articles as well as leave and manage notes. The app is hosted on heroku and helps encourage the collabrative holiday decorating cheer!</p>
+                                    <p class="font-weight-bold">A MongoDB backed Cheerio web scrapper sample application designed to help a community keep track of holiday decor articles as well as leave and manage notes. The app is hosted on heroku and helps encourage the collabrative holiday decorating cheer!</p>
                                     <span class="badge badge-warning">Javascript</span>
                                     <span class="badge badge-warning">Node.JS</span>
                                     <span class="badge badge-warning">Express</span>
@@ -698,7 +705,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://warm-falls-68532.herokuapp.com/" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Dream Shake</h4></a>
-                                    <p class="projectDesc">A sample Heroku app using MySQL, Handlebars and Node.JS. In this application, users can submit your favorite ideas for a milkshake and devour it when ready! The MySQL database keeps track of all submissions. Give it a go!</p>
+                                    <p class="font-weight-bold">A sample Heroku app using MySQL, Handlebars and Node.JS. In this application, users can submit your favorite ideas for a milkshake and devour it when ready! The MySQL database keeps track of all submissions. Give it a go!</p>
                                     <span class="badge badge-warning">Javascript</span>
                                     <span class="badge badge-warning">Node.JS</span>
                                     <span class="badge badge-warning">NPM</span>
@@ -718,7 +725,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://circuitsyn.wordpress.com/2012/06/09/arduino-auto-watering-garden-project/" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Auto Watering Garden</h4></a>
-                                    <p class="projectDesc"></p>An Arduino based auto-watering garden. The system utilized a nested loop to check for humidity and sunlight when watering plants, identifying the ideal soil moisture level to prevent burning or over watering. If conditions are met, a solenoid is triggered for a period of time and voila! Your plants are watered!</p>
+                                    <p class="font-weight-bold"></p>An Arduino based auto-watering garden. The system utilized a nested loop to check for humidity and sunlight when watering plants, identifying the ideal soil moisture level to prevent burning or over watering. If conditions are met, a solenoid is triggered for a period of time and voila! Your plants are watered!</p>
                                     <span class="badge badge-warning">Arduino</span>
                                     <span class="badge badge-warning">C/C++</span>
                                     <span class="badge badge-warning">IoT</span>
@@ -735,7 +742,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://circuitsyn.github.io/Train-Schedule/" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Firebase Train Scheduler</h4></a>
-                                    <p class="projectDesc"></p>This is a sample application built to demo Firebase. The functionality provides a real-time display scheduling notepad tracker. Users can enter their train name, destination, the typical start time, alongside the train’s frequency; what users get back is all that data saved in addition to the next train’s arrival time, as well as the minutes remaining. This would be useful for those seeking to map their train schedule for the day and recall it automatically from the cloud without having to worry about storing the data.</p>
+                                    <p class="font-weight-bold"></p>This is a sample application built to demo Firebase. The functionality provides a real-time display scheduling notepad tracker. Users can enter their train name, destination, the typical start time, alongside the train’s frequency; what users get back is all that data saved in addition to the next train’s arrival time, as well as the minutes remaining. This would be useful for those seeking to map their train schedule for the day and recall it automatically from the cloud without having to worry about storing the data.</p>
                                     <span class="badge badge-warning">Javascript</span>
                                     <span class="badge badge-warning">BootStrap</span>
                                     <span class="badge badge-warning">Moment.JS</span>
@@ -753,7 +760,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://github.com/circuitsyn/Cascade-MYSQL_Store" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Cascade Store App</h4></a>
-                                    <p class="projectDesc"></p>Cascade is a Node.JS-based shopping market that allows for customer, manager, and supervisor interactions via a MySQL database.</p>
+                                    <p class="font-weight-bold"></p>Cascade is a Node.JS-based shopping market that allows for customer, manager, and supervisor interactions via a MySQL database.</p>
                                     <span class="badge badge-warning">Node.JS</span>
                                     <span class="badge badge-warning">MySQL</span>
                                     <span class="badge badge-warning">NPM</span>
@@ -770,7 +777,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://circuitsyn.github.io/unit-4-game/" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Rick and Morty RPG</h4></a>
-                                    <p class="projectDesc"></p>In this role-playing game, the user battles some of the many characters in the hit TV-series, Rick and Morty. Choose your character carefully; if you choose the wrong one you won’t be able to defeat them all! The now-ruined punchline and plot is: in order to win you must defeat them all!</p>
+                                    <p class="font-weight-bold"></p>In this role-playing game, the user battles some of the many characters in the hit TV-series, Rick and Morty. Choose your character carefully; if you choose the wrong one you won’t be able to defeat them all! The now-ruined punchline and plot is: in order to win you must defeat them all!</p>
                                     <span class="badge badge-warning">Javascript</span>
                                     <span class="badge badge-warning">Bootstrap</span>
                                     <span class="badge badge-warning">HTML</span>
@@ -786,7 +793,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://github.com/circuitsyn/liri-node-app" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">LIRI Bot</h4></a>
-                                    <p class="projectDesc"></p>LIRI Bot is a Node.JS Language Input Robot Interface (LIRI) that receives language commands and runs a function with an attached API call. This current robot can do a myriad of things, and has four commands to start: Spotify-this, movie-this, concert-this, and do-what-it-says. Please feel free to give it a try!</p>
+                                    <p class="font-weight-bold"></p>LIRI Bot is a Node.JS Language Input Robot Interface (LIRI) that receives language commands and runs a function with an attached API call. This current robot can do a myriad of things, and has four commands to start: Spotify-this, movie-this, concert-this, and do-what-it-says. Please feel free to give it a try!</p>
                                     <span class="badge badge-warning">Node.JS</span>
                                     <span class="badge badge-warning">API (Spotify)</span>
                                     <span class="badge badge-warning">API (OMDB)</span>
@@ -803,7 +810,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://software.intel.com/en-us/videos/bringing-the-components-of-a-makerspace-together-to-create-educational-platforms" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Educational Gravity Garden</h4></a>
-                                    <p class="projectDesc"></p>The Educational Gravity Garden (EGG) is an overzealous way to water your plants. This video provides an overview of all the components one would find at a local makerspace that can then be used to create educational platforms. This demo utilizes 3D printed components designed in CAD, and multiple sensors that are connected to an Intel® Edison module.</p>
+                                    <p class="font-weight-bold"></p>The Educational Gravity Garden (EGG) is an overzealous way to water your plants. This video provides an overview of all the components one would find at a local makerspace that can then be used to create educational platforms. This demo utilizes 3D printed components designed in CAD, and multiple sensors that are connected to an Intel® Edison module.</p>
                                     <span class="badge badge-warning">Arduino</span>
                                     <span class="badge badge-warning">C/C++</span>
                                     <span class="badge badge-warning">Edison</span>
@@ -823,7 +830,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-center text-sm-center text-md-center text-lg-left text-xl-left">
                                     <a href="https://circuitsyn.github.io/GifTastic/" target="_blank" class="projLink"><h4 class="projectTitle mt-2 mt-sm-2 mt-md-2 mt-lg-2 mt-xl-0">Giftastic</h4></a>
-                                    <p class="projectDesc"></p>In this API driven app, users can make their own custom gif board based on food! In order to utilize the app, users enter a quantity and food item type, and simply click submit! Once completed, buttons will add to the display; users only need to click them to generate the chosen number of gifs. Have fun with it!</p>
+                                    <p class="font-weight-bold"></p>In this API driven app, users can make their own custom gif board based on food! In order to utilize the app, users enter a quantity and food item type, and simply click submit! Once completed, buttons will add to the display; users only need to click them to generate the chosen number of gifs. Have fun with it!</p>
                                     <span class="badge badge-warning">Javascript</span>
                                     <span class="badge badge-warning">Bootstrap</span>
                                     <span class="badge badge-warning">API (Giphy)</span>
@@ -853,9 +860,9 @@
     </div>
 
     <!-- Blog Section -->
-    <section id="blog" class="five">
+    <section id="blog" class="five d-flex">
 
-        <div id="blogSection" class="col-12 col-sm-12 offset-md-3 col-md-9 offset-lg-3 col-lg-9 offset-xl-3 col-xl-9 text-center" data-aos="fade-up" data-aos-offset="100">
+        <div id="blogSection" class="align-self-center mt-3 mb-3 col-12 col-sm-12 offset-md-3 col-md-9 offset-lg-3 col-lg-9 offset-xl-3 col-xl-9 text-center" data-aos="fade-up" data-aos-offset="100">
             <div class="standardBG boxShadow pb-2 mt-2">
                 <h1 class="headers txtShadow">Blog</h1>
                 <hr>

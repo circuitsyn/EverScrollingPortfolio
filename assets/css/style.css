@@ -90,10 +90,7 @@ body {
 
 .nav-linkStart {
     color: rgba(91, 163, 0, 1) !important;
-    font-family: 'WhitePine', monospace;
-    /* font-size: 20px; */
-    
-   
+    font-family: 'WhitePine', monospace;   
 }
 
 a.nav-linkStart {
@@ -168,11 +165,6 @@ button:focus {
 
 #robotFooter {
     height: 20%;
-}
-
-.robotCont {
-    /* padding-top: 1%;
-    padding-bottom: 1%; */
 }
 
 .popUpRobot {
@@ -313,12 +305,10 @@ button:focus {
 
 .contactHeaders {
     font-family: 'BlackRough', monospace;
-    text-align: center;
 }
 
 .headersMinor {
     font-family: 'BlackRough', monospace;
-    text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -337,14 +327,9 @@ button:focus {
     min-height: 100%;
 }
 
-.projectDesc {
-    font-weight: bolder;
-}
-
 .projectScroll {
     height: inherit;
-    /* box-sizing:border-box; */
-    /* max-height: 85%; */
+    box-sizing:border-box;
     overflow-y: scroll;
     -ms-overflow-style: auto !important;
     scroll-behavior: smooth;
@@ -352,13 +337,12 @@ button:focus {
 }
 
 .projectScrollCont {
-    height: 50vh;
+    height: 70vh;
 }
 
 .navbarProj {
     height: inherit;
     box-sizing:border-box;
-    /* max-height: 85%; */
     overflow-y: scroll;
     -ms-overflow-style: auto !important;
     scroll-behavior: smooth;
@@ -371,7 +355,6 @@ button:focus {
 
 .projectTitle {
     font-family: 'BlackRough', monospace;
-    /* vertical-align: middle !important; */
 }
 
 .img-thumbnailProj {
@@ -391,19 +374,9 @@ a.projLink:hover {
 /*------------------------------------ Project Area End ----------------------------------------  */
 
 /* ----------------------------------- Welcome Start -------------------------------------------- */
-.scrollPos {
+/* .scrollPos {
     margin-top: 25%;
-    /* left: 45%; */
-    /* position: absolute; */
-    /* width: auto; */
-}
-
-.scrollPos {
-    -webkit-animation: pulse 2s; /* Safari 4+ */
-    -moz-animation:    pulse 2s; /* Fx 5+ */
-    -o-animation:      pulse 2s; /* Opera 12+ */
-    animation:         pulse 2s; /* IE 10+, Fx 29+ */
-  }
+} */
 
 .scrollText {
     font-family: 'BlackSmooth', monospace;
@@ -414,11 +387,9 @@ a.projLink:hover {
 .treeScrollIcon {
     height: 5rem !important;
     width: auto !important;
-    /* margin: 0 !important; */
 }
 
 .greetingText {
-    font-weight: bolder;
     font-family: 'Main';
 }
 
@@ -438,14 +409,7 @@ a.projLink:hover {
     font-family: 'BlackRough', monospace;
 }
 
-/* .divMe { */
-    /* display: flex;
-    justify-content: center;
-    /* overflow: hidden */ 
-/* } */
-
 .img-thumbnailMe {
-    /* flex-shrink: 0; */
     width: auto;
     height: 100%;
     border-radius: 5px;
@@ -530,7 +494,6 @@ a.popover-dismiss:focus {
 }
 
 .sideProText {
-    font-weight: bolder;
     font-family: 'Main';
 }
 
@@ -552,10 +515,6 @@ a.popover-dismiss:focus {
 
 .blogHeader {
     font-family: 'BlackRough', monospace;
-    text-align: center;
-    /* font-size: 2vw; */
-    /* margin-top: auto; */
-    /* margin-bottom: auto; */
 }
 
 /* -------------------------------------------- Blog Styling End --------------------------------------------- */
@@ -572,37 +531,30 @@ a.popover-dismiss:focus {
 
 .one {
     min-height: 100vh;
-    background-image: url("../images/BGs/leavenworth.jpg");
     background-size: cover;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /* align-items: center; */
+    background-image: url("../images/BGs/leavenworth.jpg");
     z-index: -2;
     }
 
 .two {
     min-height: 100vh;
     background-size: cover;
-    padding-top: 5%;
-    padding-bottom: 5%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-image: url("../images/BGs/waterfallBG.jpg");
-    align-items: center;
     z-index: -2;
     }
 
 .three {
     min-height: 100vh;
-    align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -614,8 +566,6 @@ a.popover-dismiss:focus {
 
 .four {
     min-height: 100vh;
-    padding-top: 5%;
-    padding-bottom: 5%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -627,8 +577,6 @@ a.popover-dismiss:focus {
 
 .five {
     min-height: 100vh;
-    padding-top: 5%;
-    padding-bottom: 5%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -728,8 +676,8 @@ a.popover-dismiss:focus {
     -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(100%);  /* IE 9 */
     transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
-    -webkit-transition: all 0.3s 0.3s ease-out; 
-            transition: all 0.3s 0.3s ease-out;
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .loaded #loader {
@@ -778,10 +726,14 @@ a.popover-dismiss:focus {
 
   /* Media queries */
   @media all and (max-width: 547px) {
-
-    .scrollPos {
-        margin-top: 7%;
+    
+    .projectScrollCont {
+        height: auto;
     }
+
+    /* .scrollPos {
+        margin-top: 7%;
+    } */
 
     .bubble {
         position: absolute;
@@ -794,9 +746,6 @@ a.popover-dismiss:focus {
 
     .rileyCat {
         width: 45vw;
-    }
-    .contactHeaders {
-        /* font-size: 7vw; */
     }
 
     .sideProfBG {
@@ -817,30 +766,35 @@ a.popover-dismiss:focus {
         width: 11vw;
     }
 
-    .projectScroll {
+    /* .projectScroll {
         height: auto;
-        /* overflow-y: none !important;
+        overflow-y: none !important;
         scroll-behavior: unset;
         -webkit-overflow-scrolling: unset;
-        -ms-overflow-style: none; */
-    }
+        -ms-overflow-style: none;
+    } */
     #footerBottom {
         display: flex !important;
     }
 
-    .navbarProj {
+    /* .navbarProj {
         
         overflow-y: none !important;
         height: unset;
         box-sizing: unset;
         -ms-overflow-style: none;
-        /* scroll-behavior: unset; */
-        /* -webkit-overflow-scrolling: unset; */
+        scroll-behavior: unset;
+        -webkit-overflow-scrolling: unset;
         
-    }
+    } */
   }
 
   @media all and (min-width: 548px) and (max-width: 767px) {
+
+    .projectScrollCont {
+        height: auto;
+    }
+
     .rileyCat {
         width: 45vw;
     }
@@ -858,25 +812,20 @@ a.popover-dismiss:focus {
         margin-bottom: 15%;
     }
 
-    .projectScrollCont {
-        height: auto;
-    }
+    /* .projectScrollCont {
+        height: 50vh;
+    } */
 
     .hardSoftIcons {
         width: 11vw;
     }
+
     .sideProfBG {
         display: none;
     }
 
     #sideCard {
         display: none;
-    }
-
-    .projectBG {
-        margin-top: 15%;
-        margin-bottom: 15%;
-
     }
 
     nav#innerNav {
@@ -890,29 +839,24 @@ a.popover-dismiss:focus {
         -ms-overflow-style: none;
     } */
     
-    .navbarProj {
+    /* .navbarProj {
         
         overflow-y: none !important;
         height: unset;
         box-sizing: unset;
         -ms-overflow-style: none;
-        /* scroll-behavior: unset; */
-        /* -webkit-overflow-scrolling: unset; */
+        scroll-behavior: unset;
+        -webkit-overflow-scrolling: unset;
         
-    }
+    }  */
 
     .standardBG.nav {
         margin: 0 !important;
     }
-    
+/*     
     .scrollPos {
-        /* left: 42%; */
-    }
-
-
-    .blogHeader {
-        /* font-size: 4vw; */
-    }
+        left: 42%;
+    } */
 
 }
 
