@@ -31,10 +31,6 @@
 
 .headers {
     font-family: 'BlackRough', monospace;
-    text-align: center;
-    /* font-size: 4vw; */
-    /* margin-bottom: auto;
-    margin-top: auto; */
 }
 html {
     height: 100%;
@@ -60,6 +56,12 @@ body {
 .imgShadow {
     -webkit-filter: drop-shadow(0px 5px 5px #222);
     filter: drop-shadow(0px 5px 5px #222);
+}
+
+.hrProjects {
+    background-color: black;
+    opacity: 0.4;
+    height: 0.5px;
 }
 
 /* ------------------------------- Nav Bar Styling Start ------------------------------------ */
@@ -145,10 +147,6 @@ button:focus {
     
 }
 
-.bolder {
-    font-weight: bolder;
-}
-
 .robotStyleL {
     height: 150px;
     padding-right: 2%;
@@ -173,8 +171,8 @@ button:focus {
 }
 
 .robotCont {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    /* padding-top: 1%;
+    padding-bottom: 1%; */
 }
 
 .popUpRobot {
@@ -316,7 +314,6 @@ button:focus {
 .contactHeaders {
     font-family: 'BlackRough', monospace;
     text-align: center;
-    /* font-size: 3vw; */
 }
 
 .headersMinor {
@@ -324,7 +321,6 @@ button:focus {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 2vw;
 }
 
 .modal-header {
@@ -445,7 +441,6 @@ a.projLink:hover {
 /* .divMe { */
     /* display: flex;
     justify-content: center;
-    align-items: center;
     /* overflow: hidden */ 
 /* } */
 
@@ -461,7 +456,7 @@ a.projLink:hover {
 
 /* Blog Page Start */
 .blogIndexImages {
-    height: 100%;
+    height: auto;
     width: 100%;
     border-radius: 15px;
     padding: 0.8em;
@@ -469,10 +464,6 @@ a.projLink:hover {
 
 .headersMinorBlog {
     font-family: 'BlackRough', monospace;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    /* font-size: 2vw; */
 }
 
 .blogBG {
@@ -524,33 +515,22 @@ a.popover-dismiss:focus {
 
 .nameHeader {
     font-family: 'BlackRough', monospace;
-    text-align: center;
     margin-top: 0.5em;
-    /* font-size: 1.7vw; */
-    /* border-bottom: 1px solid lightgray; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
 }
 
 .img-thumbnailMeProf {
     height: 15vw;
     width: auto;
     border-radius: 10px;
-    vertical-align: middle;
 }
 
 .sideProfBG{
     background-color:rgba(255,255,255,1);
     border-radius: 5px;
-    padding: 1% 1% 1% 1%;
-    margin-left: 4%;
 }
 
 .sideProText {
     font-weight: bolder;
-    text-align: center;
     font-family: 'Main';
 }
 
@@ -599,7 +579,6 @@ a.popover-dismiss:focus {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    display: flex;
     /* align-items: center; */
     z-index: -2;
     }
@@ -615,7 +594,6 @@ a.popover-dismiss:focus {
     -o-background-size: cover;
     background-size: cover;
     background-image: url("../images/BGs/waterfallBG.jpg");
-    display: flex;
     align-items: center;
     z-index: -2;
     }
@@ -631,12 +609,10 @@ a.popover-dismiss:focus {
     -o-background-size: cover;
     background-size: cover;
     background-image: url("../images/BGs/victoria.jpg");
-    display: flex;
     z-index: -2;
     }
 
 .four {
-    align-items: center;
     min-height: 100vh;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -646,12 +622,10 @@ a.popover-dismiss:focus {
     -o-background-size: cover;
     background-size: cover;
     background-image: url("../images/BGs/whistler.jpg");
-    display: flex;
     z-index: -2;
     }
 
 .five {
-    align-items: center;
     min-height: 100vh;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -661,7 +635,6 @@ a.popover-dismiss:focus {
     -o-background-size: cover;
     background-size: cover;
     background-image: url("../images/BGs/rasar.jpg");
-    display: flex;
     z-index: -2;
     }
 
@@ -815,11 +788,7 @@ a.popover-dismiss:focus {
         top: -73%;
     }
 
-    .headersMinor{
-        font-size: 9vw;
-    }
-
-    .robotCont {
+    .break {
         border-radius: 10px;
     }
 
@@ -847,14 +816,27 @@ a.popover-dismiss:focus {
     .hardSoftIcons {
         width: 11vw;
     }
-    /* .projectScroll {
-        overflow-y: none !important;
+
+    .projectScroll {
+        height: auto;
+        /* overflow-y: none !important;
         scroll-behavior: unset;
         -webkit-overflow-scrolling: unset;
-        -ms-overflow-style: none;
-    } */
+        -ms-overflow-style: none; */
+    }
     #footerBottom {
         display: flex !important;
+    }
+
+    .navbarProj {
+        
+        overflow-y: none !important;
+        height: unset;
+        box-sizing: unset;
+        -ms-overflow-style: none;
+        /* scroll-behavior: unset; */
+        /* -webkit-overflow-scrolling: unset; */
+        
     }
   }
 
@@ -876,10 +858,6 @@ a.popover-dismiss:focus {
         margin-bottom: 15%;
     }
 
-    .headersMinorBlog {
-        text-align: center;
-    }
-
     .projectScrollCont {
         height: auto;
     }
@@ -894,25 +872,6 @@ a.popover-dismiss:focus {
     #sideCard {
         display: none;
     }
-
-    .headers {
-        /* font-size: 6.1vw; */
-    }
-
-    .headersMinor{
-        font-size: 4.5vw;
-    }
-
-    .headersMinorBlog {
-        /* font-size: inherit; */
-    }    
-    /* .img-thumbnailMe {
-        height: 200px;
-        width: 200px;
-        min-width: 0;
-        min-height: 0;
-        border-radius: 10px;
-    } */
 
     .projectBG {
         margin-top: 15%;
@@ -961,10 +920,7 @@ a.popover-dismiss:focus {
     .rileyCat {
         width: 45vw;
     }
-    /* h4.sideProText {
-        font-size: 1rem;
-    } */
-
+   
     .makeItStick {
         position: fixed;
         left: 0;
