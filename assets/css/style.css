@@ -403,7 +403,6 @@ a.projLink:hover {
     background-color:rgba(255,255,255,1);
     border-radius: 5px;
     padding: 1% 1% 1% 1%;
-    margin-top: 25vh
 }
 
 .startHeader {
@@ -740,10 +739,6 @@ a.popover-dismiss:focus {
     .bubble {
         position: absolute;
         top: -73%;
-    }
-
-    .break {
-        border-radius: 10px;
     }
 
     .rileyCat {
