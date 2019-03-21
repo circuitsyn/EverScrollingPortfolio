@@ -135,6 +135,17 @@ button:focus {
     outline-style: 'border-radius: 10px';
 }
 
+button:focus:not(.focus-visible) {
+    outline: none;
+  }
+  
+button .focus-visible {
+    outline-color: rgba(91, 163, 0, 1);
+    outline-style: auto;
+    outline-width: 5px;
+    outline-style: 'border-radius: 10px';
+}
+
 /* ------------------------------ Nav Bar Styling End ------------------------------------ */
 /* --------------------------------  Robot Start ----------------------------------------- */
 .roboText {
