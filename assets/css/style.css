@@ -128,6 +128,14 @@ li.nav-item {
     background-color: #FDB814;
 }
 
+#navIcon:hover {
+    height: 64px;
+    width:64px;
+    box-shadow: 0 0 20px 0 rgba(91, 163, 0, 1), 0 0 20px 0 rgba(91, 163, 0, 1);
+    border-radius: 50%;
+    background-color: #FDB814;
+}
+
 button:focus {
     outline-color: rgba(91, 163, 0, 1);
     outline-style: auto;
