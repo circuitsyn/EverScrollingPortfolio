@@ -887,4 +887,8 @@ a.popover-dismiss:focus {
         top: 10vh;
     }
 
+    .hardSoftIcons {
+        width: 11vw;
+    }
+
   }
