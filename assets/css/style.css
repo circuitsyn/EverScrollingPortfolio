@@ -890,10 +890,15 @@ a.popover-dismiss:focus {
    
     .makeItStick {
         position: fixed;
+        /* max-width: 300px;
+        width: 100%; */
+        /* height: 200px; */
+        margin: auto auto auto 0;
+        /* position: absolute; */
         left: 0;
-        top: 10vh;
-        margin-top: auto;
-        margin-bottom: auto;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
 
     .hardSoftIcons {
