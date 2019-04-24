@@ -32,9 +32,11 @@
 .headers {
     font-family: 'BlackRough', monospace;
 }
+
 html {
     height: 100%;
 }
+
 body {
     font-family: 'Main';
     height: 100%;
@@ -125,7 +127,8 @@ li.nav-item {
     width:64px;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.2);
     border-radius: 50%;
-    background-color: #FDB814;
+    background-color: white;
+    border: 1px solid #FDB814;
 }
 
 #navIcon:hover {
@@ -133,7 +136,8 @@ li.nav-item {
     width:64px;
     box-shadow: 0 0 20px 0 rgba(91, 163, 0, 1), 0 0 20px 0 rgba(91, 163, 0, 1);
     border-radius: 50%;
-    background-color: #FDB814;
+    background-color: white;
+    border: 1px solid #FDB814;
 }
 
 button:focus {
@@ -550,8 +554,6 @@ a.popover-dismiss:focus {
 
 .one {
     min-height: 100vh;
-    min-width: 100vw;
-    background-size: cover;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -563,7 +565,6 @@ a.popover-dismiss:focus {
 
 .two {
     min-height: 100vh;
-    background-size: cover;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
