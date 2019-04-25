@@ -551,7 +551,7 @@ a.popover-dismiss:focus {
 
 .one {
     min-height: 100vh;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat; 
     background-position: center;
     -webkit-background-size: cover;
@@ -564,7 +564,7 @@ a.popover-dismiss:focus {
 
 .two {
     min-height: 100vh;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat; 
     background-position: center;
     -webkit-background-size: cover;
@@ -577,7 +577,7 @@ a.popover-dismiss:focus {
 
 .three {
     min-height: 100vh;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat; 
     background-position: center;
     -webkit-background-size: cover;
@@ -590,7 +590,7 @@ a.popover-dismiss:focus {
 
 .four {
     min-height: 100vh;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat; 
     background-position: center;
     -webkit-background-size: cover;
@@ -603,7 +603,7 @@ a.popover-dismiss:focus {
 
 .five {
     min-height: 100vh;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat; 
     background-position: center;
     -webkit-background-size: cover;
