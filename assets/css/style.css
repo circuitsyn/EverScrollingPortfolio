@@ -753,6 +753,38 @@ a.popover-dismiss:focus {
 /* Load screen styling area end */
 
   /* Media queries */
+  /* --- start of welcome box sizing queries */
+  @media (min-width: 1713px) {
+    .container-small {
+        max-width: 41% !important;
+      }
+    }
+
+  @media (min-width: 1530px) and (max-width: 1713px) {
+    .container-small {
+        max-width: 45% !important;
+      }
+    }
+
+  @media (min-width: 1460px) and (max-width: 1529px) {
+    .container-small {
+        max-width: 50% !important;
+      }
+    }
+
+  @media (min-width: 1200px) and (max-width: 1459px) {
+  .container-small {
+      max-width: 60% !important;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+  .container-small {
+      max-width: 70% !important;
+    }
+   }
+  /* --- end of welcome box sizing queries */
+
   @media all and (max-width: 547px) {
     
     .projectScrollCont {
