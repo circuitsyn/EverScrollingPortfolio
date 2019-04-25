@@ -394,9 +394,9 @@ a.projLink:hover {
 /*------------------------------------ Project Area End ----------------------------------------  */
 
 /* ----------------------------------- Welcome Start -------------------------------------------- */
-/* .scrollPos {
-    margin-top: 25%;
-} */
+#welcomeWrap {
+    position: absolute;
+}
 
 .scrollText {
     font-family: 'BlackSmooth', monospace;
