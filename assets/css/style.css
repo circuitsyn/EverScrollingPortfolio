@@ -302,7 +302,8 @@ button .focus-visible {
 
 .rileyCat {
     border-radius: 20px;
-    width: 25vw;
+    height: 50%;
+        height: 50vh;
     border: solid 1px white;
 }
 
@@ -814,7 +815,8 @@ a.popover-dismiss:focus {
     }
 
     .rileyCat {
-        width: 45vw;
+        height: 50%;
+        height: 50vh;
     }
 
     .sideProfBG {
@@ -865,7 +867,8 @@ a.popover-dismiss:focus {
     }
 
     .rileyCat {
-        width: 45vw;
+        height: 50%;
+        height: 50vh;
     }
     .projectTitle {
         margin-top: 5%;
@@ -931,7 +934,8 @@ a.popover-dismiss:focus {
 
   @media all and (max-width: 960px) and (min-width: 767px){
     .rileyCat {
-        width: 45vw;
+        height: 50%;
+        height: 50vh;
     }
    
     .makeItStick {
